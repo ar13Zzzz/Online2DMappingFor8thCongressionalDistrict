@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/startToExplore.css">
+    <title>Start To Explore</title>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+        <nav class="nav">
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link navBtn" aria-current="page" href="index.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link active navBtn" href="aboutUs.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </nav>
+    </nav>
+
+    <div class="container-fluid map">
+        <div class="container-fluid title">
+            <p class="DistrictOfCavite">8th District of Cavite</p>
+            <p class="caviteDesc">Welcome to the vibrant 8<sup>th</sup> Congressional District of Cavite - 
+                where history meets progress and community thrives! Discover a land of adverse landscapes,
+                 rich natural heritage, and dynamic opportunities as we unite to build a better future.</p>
+        </div>
+        <div class="container-xxl wrapper">
+            <!-- <img src="../images/startToExploreImage/guide.png" class="guide"> -->
+            <img src="../images/startToExploreImage/maragondon.png" alt="map of Maragondon" id="maragondonMap" class="imgMap" draggable="false">
+            <img src="../images/startToExploreImage/tagaytay.png" alt="map of Tagaytay" id="tagaytayMap" class="imgMap" draggable="false">
+            <img src="../images/startToExploreImage/mendez.png" alt="map of Mendez" id="mendezMap" class="imgMap" draggable="false">
+            <img src="../images/startToExploreImage/alfonso.png" alt="map of Alfonso" id="alfonsoMap" class="imgMap" draggable="false">
+            <img src="../images/startToExploreImage/magallanes.png" alt="map of Magallanes" id="magallanesMap" class="imgMap" draggable="false">
+            <img src="../images/startToExploreImage/ternate.png" alt="map of Ternate" id="ternateMap" class="imgMap" draggable="false">
+            <img src="../images/startToExploreImage/bailen.png" alt="map of Bailen" id="bailenMap" class="imgMap" draggable="false">
+            <img src="../images/startToExploreImage/naic.png" alt="map of Naic" id="naicMap" class="imgMap" draggable="false">  
+        </div>
+        <div class="dropPin">
+            <img src="../images/startToExploreImage/alfonsoDropPin.png" alt="click here to open Alfonso" class="dropPinAlfonso" onclick="openModalAlfonso()" data-bs-toggle="tooltip" data-bs-title="Alfonso (click for more info)">
+            <img src="../images/startToExploreImage/tagaytayDropPin.png" alt="click here to open Tagaytay City" class="dropPinTagaytay" onclick="openModalTagaytay()" data-bs-toggle="tooltip" data-bs-title="Tagaytay City (click for more info)">
+            <img src="../images/startToExploreImage/mendezDropPin.png" alt="click here to open Mendez" class="dropPinMendez" onclick="openModalMendez()" data-bs-toggle="tooltip" data-bs-title="Mendez-Nuñez (click for more info)">
+            <img src="../images/startToExploreImage/bailenDropPin.png" alt="click here to open General Emilio Aguinaldo" class="dropPinBailen" onclick="openModalBailen()" data-bs-toggle="tooltip" data-bs-title="General Emilio Aguinaldo (click for more info)">
+            <img src="../images/startToExploreImage/magallanesDropPin.png" alt="click here to open Magallanes" class="dropPinMagallanes" onclick="openModalMagallanes()" data-bs-toggle="tooltip" data-bs-title="Magallanes (click for more info)">
+            <img src="../images/startToExploreImage/maragondonDropPin.png" alt="click here to open Maragondon" class="dropPinMaragondon" onclick="openModalMaragondon()" data-bs-toggle="tooltip" data-bs-title="Maragondon (click for more info)">
+            <img src="../images/startToExploreImage/ternateDropPin.png" alt="click here to open Ternate" class="dropPinTernate" onclick="openModalTernate()" data-bs-toggle="tooltip" data-bs-title="Ternate (click for more info)">
+            <img src="../images/startToExploreImage/naicDropPin.png" alt="click here to open Naic" class="dropPinNaic" onclick="openModalNaic()" data-bs-toggle="tooltip" data-bs-title="Naic (click for more info)">
+        </div>
+        <!-- <div class="scrollBtnContainer container-fluid">
+            <a href="#mayorsAndRepresentativeSection"><button class="scrollBtn">&Downarrow;Representative and Mayors&Downarrow;</button></a>
+        </div>   -->
+    </div>
+
+    <div class="mayorsAndRepresentative container-fluid" id="mayorsAndRepresentativeSection">
+
+        <div class="representativeContainer">
+
+            <a href="#" style="text-decoration: none; color: #000;">
+                <div class="card representative">
+                    <img src="../images/mayors/anielaTolentino.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title name">Aniela Bianca D. Tolentino</h5>
+                        <p class="card-text subject">Representative of 8<sup>th</sup> District of Cavite</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="mayorContainer">
+
+            <div class="card mayor" onclick="openModalTagaytay()">
+                <img src="../images/mayors/tagaytayMayor.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Abraham Tolentino</h5>
+                    <p class="card-text subject">Tagaytay City</p>
+                </div>
+            </div>
+
+            <div class="card mayor" onclick="openModalAlfonso()">
+                <img src="../images/mayors/alfonsoMayor.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Randy Salamat</h5>
+                    <p class="card-text subject">Alfonso Cavite</p>
+                </div>
+            </div>
+            
+            <div class="card mayor" onclick="openModalMendez()">
+                <img src="../images/mayors/mendezMayor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Francisco Mendoza Jr.</h5>
+                    <p class="card-text subject">Mendez-Nuñez Cavite</p>
+                </div>
+            </div>
+            
+            <div class="card mayor" onclick="openModalBailen()">
+                <img src="../images/mayors/bailenMayor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Dennis Glean</h5>
+                    <p class="card-text subject">General Emilio Aguinaldo Cavite</p>
+                </div>
+            </div>
+            
+            <div class="card mayor" onclick="openModalMagallanes()">
+                <img src="../images/mayors/magallanesMayor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Jasmin Angelli Maligaya-Bautista</h5>
+                    <p class="card-text subject">Magallanes Cavite</p>
+                </div>
+            </div>
+            
+            <div class="card mayor" onclick="openModalMaragondon()">
+                <img src="../images/mayors/maragondonMayor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Lawrence Arca</h5>
+                    <p class="card-text subject">Maragondon Cavite</p>
+                </div>
+            </div>       
+            
+            <div class="card mayor" onclick="openModalTernate()">
+                <img src="../images/mayors/ternateMayor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Lamberto Bambao</h5>
+                    <p class="card-text subject">Ternate Cavite</p>
+                </div>
+            </div>
+            
+            <div class="card mayor" onclick="openModalNaic()">
+                <img src="../images/mayors/naicMayor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title name">Ruperto Dualan</h5>
+                    <p class="card-text subject">Naic Cavite</p>
+                </div>
+            </div>
+
+        </div> <!--mayor container-->
+    </div><!--mayor and representative container-->
+
+    <!-- modal -->
+    <div id="modalGoToMunicipality" class="modalContainer">
+        <div class="modalContent" id="modalContentContainer">
+            <span onclick="hideModal()" class="btnclose" title="Close Modal">&times;</span>
+            <h1 id="modalTitle"></h1>
+            <p id="modalDescription"></p>
+            <a href="" class="modalLink"><button id="modalGoToDestinationList">EXPLORE</button></a>
+        </div>
+    </div>
+    
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../javascript/startToExplore.js"></script>
+</body>
+</html>
