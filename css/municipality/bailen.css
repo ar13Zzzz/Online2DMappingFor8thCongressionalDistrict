@@ -1,0 +1,28 @@
+body {
+    background-color: #f9f777;
+}
+.blurBg {
+    background-color: #f9f77751;
+    padding-top: 15vw;
+}
+.tagaytayLabel {
+    color: #020324;
+}
+.shortDesc {
+    color: #232323;
+}
+.bodyTitle {
+    color: #fdfdfd;
+}
+.choiceName {
+    color: #fdfdfd;
+}
+.card {
+    background-color: #6d3b2c;
+}
+.title {
+    color: #f1f1f1;
+}
+.desc {
+    color: #f9f9f9;
+}
