@@ -1,0 +1,810 @@
+body {
+    scroll-behavior: smooth;
+}
+/* nav bar */
+.navbar {
+    height: 3.5vw;
+}
+.nav {
+    box-shadow: 0px 10px 50px rgba(255, 255, 255, 0.053);
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+}
+.nav a {
+    color: #000;
+}
+.navBtn:hover {
+    color: #000;
+    animation: scaled 250ms linear 0s 1 normal;
+    -webkit-animation: scaled 250ms linear 0s 1 normal;
+    transform: scale(1.1);
+}
+
+/* map */
+.map {
+    height: 46vw;
+    width: 100%;
+    padding-left: 1vw;
+    background-image: url("../images/bgImage/IMG_20231009_122708_443.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+/* 8th district of cavite text */
+.DistrictOfCavite {
+    width: 100%;
+    height: 4vw;
+    margin-bottom: 0vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 3vw;
+    color: white;
+}
+.caviteDesc {
+    color: rgb(220, 216, 216);
+    margin-left: 1vw;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.5vw;
+    width: 30vw;
+}
+
+/* guide pic */
+.guide {
+    height: 42vw;
+    position: absolute;
+    top: 7.5vw;
+    left: 3vw;
+}
+
+/* municapality/city */
+#tagaytayMap {
+    height: 12.5vw;
+    position: absolute;
+    top: 33.7vw;
+    left: 57.4vw;
+}
+#mendezMap {
+    height: 9.3vw;
+    position: absolute;
+    top: 33.4vw;
+    left: 54.5vw;
+    transform: rotate(1deg);
+}
+#alfonsoMap {
+    height: 15.8vw;
+    position: absolute;
+    top: 32.7vw;
+    left: 45.8vw;
+}
+#bailenMap {
+    height: 17vw;
+    position: absolute;
+    top: 21.5vw;
+    left: 37vw;
+}
+#magallanesMap {
+    height: 19.5vw;
+    position: absolute;
+    top: 24.6vw;
+    left: 29.2vw;
+}
+#maragondonMap {
+    height: 41vw;
+    position: absolute;
+    top: 3.5vw;
+    left: 12.19vw;
+}
+#ternateMap {
+    height: 20.5vw;
+    position: absolute;
+    top: 7.5vw;
+    left: 18.3vw;
+}
+#naicMap {
+    height: 22vw;
+    position: absolute;
+    top: 3.1vw;
+    left: 34.8vw;
+}
+
+/* drop pins */
+.dropPinAlfonso {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 34.5vw;
+    left: 49.5vw;
+}
+.dropPinTagaytay {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 29.5vw;
+    left: 67vw;
+}
+.dropPinMendez {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 28.5vw;
+    left: 56vw;
+}
+.dropPinBailen {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 22.5vw;
+    left: 42.4vw;
+}
+.dropPinMagallanes {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 23.5vw;
+    left: 35vw;
+}
+.dropPinMaragondon {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 12.5vw;
+    left: 34vw;
+}
+.dropPinTernate {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 12vw;
+    left: 21vw;
+}
+.dropPinNaic {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 8.5vw;
+    left: 43.5vw;
+}
+.dropPinAlfonso:hover, .dropPinAlfonso:focus, 
+.dropPinTagaytay:hover, .dropPinTagaytay:focus,
+.dropPinMendez:hover, .dropPinMendez:focus,
+.dropPinBailen:hover, .dropPinBailen:focus,
+.dropPinMagallanes:hover, .dropPinMagallanes:focus,
+.dropPinMaragondon:hover, .dropPinMaragondon:focus,
+.dropPinTernate:hover, .dropPinTernate:focus,
+.dropPinNaic:hover, .dropPinNaic:focus
+{
+    animation: bounce 3s both ease-in-out infinite, scaled 250ms linear 0s 1 normal;
+    -webkit-animation: bounce 3s both ease-in-out infinite, scaled 250ms linear 0s 1 normal;
+    transform: scale(2);
+}
+/* representative and mayor button */
+.scrollBtnContainer {
+    position: absolute;
+    bottom: 1vw;
+    text-align: center;
+}
+.scrollBtn {
+    font-size: 1.25vw;
+    line-height: 1.75vw;
+    padding: 0.25vw 1.5vw;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* mayors and representative */
+.mayorsAndRepresentative {
+    /* background-color: #01063c; */
+    background-image: url("../images/bgImage/mayorsBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.representativeContainer {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.representative {
+    text-align: center;
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 27vw;
+}
+.mayorContainer {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1vw;
+    padding-inline: 2vw;
+}
+.mayor {
+    width: 15vw;
+    height: 22vw;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-inline: 1vw;
+}
+.representative .name::before {
+    content: "Hon. ";
+}
+.mayor .name::before {
+    content: "Hon. ";
+}
+
+
+/* modal */
+.modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.141);
+    backdrop-filter: blur(2px);
+}
+.modalContent {
+    overflow: hidden;
+    background-size: cover;
+    background-color: #3c3737;
+    color: #bbb0b0;
+    margin: auto;
+    margin-top: 10vw;
+    animation: animatezoom 0.6s;
+    -webkit-animation: animatezoom 0.6s;
+    height: auto;
+    width: 30vw;
+    border-radius: 10%;
+    padding-bottom: 3vw;
+}
+.btnclose {
+    float: right;
+    margin-right: 1vw;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.btnclose:hover, .btnclose:focus {
+    color: rgb(127, 15, 15);
+    cursor: pointer;
+}
+#modalTitle {
+    padding: 10vw 0vw 0vw 1vw;
+}
+#modalDescription {
+    padding: 1vw 3vw 0vw 1vw;
+}
+#modalGoToDestinationList {
+    margin-left: 1vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 1vw;
+    height: auto;
+    padding: .25vw 1vw;
+}
+#modalGoToDestinationList:hover, #modalGoToDestinationList:focus {
+    animation: scaled 250ms linear 0s 1 normal;
+    -webkit-animation: scaled 250ms linear 0s 1 normal;
+    transform: scale(1.1);
+}
+
+@keyframes scaled {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1.1);
+    }
+}
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    } 
+    to {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes bounce {
+    0%, 50%, 100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+    }
+    75% {
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+    }
+}
+
+@media only screen and (max-width: 320px) /*smol phone*/ {
+    /* nav bar */
+    .navbar {
+        height: 6.5vw;
+        padding: 2px;
+        padding-top: 0vw;
+        padding-bottom: 0vw;
+        background-color: transparent;
+    }
+    .nav a {
+        padding-top: 0.5vw;
+        margin: 0vw;
+        border: 0vw;
+        font-size: 2.5vw;
+        background-color: transparent;
+    }
+    .nav .logoBtn {
+        width: 5vw;
+        height: 5vw;
+        padding: 0vw;
+        margin: 0vw;
+        padding-top: 0.5vw;
+    }
+
+
+    /* map */
+    .map {
+        height: 70vw;
+    }
+    .guide {
+        height: 54vw;
+    }
+    
+    /* header text */
+    .DistrictOfCavite {
+        text-align: center;
+        margin: 5vw auto 0vw auto;
+        font-size: 8vw;
+        font-weight: 900;
+        line-height: 8vw;
+    }
+    .caviteDesc {
+        display: none;
+    }
+
+    /* drop pin */
+    .dropPinAlfonso {
+        height: 12vw;
+        top: 60vw;
+        left: 53.5vw;
+    }
+    .dropPinTagaytay {
+        height: 12vw;
+        top: 55vw;
+        left: 75vw;
+    }
+    .dropPinMendez {
+        height: 12vw;
+        top: 55vw;
+        left: 62vw;
+    }
+    .dropPinBailen {
+        height: 12vw;
+        top: 48vw;
+        left: 44.5vw;
+    }
+    .dropPinMagallanes {
+        height: 12vw;
+        top: 50vw;
+        left: 36vw;
+    }
+    .dropPinMaragondon {
+        height: 12vw;
+        top: 36vw;
+        left: 34vw;
+    }
+    .dropPinTernate {
+        height: 12vw;
+        top: 30vw;
+        left: 19vw;
+    }
+    .dropPinNaic {
+        height: 12vw;
+        top: 25vw;
+        left: 43vw;
+    }
+
+    /* modal */
+    .modalContent {
+        width: 70%;
+        height: auto;
+        padding-bottom: 5vw;
+    }
+    .wrapper {
+        margin-top: 3vw;
+    }
+
+    /* map */
+    #tagaytayMap {
+        height: 15vw;
+        position: absolute;
+        top: 58.8vw;
+        left: 62.64vw;
+    }
+    #mendezMap {
+        height: 12.3vw;
+        position: absolute;
+        top: 57.2vw;
+        left: 59.3vw;
+    }
+    #alfonsoMap {
+        height: 18.7vw;
+        position: absolute;
+        top: 57.3vw;
+        left: 49vw;
+    }
+    #bailenMap {
+        height: 20.5vw;
+        position: absolute;
+        top: 43.2vw;
+        left: 38vw;
+    }
+    #magallanesMap {
+        height: 24vw;
+        position: absolute;
+        top: 46.8vw;
+        left: 28.2vw;
+    }
+    #maragondonMap {
+        height: 52vw;
+        position: absolute;
+        top: 19.4vw;
+        left: 5.8vw;
+    }
+    #ternateMap {
+        height: 15.7vw;
+        position: absolute;
+        top: 29.8vw;
+        left: 14.3vw;
+    }
+    #naicMap {
+        height: 22.9vw;
+        position: absolute;
+        top: 22.3vw;
+        left: 33.6vw;
+        transform: rotate(-1deg);
+    }
+
+    /* modal */
+    .modalContent {
+        margin-top: 100vw;
+        width: 91vw;
+        border-radius: 8%;
+        padding-bottom: 5vw;
+    }
+    #modalTitle {
+        padding: 10vw 0vw 0vw 2vw;
+    }
+    #modalDescription {
+        padding: 1vw 3vw 0vw 2vw;
+    }
+    #modalGoToDestinationList {
+        margin-left: 2vw;
+        border-radius: 5px;
+        border: none;
+        font-size: 2vw;
+        height: auto;
+        padding: 1vw 2vw;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 430px)/*medium to large phone*/ {
+    /* nav bar */
+    .navbar {
+        height: 6.5vw;
+        padding: 2px;
+        padding-top: 0vw;
+        padding-bottom: 0vw;
+        background-color: transparent;
+    }
+    .nav a {
+        padding-top: 0.5vw;
+        margin: 0vw;
+        border: 0vw;
+        font-size: 2.5vw;
+        background-color: transparent;
+    }
+    .nav .logoBtn {
+        width: 5vw;
+        height: 5vw;
+        padding: 0vw;
+        margin: 0vw;
+        padding-top: 0.5vw;
+    }
+
+    /* map */
+    .map {
+        height: 70vw;
+    }
+    .guide {
+        height: 54vw;
+    }
+
+    /* header text */
+    .DistrictOfCavite {
+        text-align: center;
+        margin: 5vw auto 0vw auto;
+        font-size: 8vw;
+        font-weight: 900;
+        line-height: 8vw;
+    }
+    .caviteDesc {
+        display: none;
+    }
+
+    .modalContent {
+        width: 70%;
+        height: auto;
+        padding-bottom: 5vw;
+    }
+    .wrapper {
+        margin-top: 3vw;
+    }
+
+    #tagaytayMap {
+        height: 15vw;
+        position: absolute;
+        top: 56.8vw;
+        left: 62.64vw;
+    }
+    #mendezMap {
+        height: 12.3vw;
+        position: absolute;
+        top: 55.2vw;
+        left: 59.2vw;
+    }
+    #maragondonMap {
+        height: 51vw;
+        position: absolute;
+        top: 18.2vw;
+        left: 6.5vw;
+    }
+    #alfonsoMap {
+        height: 18.7vw;
+        position: absolute;
+        top: 55.3vw;
+        left: 49vw;
+    }
+    #bailenMap {
+        height: 20.5vw;
+        position: absolute;
+        top: 41.3vw;
+        left: 38.1vw;
+    }
+    #magallanesMap {
+        height: 24vw;
+        position: absolute;
+        top: 44.8vw;
+        left: 28.4vw;
+    }
+    #ternateMap {
+        height: 15.7vw;
+        position: absolute;
+        top: 28.1vw;
+        left: 14.7vw;
+    }
+    #naicMap {
+        height: 22.7vw;
+        position: absolute;
+        top: 20.8vw;
+        left: 33.6vw;
+        transform: rotate(-1deg);
+    }
+
+    /* drop pin */
+    .dropPinAlfonso {
+        height: 12vw;
+        top: 58vw;
+        left: 53.5vw;
+    }
+    .dropPinTagaytay {
+        height: 12vw;
+        top: 54vw;
+        left: 75vw;
+    }
+    .dropPinMendez {
+        height: 12vw;
+        top: 52vw;
+        left: 62vw;
+    }
+    .dropPinBailen {
+        height: 12vw;
+        top: 46vw;
+        left: 44.5vw;
+    }
+    .dropPinMagallanes {
+        height: 12vw;
+        top: 48vw;
+        left: 36vw;
+    }
+    .dropPinMaragondon {
+        height: 12vw;
+        top: 35vw;
+        left: 34vw;
+    }
+    .dropPinTernate {
+        height: 12vw;
+        top: 30vw;
+        left: 19vw;
+    }
+    .dropPinNaic {
+        height: 12vw;
+        top: 23vw;
+        left: 43vw;
+    }
+
+    /* modal */
+    .modalContent {
+        margin-top: 90vw;
+        width: 91vw;
+        border-radius: 8%;
+        padding-bottom: 5vw;
+    }
+    #modalTitle {
+        padding: 10vw 0vw 0vw 2vw;
+    }
+    #modalDescription {
+        padding: 1vw 3vw 0vw 2vw;
+    }
+    #modalGoToDestinationList {
+        margin-left: 2vw;
+        border-radius: 5px;
+        border: none;
+        font-size: 3vw;
+        height: auto;
+        padding: 1.5vw 4vw;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 768px) /*tablet*/ {
+    /* nav bar */
+    .navbar {
+        height: 6.5vw;
+        padding: 2px;
+        padding-top: 0vw;
+        padding-bottom: 0vw;
+        background-color: transparent;
+    }
+    .nav a {
+        padding-top: 0.5vw;
+        margin: 0vw;
+        border: 0vw;
+        font-size: 2.5vw;
+        background-color: transparent;
+    }
+    .nav .logoBtn {
+        width: 5vw;
+        height: 5vw;
+        padding: 0vw;
+        margin: 0vw;
+        padding-top: 0.5vw;
+    }
+
+    .map {
+        top: 6.5vw;
+        height: 50vw;
+    }
+
+    /* header text */
+    .DistrictOfCavite {
+        margin: 1vw auto 0vw auto;
+        font-size: 5.5vw;
+        font-weight: 900;
+        line-height: 4vw;
+    }
+    .caviteDesc {
+        margin-left: 2vw;
+        margin-top: 1vw;
+        font-size: 1.5vw;
+        font-weight: 300;
+        line-height: 1.75vw;
+        width: 42vw;
+        border-radius: 0px 0px 100px 0px;
+    }
+
+    #tagaytayMap {
+        top: 39vw;
+    }
+    #mendezMap {
+        top: 38vw;
+    }
+    #alfonsoMap {
+        top: 37.8vw;
+    }
+    #bailenMap {
+        top: 28.2vw;
+    }
+    #magallanesMap {
+        top: 30.8vw;
+    }
+    #maragondonMap {
+        top: 13vw;
+    }
+    #ternateMap {
+        top: 19.5vw;
+    }
+    #naicMap {
+        top: 14.8vw;
+    }
+
+    /* drop pins */
+    .dropPinAlfonso {
+        height: 9vw;
+        top: 39vw;
+        left: 52vw;
+    }
+    .dropPinTagaytay {
+        height: 9vw;
+        top: 37vw;
+        left: 65vw;
+    }
+    .dropPinMendez {
+        height: 9vw;
+        top: 35vw;
+        left: 58.5vw;
+    }
+    .dropPinBailen {
+        height: 9vw;
+        top: 31vw;
+        left: 46vw;
+    }
+    .dropPinMagallanes {
+        height: 9vw;
+        top: 33vw;
+        left: 41vw;
+    }
+    .dropPinMaragondon {
+        height: 9vw;
+        top: 24vw;
+        left: 39vw;
+    }
+    .dropPinTernate {
+        height: 9vw;
+        top: 19vw;
+        left: 29vw;
+    }
+    .dropPinNaic {
+        height: 8vw;
+        top: 16vw;
+        left: 45vw;
+    }
+
+    /* modal */
+    .modalContent {
+        margin-top: 17vw;
+        width: 67vw;
+        border-radius: 30px;
+        padding-bottom: 5vw;
+    }
+    #modalTitle {
+        padding: 10vw 0vw 0vw 2vw;
+    }
+    #modalDescription {
+        padding: 1vw 3vw 0vw 2vw;
+    }
+    #modalGoToDestinationList {
+        margin-left: 2vw;
+        border-radius: 5px;
+        border: none;
+        font-size: 2vw;
+        height: auto;
+        padding: 1vw 3vw;
+    }
+}
