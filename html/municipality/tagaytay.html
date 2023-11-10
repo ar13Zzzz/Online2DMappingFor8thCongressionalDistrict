@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/municipalityMainCss.css">
+    <title>Tagaytay City</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+      <nav class="nav">
+          <ul class="nav justify-content-start">
+              <li class="nav-item">
+                  <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../startToExplore.html">HOME</a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="nav">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <a class="navbar-brand nav-link active navBtn" href="../aboutUs.html">ABOUT US</a> 
+              </li>
+          </ul>
+      </nav>
+    </nav>   
+  
+    <!-- carousel image for header -->
+    <div id="carouselTagaytayDefault" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../images/bgImage/tagaytayBg.JPG" class="d-block w-100">
+          </div>
+          <!-- use this to locate the image you want to add in the list, THE LIST IS ON THE JAVASCRIPT FILE NAMED: tagaytayHeaderCarousel.js
+          <div class="carousel-item">
+            <img src="../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" class="d-block w-100" alt="...">
+          </div> 
+          -->
+      </div>
+    </div>
+
+    <div id="carouselWhereToEat" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../images/tagaytay/whereToEat/cafe/bagOfBeans/bagOfBeansMain/bagOfBeansMainCover.jpg" class="d-block w-100">
+          </div>
+      </div>
+    </div>
+    
+    <div id="carouselWhereToStay" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../images/tagaytay/whereToStay/hotel/belizeTagaytay/belizeTagaytayCover.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+    
+    <div id="carouselWhereToExplore" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../images/tagaytay/whereToExplore/museoOrlina/museoOrlinaCover.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    
+    <div id="carouselChurches" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../images/tagaytay/churches/ourLadyOfLourdes/ourLadyOfLourdesParishChurchCover.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <!-- shield to prevent hovering the carousel -->
+    <div class="carouselShield"></div>
+
+    <!-- header -->
+    <div class="headerWrapper">
+        <div class="blurBg container">
+            <p class="tagaytayWord tagaytayLabel">TAGAYTAY</p>
+            <p class="cityWord tagaytayLabel">CITY</p>
+            <p class="shortDesc">Escape to Tagaytay, Philippines and immerse yourself in breathtaking 
+              landscapes, from the stunning views of Taal Lake and Volcano to 
+              the cool mountain climate, offering a serene retreat and respite 
+              from the city, all while indulging in delectable local cuisine 
+              such as the iconic bulalo, making it a must-visit destination for
+               nature lovers and food enthusiasts alike.</p>
+        </div>
+
+        <div class="choices">
+            <a href="#whereToEat" onclick="revealWhereToEat(), insertContentToWhereToEat()">
+                <div class="whereToBtn whereToEatBtn">
+                    <img src="../../images/tagaytay/whereToEatBg.png" alt="where to eat picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Eat</p>
+                </div>
+            </a>
+
+            <a href="#whereToStay"  onclick="revealWhereToStay(), insertContentToWhereToStay()">
+                <div class="whereToBtn">
+                    <img src="../../images/tagaytay/whereToStayBg.png" alt="where to stay picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Stay</p>
+                </div>
+            </a>
+
+            <a href="#whereToExplore"  onclick="revealWhereToExplore(), insertContentToWhereToExplore()">
+                <div class="whereToBtn">
+                    <img src="../../images/tagaytay/whereToExploreBg.png" alt="where to explore picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Explore</p>
+                </div>
+            </a>
+
+            <a href="#whereToChurches"  onclick="revealWhereToChurches(), insertContentToChurches()">
+                <div class="whereToBtn">
+                    <img src="../../images/tagaytay/whereToOtherBg.png" alt="other destination picture" class="whereToPic">
+                    <p class="whereToLabel">Churches</p>
+                </div>
+            </a>
+        </div> <!--choices-->
+    </div>
+    <!-- body -->
+
+    <!-- WHERE TO EAT -->
+    <div class="bodyWrapper" id="whereToEat">
+        <p class="bodyTitle">WHERE TO EAT</p> 
+
+        <p class="choiceName">Restaurants</p>
+
+        <!-- first row of choices for restaurants-->
+        <div class="destination resto">
+            <div class="choicesWrapper">
+              <!-- 10/28/2023 00:18 1st row: 15, 2nd row: 15 -->
+
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/antonios/antoniosResto.html">
+                <div class="card">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info" style="z-index: 99;">
+                    3
+                  </span>
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/antonios/antoniosResto/antoniosRestaurantCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Antonio's Restaurant</h5>
+                      <p class="card-text desc">Zambal</p>
+                  </div>
+                </div>
+              </a>
+                    
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/arnaldosResto.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/arnaldosResto/arnaldosRestaurantCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Arnaldo's Restaurant</h5>
+                      <p class="card-text desc">Maharlika East</p>
+                  </div>
+                </div>
+              </a>
+                      
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/bistroIbarra.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/BistroIbarra/bistroIbarraCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Bistro Ibarra Tagaytay</h5>
+                      <p class="card-text desc">Maharlika East</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/bulaloCapital/bulaloCapital.html">
+                <div class="card">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info" style="z-index: 99;">
+                    2
+                  </span>
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/bulaloCapital/bulaloCapitalTagaytayNasugbuHwy/bulaloCapitalMainBranchCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">BULALO CAPITAL</h5>
+                      <p class="card-text desc">Asisan</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/bulaloPointTuroTuro.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/bulaloPointTutoTutoGrill/bulaloPointTuroTuroGrillCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Bulalo Point Turo-Turo Grill</h5>
+                      <p class="card-text desc">Mendez Crossing East</p>
+                  </div>
+                </div>
+              </a>
+                
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/ceciliasAllDay/ceciliasAllDay.html">
+                <div class="card">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info" style="z-index: 99;">
+                    2
+                  </span>
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/ceciliasAllDayBreakfastAndResto/allDaysSilangJunctionSouth/ceciliasAllDayAndRestaurantCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Cecilia's All day Breakfast & Restaurant</h5>
+                      <p class="card-text desc">Silang Junction South</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/dahonAtMesa.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/dahonAtMesaTags/dahonAtMesaCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Dahon @ Mesa</h5>
+                      <p class="card-text desc">Maharlika East</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/dBasBulalohan.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/dbasBulalohan/dbasCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">D'Bas Bulalohan</h5>
+                      <p class="card-text desc">Mendez Crossing East</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/donLimoneNapaGrill.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/donLimoneNapaGrill/donLimoneNapaGrillCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Don Limone Napa Grill</h5>
+                      <p class="card-text desc">Mendez Crossing East</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/entrada.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/entrada/entradaCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Entrada</h5>
+                      <p class="card-text desc">Mahogany Ave.</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/farmersTableTagaytay.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/farmersTableTags/farmersTableCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Farmer's Table Tagaytay</h5>
+                      <p class="card-text desc">Maitim 2nd West</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/fireLakeGrill.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/firelakeGrill/fireLakeGrillCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Fire Lake Grill</h5>
+                      <p class="card-text desc">Maharlika East</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/goriosRoadsideResto.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/goriosRoadsideResto/goriosRoadsideCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Gorio's Roadside Restaurant</h5>
+                      <p class="card-text desc">Silang Junction South</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/kaTunyingsTags.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/kaTunyingTags/kaTunyingCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Ka Tunying's Tagaytay</h5>
+                      <p class="card-text desc">Vista Point</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/liesilRestoAndEvent.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/liesilsRestoAndEvent/liesilsRestoAndEventCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">LieSil's Restaurant & Events</h5>
+                      <p class="card-text desc">Kaybagal South</p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- 10/28/2023 00:18 1st row: 15, 2nd row: 15 -->
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+        <!-- second row of choices for restaurants -->
+        <div class="destination resto">
+            <div class="choicesWrapper">
+              <!-- 10/28/2023 00:18 1st row: 15, 2nd row: 15 -->
+               
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/lolaNenas.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/lolaNenas/lolaNenasCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Lola Nena's</h5>
+                      <p class="card-text desc">Magallanes Square</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/memoryLane.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/memoryLane/memoryLaneCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Memory Lane</h5>
+                      <p class="card-text desc">Magallanes Drive</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/moriellisInn.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/moriellisInnAndDiner/moriellisCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Morielli's Inn & Diner</h5>
+                      <p class="card-text desc">Saint Francis Drive</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/myCountryHouse.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/myCountryHouseTags/myCountryHouseTagaytayCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">My Country House Tagaytay</h5>
+                      <p class="card-text desc">Maitim 2nd West</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/ribchon.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/ribchon/ribchonCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Ribchon</h5>
+                      <p class="card-text desc">Mahogany Ave.</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/ribsarap.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/ribsarapTags/ribSarapCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">RibSarap</h5>
+                      <p class="card-text desc">TCI Rd.</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/rowena/rowenaSilangJunction.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/rowenasPasalubongTags/rowenasPasalubongEmilioAguinaldoHwy/rowenasEmilioAguinaldHwyCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Rowena's Pasalubong Tagaytay</h5>
+                      <p class="card-text desc">Silang Junction South</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/samiraByCheleGonzalez.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/samiraByChel/samiraByCheleCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Samira by Chele Gonzalez</h5>
+                      <p class="card-text desc">Anya Resort</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/solVictorias.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/solVictorias/solVictoriasCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Sol Victoria's</h5>
+                      <p class="card-text desc">Maharlika East</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/staciesRibAndSteak.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/staciesRibsAndSteaks/staciesRibAndSteakCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Stacie's Ribs and Steaks</h5>
+                      <p class="card-text desc">Francisco</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/sweetKnotHaven.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/sweetKnotHaven/sweetKnotHavenCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Sweet Knot Haven</h5>
+                      <p class="card-text desc">La Bella Botique Hotel</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/tazaFreshTable.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/tazaFreshTable/tazaFreshTableCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Taza Fresh Table</h5>
+                      <p class="card-text desc">Kaybagal South</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/tipananResto.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/tipananResto/tipananCoverResto.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Tipanan Restaurant</h5>
+                      <p class="card-text desc">Kaybagal South</p>
+                  </div>
+                </div>
+              </a>
+             
+              <a href="../destination/tagaytay/kainanSaTags/resto/first/viewpointInnAndResto.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/firstRow/viewpointInnAndResto/viewpointInnAndRestoCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Viewpoint Inn and Restaurant</h5>
+                      <p class="card-text desc">Bagong Tubig</p>
+                  </div>
+                </div>
+              </a>
+             
+              <a href="../destination/tagaytay/kainanSaTags/resto/second/yellowCab.html">
+                <div class="card">
+                  <img src="../../images/tagaytay/whereToEat/restoLang/secondRow/yellowCabPizza/yellowCabCover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title title">Yellow Cab Pizza Co.</h5>
+                      <p class="card-text desc">Maharlika East</p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- 10/28/2023 00:18 1st row: 15, 2nd row: 15 -->
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+        <p class="choiceName">Bar and Restaurants</p>
+
+        <!-- first row of choices for RESTOBAR -->
+        <div class="destination restobar">
+          <div class="choicesWrapper">
+            
+            <a href="../destination/tagaytay/kainanSaTags/restoBar/cabanasDineAndBar.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToEat/restoBar/cabanasDineAndBar/cabanasDineAndBarCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Cabanas Dine and Bar</h5>
+                    <p class="card-text desc">Silang Junction South</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="../destination/tagaytay/kainanSaTags/restoBar/delantera.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToEat/restoBar/delanteraRestoBar/delanteraRestoBarCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Delantera Restaurant Bar</h5>
+                    <p class="card-text desc">Mahogany Ave.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="../destination/tagaytay/kainanSaTags/restoBar/papaDoms.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToEat/restoBar/papaDomsBarAndResto/papaDomsCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Papa Doms Bar and Restaurant</h5>
+                    <p class="card-text desc">Vista Point</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="../destination/tagaytay/kainanSaTags/restoBar/pusoGrillAndRestoBar.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToEat/restoBar/PusoGrillAndRestoBar/pusoGrillAndRetoBarCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">PUSO Grill and Restobar</h5>
+                    <p class="card-text desc">Silang Junction South</p>
+                </div>
+              </div>
+            </a>
+
+          </div><!--wrapper-->
+        </div><!--destinations-->
+
+      <p class="choiceName">Filipino Restaurants</p>
+
+      <!-- first row of choices for filipino resto -->
+      <div class="destination filiResto">
+        <div class="choicesWrapper">
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/balinsasayaw.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/balinsasayawAlfrescoDiningAndCafe/balinsasayawAlfrescoDiningCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Balinsasayaw - Alfresco Dining & Cafe</h5>
+                  <p class="card-text desc">Mendez Crossing East</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/crossroadSizzling.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/crossroadSizzling/crossroadSizzlingCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Crossroad Sizzling Restaurant</h5>
+                  <p class="card-text desc">Kaybagal South</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/dekada.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/dekada/dekadaCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">DEKADA Historic Filipino Cuisine</h5>
+                  <p class="card-text desc">Silang Junction South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/gerrysGrill.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/gerrysGrillTags/gerrysGrillCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Gerry's Grill</h5>
+                  <p class="card-text desc">Vista Point</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/greenAts.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/greenAts/greenAtsCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Green ATS Restaurant</h5>
+                  <p class="card-text desc">Asisan</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/hermana.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/hermana/hermanaCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Hermana</h5>
+                  <p class="card-text desc">Kaybagal South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/jaytees/jayteesMain.html">
+            <div class="card">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info" style="z-index: 99;">
+                3
+              </span>
+              <img src="../../images/tagaytay/whereToEat/filiResto/jayteesFilipinoCuisine/jayteesFilipinoCuisine/jayteesFilipinoCuisineCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Jaytee's Filipino Cuisine</h5>
+                  <p class="card-text desc">Silang Crossing West</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/lesliesResto.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/leslisResto/lesliesCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Leslie's Restaurant</h5>
+                  <p class="card-text desc">Kaybagal South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/loumarsCafeAndResto.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/loumarsCafeAndResto/loumarsCafeAndRestoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Loumars Cafe & Restaurant</h5>
+                  <p class="card-text desc">Francisco</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/masingngo.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/masingngo/masingngoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">MASINGngo</h5>
+                  <p class="card-text desc">Mendez Crossing East</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/maxResto.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/MaxsResto/maxCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Max's Restaurant</h5>
+                  <p class="card-text desc">Maharlika East</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/merbenTapsi.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/merbenTapsi/merbenTapsiloganCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Mer-Ben Tapsilogan</h5>
+                  <p class="card-text desc">Mendez Crossing East</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/nanayCiriliasKapengBarako.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/nanayCiriliasKapengBarako/nanayCiriliasKapengBarakoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Nanay Cirilas' Kapeng Barako</h5>
+                  <p class="card-text desc">Mayor's Drive</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/pamana.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/pamanaResto/pamanaRestoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Pamana Restaurant</h5>
+                  <p class="card-text desc">Silang Crossing East</p>
+              </div>
+            </div>sigloModernFilipino
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/ridgePark.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/ridgeParkKainanSaKubo/ridgeParkKainanSaKuboCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Ridge Park Kainan sa Kubo</h5>
+                  <p class="card-text desc">Maharlika West</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/pinoy/sigloModernFilipino.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/filiResto/sigloModernFilipino/sigloCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">SIGLO MODERN FILIPINO</h5>
+                  <p class="card-text desc">Sungay East</p>
+              </div>
+            </div>
+          </a>
+
+        </div><!--wrapper-->
+      </div><!--destinations-->
+
+      <p class="choiceName">Japanese Restaurants</p>
+
+      <!-- first row of choices for japanese resto -->
+      <div class="destination japaneseResto">
+        <div class="choicesWrapper">
+          
+          <a href="../destination/tagaytay/kainanSaTags/japan/aozora/aozoraAtTheFarm.html">
+            <div class="card">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info" style="z-index: 99;">
+                4
+              </span>
+              <img src="../../images/tagaytay/whereToEat/japaneseResto/aozoraJapaneseResto/aozoraAtTheFarmAnnaMarianeSt/aozoraAtTheFarmCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Aozora at the Farm</h5>
+                    <p class="card-text desc">Anna Marianne St.</p>
+                </div>
+            </div>
+          </a>
+
+        </div><!--wrapper-->
+      </div><!--destinations-->
+      
+      <p class="choiceName">Italian Restaurants</p>
+
+      <!-- first row of choices for italian resto -->
+      <div class="destination italianResto">
+        <div class="choicesWrapper">
+          
+          <a href="../destination/tagaytay/kainanSaTags/italian/bellaCiao.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/italianResto/bellaCiao/bellaCiaoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Bella Ciao Italian Bistro</h5>
+                  <p class="card-text desc">La bella Botique Hotel</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/italian/buonGiorno.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/italianResto/bounGiornoCaffe/buonGiornoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Buon Giorno Caffe & Bistro The Cliffhouse</h5>
+                  <p class="card-text desc">Maharlika East</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/italian/morganoResto.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/italianResto/morganoResto/morganoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Morgano Restaurant</h5>
+                  <p class="card-text desc">Arnoldus Rd.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/italian/mamaLou.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/italianResto/mamaLousItalianKitchen/mamaLouCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Mama Lou's Italian Kitchen</h5>
+                  <p class="card-text desc">Sky Ranch Tagaytay</p>
+              </div>
+            </div>
+          </a>
+
+        </div><!--wrapper-->
+      </div><!--destinations-->
+      
+      <p class="choiceName">Korean Restaurants</p>
+
+      <!-- first row of choices for korean resto -->
+      <div class="destination koreanResto">
+        <div class="choicesWrapper">
+          
+          <a href="../destination/tagaytay/kainanSaTags/korea/bonchon.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/koreanResto/bonchonFora/bonchonCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Bonchon</h5>
+                  <p class="card-text desc">Fora</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/korea/romanticBaboy.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/koreanResto/romanticBaboy/romanticBaboyCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Romantic Baboy</h5>
+                  <p class="card-text desc">Silang Junction South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/korea/theSamgyupsal.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/koreanResto/theSamgyupsalTags/theSamgyupsalCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">The Samgyupsal Tagaytay</h5>
+                  <p class="card-text desc">Robinson</p>
+              </div>
+            </div>
+          </a>
+
+        </div><!--wrapper-->
+      </div><!--destinations-->
+
+      <p class="choiceName">Cafes</p>
+
+      <!-- first row of choices for cafe -->
+      <div class="destination cafesResto">
+        <div class="choicesWrapper">
+          
+          <a href="../destination/tagaytay/kainanSaTags/kape/bagOfBeans/bobMain.html">
+            <div class="card">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info" style="z-index: 99;">
+                4
+              </span>
+              <img src="../../images/tagaytay/whereToEat/cafe/bagOfBeans/bagOfBeansMain/bagOfBeansMainCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Bag of Beans</h5>
+                  <p class="card-text desc">Mendez Crossing West</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/barakoHaus.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/barakoHaus/barakoHausCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Barako Haus</h5>
+                  <p class="card-text desc">Silang Junction South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/baristaLoft.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/baristaLoft/baristaLoftCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Barista Loft</h5>
+                  <p class="card-text desc">Croydon Center Bldg.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/cafeVoila.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/cafeVioLa/cafeVioLaCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Cafe Voi La</h5>
+                  <p class="card-text desc">Crosswinds</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/nativo.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/caffeNativo/cafeNativoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Caffe Nativo</h5>
+                  <p class="card-text desc">San Jose</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/charGarden.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/charsGardenCafe/charsGardrnCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Char's Garden Cafe</h5>
+                  <p class="card-text desc">Patutong Malaki North</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/coffeeAndDreamsCafe.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/coffeeAndDreams/coffeeAndDreamsCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Coffee and Dreams Cafe</h5>
+                  <p class="card-text desc">SIlang Junction South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/cofiocaTags.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/cafiocaTagaytay/cafiocaCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Cofioca Tagaytay</h5>
+                  <p class="card-text desc">FGC Bldg.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/embrace.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/embraceCafe/embraceCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Embrace Café</h5>
+                  <p class="card-text desc">Silang Junction North</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/facioCoffee.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/facioCoffeeAndCocktails/facioCoffeeAndCocktailsCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Facio Coffee & Cocktails</h5>
+                  <p class="card-text desc">Hortz Hotels & Resorts</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/foundCafe.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/foundCafe/foundCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Found Cafe</h5>
+                  <p class="card-text desc">Maitim 2nd West</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/greenhouseCafe.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/greenhouseCafe/greenhouseCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Greenhouse Cafe</h5>
+                  <p class="card-text desc">Enrile St.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/helloCafe.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/helloCafe/helloCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Hello Cafe (Hə'lō Café)</h5>
+                  <p class="card-text desc">Poliver Subdivision</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/hillbarn.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/hillbarnCafeAndResto/hillbarnCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Hillbarn Cafe & Restaurant</h5>
+                  <p class="card-text desc">Daang Luma</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/kapeMoto.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/kapeMoTo/kapeMotoCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Kape mo-to</h5>
+                  <p class="card-text desc">Kaybagal South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/kapengMainit.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/kapengMainitTags/kapengMainitCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Kapeng Mainit Tagaytay</h5>
+                  <p class="card-text desc">Maharlika East</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/kubliCafeBistro.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/kubliCafeBistro/kubliCafeBistro.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Kubli Cafe Bistro</h5>
+                  <p class="card-text desc">Francisco</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/lawaCafe.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/lawaCafe/lawaCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Lawa Cafe</h5>
+                  <p class="card-text desc">Maharlika West</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/lulaCafePh.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/lulaCafePh/lulaCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">lula cafe ph</h5>
+                  <p class="card-text desc">Monte Vista Subd. Clubhouse</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/marjsCafe.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/marjsCafe/marjsCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Marj's Cafe</h5>
+                  <p class="card-text desc">Kaybagal South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/ruined.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/ruinedProject/ruinedProjectCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Ruined Project?</h5>
+                  <p class="card-text desc">Crosswinds</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/sipNBrew.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/sipNBrewByMiaraCafe/sipNBrewCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Sip n' Brew by Miara Café</h5>
+                  <p class="card-text desc">Mendez Crossing West</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/starbs/starbsHiraya.html">
+            <div class="card">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info" style="z-index: 99;">
+                4
+              </span>
+              <img src="../../images/tagaytay/whereToEat/cafe/starbs/starbsReserveHiraya/starbsHirayaCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Starbucks Reserve Hiraya</h5>
+                  <p class="card-text desc">Silang Junction South</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/tsokolateria.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Tsokolateria</h5>
+                  <p class="card-text desc">The Boutique Bed & Breakfast</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="../destination/tagaytay/kainanSaTags/kape/yaletown.html">
+            <div class="card">
+              <img src="../../images/tagaytay/whereToEat/cafe/yaletownCafe/yaletownCafeCover.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title title">Yaletown Cafe</h5>
+                  <p class="card-text desc">Silang Junction West</p>
+              </div>
+            </div>
+          </a>
+          
+        </div><!--wrapper-->
+      </div><!--destinations-->
+
+    </div> <!--where to eat-->
+
+    <!-- WHERE TO STAY -->
+    <div class="bodyWrapper" id="whereToStay">
+        <p class="bodyTitle">WHERE TO STAY</p> 
+
+        <p class="choiceName">Hotels</p>
+
+        <!-- choices for hotel -->
+        <div class="destination hotel">
+          <div class="choicesWrapper">
+            
+            <a href="../destination/tagaytay/hotelSaTags/hotel/belizeTagaytay.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/belizeTagaytay/belizeTagaytayCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Belize Tagaytay Bed and Breafast</h5>
+                    <p class="card-text desc">Mendez Crossing East</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/cabinsByEcoHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/cabinsByEcoHotel/cabinsByEcoHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Cabins by Eco Hotel</h5>
+                    <p class="card-text desc">Silang Junction South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/containersByEcoHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/containersByEcoHotel/containersByEcoHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Containers by Eco Hotel</h5>
+                    <p class="card-text desc">Tolentino West</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/countryChateau.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/countryChetau/countryChateauCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Country Chateau Hotel</h5>
+                    <p class="card-text desc">Maharlika West</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/daysHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/daysHotel/daysHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Days Hotel</h5>
+                    <p class="card-text desc">Silang Junction South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/escalaTagaytay.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/escala/escalaTagaytayCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Escala Tagaytay</h5>
+                    <p class="card-text desc">Poblete St.</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/hotelCarlito.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/hotelCarlito/hotelCarlitoCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Hotel Carlito Tagaytay</h5>
+                    <p class="card-text desc">San Jose</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/hotelDominique.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/hotelDominique/hotelDominiqueCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Hotel Dominique</h5>
+                    <p class="card-text desc">Maitim 2nd West</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/oneTagaytayPlaceHotelSuites.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/oneTagaytayPlaceHotelSuites/oneTagaytayPlaceCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">One Tagaytay Place Hotel Suites</h5>
+                    <p class="card-text desc">Sungay South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/questHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/questHotel/questHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Quest Hotel Tagaytay</h5>
+                    <p class="card-text desc">Silang Junction North</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/rangyaHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/rangyaHotel/rangyaHotelTagaytayCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Rangya Hotel</h5>
+                    <p class="card-text desc">Maitim 2nd West</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/royalParc.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/royalParcHotel/royaleParcHotelTagaytayCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Royale Parc Hotel Tagaytay</h5>
+                    <p class="card-text desc">Silang Junction South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/summitRidgeHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/summitRidgeHotel/summitRidgeHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Summit Ridge Hotel</h5>
+                    <p class="card-text desc">Maharlika West</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/taalVistaHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/taalVistaHotel/taalVistaHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Taal Vista Hotel</h5>
+                    <p class="card-text desc">Kaybagal South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/tagaytayCountryHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/tagaytayCountryHotel/countryHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Tagaytay Country Hotel</h5>
+                    <p class="card-text desc">San Jose</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/tagaytayWingateManor.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/wingateManor/tagaytayWingateManorCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Tagaytay Wingate Manor</h5>
+                    <p class="card-text desc">Magallanes Drive</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/lakeHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/lakeHotel/lakeHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">The Lake Hotel Tagaytay</h5>
+                    <p class="card-text desc">Maharlika West</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/carmelenceLodge.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/carmelenceLodge/theCarmelenceLodgeCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">The Carmelence Lodge</h5>
+                    <p class="card-text desc">Maharlika West</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/lakeviewSuitesByCocotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/lakeviewSuitesByCocotel/theLakeViewSuitesByCocotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">The Lakeview Suites by Cocotel</h5>
+                    <p class="card-text desc">Kaybagal South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/windyRidgeHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/windyRidgeHotel/windyRidgeHotelTagaytayCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">The Windy Ridge Hotel</h5>
+                    <p class="card-text desc">Silang Junction South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/viaAppia.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/viaAppia/viaAppiaCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Via Appia Tagaytay</h5>
+                    <p class="card-text desc">Kaybagal Central</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/viewParkHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/viewParkHotel/viewParkHotelCover.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">View Park Hotel Tagaytay</h5>
+                    <p class="card-text desc">Sungay South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/hotel/villaIbarra.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/hotel/villaIbarra/villaIbarraCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Villa Ibarra</h5>
+                    <p class="card-text desc">Maharlika East</p>
+                </div>
+              </div>
+            </a>
+  
+          </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Resorts</p>
+
+        <!-- choices for Resort/Hotel Resort -->
+        <div class="destination resort">
+          <div class="choicesWrapper">
+            
+            <a href="../destination/tagaytay/hotelSaTags/resort/anyaResort.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/anyaResort/anyaResortCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Anya Resort Tagaytay</h5>
+                    <p class="card-text desc">Tolentino West</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/crosswindsResortSuites.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/crosswindResortSuites/crosswindsResorrSuitesCover.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Crosswinds Swiss Luxury Resort</h5>
+                    <p class="card-text desc">Iruhin East</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/resort/estanciaResortHotel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/estanciaResortHotel/estanciaCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Estancia Resort Hotel</h5>
+                    <p class="card-text desc">San Jose</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/hortzHotelAndResort.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/hortzHotelAndResort/hortzHotelAndResortCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Hortz Hotels and Resort</h5>
+                    <p class="card-text desc">Kaybagal South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/hotelSaTags/resort/hotelKimberly.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/hotelKimberly/hotelKimberlyCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Hotel Kimberly Tagaytay</h5>
+                    <p class="card-text desc">Kaybagal North</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/laBellaBotique.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/laBellaBotiqueHotel/laBellaBotiqueHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">La Bella Botique Hotel</h5>
+                    <p class="card-text desc">Neogan</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/leeBotique.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/leeBotiqueHotel/leeBoutiqueHotelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Lee Botique Hotel Tagaytay</h5>
+                    <p class="card-text desc">San Jose</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/nurtureWellnesVillage.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/nurtureWellnessVillage/nurtureWellnessVillageCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Nurture Wellness Village</h5>
+                    <p class="card-text desc">Maitim 2nd West</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/pinaColinaResort.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/pinaColina/pinaColinaHotelAndResortCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Pina Colina Resort</h5>
+                    <p class="card-text desc">Ulat</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/puraVidaResort.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/puraVidaResort/puraVidaResortCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Pura Vida Resort and Hotel</h5>
+                    <p class="card-text desc">Mendez Crossing East</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/hotelSaTags/resort/tagaytayHighlands.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToStay/resort/tagaytayHighlands/tagaytayHighlandsCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Tagaytay Higlands</h5>
+                    <p class="card-text desc">Calabuso North</p>
+                </div>
+              </div>
+            </a>
+    
+          </div><!--wrapper-->
+        </div><!--destinations-->
+        
+      </div> <!--where to stay-->
+
+    <!-- WHERE TO EXPLORE -->
+    <div class="bodyWrapper" id="whereToExplore">
+        <p class="bodyTitle">WHERE TO EXPLORE</p> 
+
+        <p class="choiceName">Zoo</p>
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+          <div class="choicesWrapper">
+            
+            <a href="../destination/tagaytay/parkSaTags/zoos/residenceInn.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToExplore/residenceInn/residenceInnCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Residence Inn Mini Zoo</h5>
+                    <p class="card-text desc">Tagaytay - Nasugbu Hwy.</p>
+                </div>
+              </div>
+            </a>
+  
+          </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Parks</p>
+
+        <!-- choices for resto -->
+        <div class="destination amusementPark">
+          <div class="choicesWrapper">
+            
+            <a href="../destination/tagaytay/parkSaTags/amusementParks/peoplesPark.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToExplore/peoplesPark/peoplesParkCover.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">People's Park in the Sky</h5>
+                    <p class="card-text desc">Calabuso North</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/parkSaTags/amusementParks/skyRanch.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToExplore/skyRanch/skyRanch.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Sky Ranch</h5>
+                    <p class="card-text desc">Kaybagal South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/parkSaTags/amusementParks/picnicGrove.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToExplore/picnicGrove/picnicGroveCover.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Tagaytay Picnic Grove</h5>
+                    <p class="card-text desc">Sungay South</p>
+                </div>
+              </div>
+            </a>
+  
+          </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Museums</p>
+
+        <!-- choices for resto -->
+        <div class="destination museum">
+          <div class="choicesWrapper">
+            
+            <a href="../destination/tagaytay/parkSaTags/museums/museoOrlina.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToExplore/museoOrlina/museoOrlinaCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Museo Orlina</h5>
+                    <p class="card-text desc">Tolentino East</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/parkSaTags/museums/puzzleMansion.html">
+              <div class="card">
+                <img src="../../images/tagaytay/whereToExplore/puzzlaMansion/puzzlaMansionCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Puzzle Mansion</h5>
+                    <p class="card-text desc">Asisan</p>
+                </div>
+              </div>
+            </a>
+  
+          </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to explore-->
+
+    <!-- CHURCHES -->
+    <div class="bodyWrapper" id="whereToChurches">
+        <p class="bodyTitle">CHURCHES</p> 
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+          <div class="choicesWrapper">
+            
+            <a href="../destination/tagaytay/churchesSaTags/ourLadyOfManaog.html">
+              <div class="card">
+                <img src="../../images/tagaytay/churches/ourLadyOfManaog/ourLadyOfManaogCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Our Lady of Manaoag</h5>
+                    <p class="card-text desc">Sungay South</p>
+                </div>
+              </div>
+            </a>
+    
+            <a href="../destination/tagaytay/churchesSaTags/ourLadyOfLourdesAndParishChurch.html">
+              <div class="card">
+                <img src="../../images/tagaytay/churches/ourLadyOfLourdes/ourLadyOfLourdesParishChurchCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Our Lady of Lourdes Parish Church</h5>
+                    <p class="card-text desc">Silang Junction South</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="../destination/tagaytay/churchesSaTags/pinkSistersConventAndChapel.html">
+              <div class="card">
+                <img src="../../images/tagaytay/churches/pinkSistersConventAndChapel/pinkSistersConventAndChapelCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title">Pink Sisters' Convent and Chapel</h5>
+                    <p class="card-text desc">Maitim 2nd East</p>
+                </div>
+              </div>
+            </a>
+    
+          </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div><!--churches-->
+    
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../javascript/revealChoices.js"></script>
+    <script src="../../javascript/tagaytayHeaderCarousel.js"></script>
+  </body>
+</html>
