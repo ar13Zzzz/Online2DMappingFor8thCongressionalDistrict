@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/destination/tagaytay/whereToStayTagaytay/hotel/rangyaHotel.css">
+    <title>Rangya Hotel</title>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+        <nav class="nav">
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../../../../startToExplore.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link active navBtn" href="../../../../aboutUs.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </nav>
+    </nav> 
+
+    <div class="headerContainer container-fluid">
+    <!-- header image -->
+    <img src="../../../../../images/tagaytay/whereToStay/hotel/rangyaHotel/rangyaHotelTagaytayCover.jpg" alt="Cover Image" class="headerImage">
+    <!-- blurred part -->
+    <div class="container blurBg">
+        <p class="businessDesc">Immerse yourself in Tagaytay's culture at 
+            Rangya Hotel, a boutique hotel that reflects the town's 
+            heritage and hospitality.
+        </p>
+        <p class="businessName">Rangya Hotel</p>
+    </div></div> 
+
+    <!-- sample images -->
+    <div class="sampleImagesWrapper">
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/tagaytay/whereToStay/hotel/rangyaHotel/412520389.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/tagaytay/whereToStay/hotel/rangyaHotel/IMG_20231002_190307_434.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/tagaytay/whereToStay/hotel/rangyaHotel/IMG_20231002_190311_510.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/tagaytay/whereToStay/hotel/rangyaHotel/IMG_20231002_190318_734.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+    </div><!--sample images-->
+    
+    <!-- route -->
+    <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
+        <div class="routeWrapper"> <!--route wrapper-->
+            <div class="mainRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/3/embed?mid=17mHie-DT7LqmuQtOEbAT3FcQCHWRRwk&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1KejLf6EkOK40DUsSlcT3WEg4uEF-eEg&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div class="legendWrapper">
+                <!-- route button -->
+                <div class="btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                        Routes
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                    </ul>
+                </div><!-- route button -->
+            </div><!--legend wrapper-->
+        </div><!--route wrapper-->
+        <div class="frontWrapper">
+            <img src="../../../../../images/tagaytay/whereToStay/hotel/rangyaHotel/rangyaHotelTagaytayCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+            <p>Maitim 2nd East, Tagaytay City</p>
+        </div>
+    </div><!-- route -->
+
+    <!-- nearest landmark note -->
+    <div id="accordion" data-animate="slideDownCard">
+        <div class="card" id="nearestLandmarkNote">
+
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Nearest Landmark
+                </button>
+                </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                <div class="card-body">
+                    900 meters from Fora Mall Tagaytay (Silang Junction North, Tagaytay City)
+                </div><!--note for the nearest landmark-->
+            </div>
+
+        </div>
+    </div>
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+
+
+    <!-- capsule back to top and back button -->
+    <div class="container-fluid backTopBtnContainer" data-animate="slideDownBackToptn">
+        <div class="backTopBtnWrapper container">
+            <button type="button" class="btn backBtn"><a href="../../../../municipality/tagaytay.html" style="color: #e9dfdf;">Back</a></button>
+            <button type="button" class="btn topBtn"><a href="#" style="color: #fff;">Top</a></button>
+        </div>
+    </div>
+    
+    <script src="../../../../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../../../../javascript/animationOfSampleImageOnScroll.js"></script>
+</body>
+</html>
