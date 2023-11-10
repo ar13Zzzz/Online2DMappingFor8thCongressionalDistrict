@@ -1,0 +1,27 @@
+.blurBg {
+    background-color: #47300692;
+}
+.routeAndFrontkWrapper {
+    background-color: #473006;
+}
+.frontWrapper p {
+    color: #473006
+}
+#accordion .card-header {
+    background-color: #473006;
+}
+#accordion .card-body {
+    background-color: #473006e0;
+}
+.topBtn {
+    background-color: #473006;
+}
+.otherBranchesWrapper .otherBranchHeader {
+    color: #473006;
+}
+.otherBranchesWrapper {
+    border-color: #473006
+}
+.otherBranchesWrapper .destination .choicesWrapper a {
+    color: #473006;
+}
