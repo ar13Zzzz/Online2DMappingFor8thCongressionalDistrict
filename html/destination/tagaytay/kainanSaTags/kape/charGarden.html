@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/destination/tagaytay/whereToEatTagaytay/kape/charsGardenCafe.css">
+    <title>Char's Garden Cafe</title>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+        <nav class="nav">
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../../../../startToExplore.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link active navBtn" href="../../../../aboutUs.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </nav>
+    </nav> 
+
+    <div class="headerContainer container-fluid">
+    <!-- header image -->
+    <img src="../../../../../images/tagaytay/whereToEat/cafe/charsGardenCafe/charsGardrnCafeCover.jpg" alt="Cover Image" class="headerImage">
+    <!-- blurred part -->
+    <div class="container blurBg">
+        <p class="businessDesc">Welcome to Char's Garden Cafe, where nature's beauty and culinary delights 
+            come together in perfect harmony! Located in the heart of Tagaytay City, our charming cafe 
+            invites tourists to experience a delightful fusion of farm-to-table cuisine amidst a lush 
+            garden setting - a picturesque escape that will leave you enchanted.
+        </p>
+        <p class="businessName">Char's Garden Cafe</p>
+    </div>
+</div> 
+
+    <!-- sample images -->
+    <div class="sampleImagesWrapper">
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/tagaytay/whereToEat/cafe/charsGardenCafe/IMG_20230731_132944_969.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/tagaytay/whereToEat/cafe/charsGardenCafe/IMG_20230731_132951_843.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/tagaytay/whereToEat/cafe/charsGardenCafe/IMG_20230731_132955_386.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/tagaytay/whereToEat/cafe/charsGardenCafe/IMG_20230731_132958_747.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+    </div><!--sample images-->
+    
+    <!-- route -->
+    <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
+        <div class="routeWrapper"> <!--route wrapper-->
+            <div class="mainRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1KLFzuCPbJML2RfB2Ebl44gJUch2gkuA&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=11Z3DVuTVSTe-wFGy8WOjZEd89Bb8pSo&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=12hG9SPiIAYbAUOVO3PTWh1pl5ar7hmk&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer4" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1nn0gIp7l9lTvcV203F_mymYBHAf2eHM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div class="legendWrapper">
+                <!-- route button -->
+                <div class="btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                        Routes
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item" onclick="revealAlternativeRoute4()">Route #4</button></li>
+                    </ul>
+                </div><!-- route button -->
+            </div><!--legend wrapper-->
+        </div><!--route wrapper-->
+        <div class="frontWrapper">
+            <img src="../../../../../images/tagaytay/whereToEat/cafe/charsGardenCafe/charsGardrnCafeCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+            <p>Patutong Malaki North, Tagaytay City</p>
+        </div>
+    </div><!-- route -->
+
+    <!-- nearest landmark note -->
+    <div id="accordion" data-animate="slideDownCard">
+        <div class="card" id="nearestLandmarkNote">
+
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Nearest Landmark
+                </button>
+                </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                <div class="card-body">
+                    420 meters from Mater Dei Academy (Mahogany Ave., Tagaytay City)
+                </div><!--note for the nearest landmark-->
+            </div>
+
+        </div>
+    </div>
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+
+
+    <!-- capsule back to top and back button -->
+    <div class="container-fluid backTopBtnContainer" data-animate="slideDownBackToptn">
+        <div class="backTopBtnWrapper container">
+            <button type="button" class="btn backBtn"><a href="../../../../municipality/tagaytay.html" style="color: #e9dfdf;">Back</a></button>
+            <button type="button" class="btn topBtn"><a href="#" style="color: #fff;">Top</a></button>
+        </div>
+    </div>
+    
+    <script src="../../../../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../../../../javascript/animationOfSampleImageOnScroll.js"></script>
+</body>
+</html>
