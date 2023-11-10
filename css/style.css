@@ -1,0 +1,134 @@
+.navbar {
+    justify-content: flex-end;
+}
+.nav {
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    padding-inline: 0.5vw;
+}
+.nav a {
+    color: #f8f9fa;
+    font-weight: 450;
+}
+.navBtn:hover, .navBtn:focus {
+    color: #f8f9fa;
+    animation: scaled1 250ms linear 0s 1 normal;
+    -webkit-animation: scaled1 250ms linear 0s 1 normal;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+#bgVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.title {
+    margin-top: 25vw;
+    padding-left: 6vw;
+    height: auto;
+}
+.title p {
+    font-size: 5vw;
+    font-weight: 500;
+    color: #f8f9fa;
+    line-height: 4vw;
+    animation: fadeIn 1s linear 0s;
+}
+.btnContainer {
+    padding-left: 1vw;
+    animation: fadeIn 2s ease 1;
+}
+.title .btnStartToExplore {
+    display: inline-block;
+    width: auto;
+    font-size: 1.75vw;
+    text-align: center;
+    padding: 0.5vw 1.75vw;
+    text-decoration: none;
+    font-weight: 400;
+    color: #f8f9fa;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.title .btnStartToExplore:hover, .btnStartToExplore:focus {
+    animation: scaled2 250ms linear 0s 1 normal;
+    -webkit-animation: scaled2 250ms linear 0s 1 normal;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+@media only screen and (max-width: 430px) /*phone*/ {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navbar-brand {
+        margin: 0;
+    }
+    .nav a {
+        font-size: .5rem;
+    }
+
+    .btnStartToExplore {
+        width: 25vw;
+        font-size: 2vw;
+    }
+    .title {
+        margin-top: 100vw;
+        text-align: center;
+    }
+    .title p {
+        font-size: 10vw;
+        line-height: 8vw;
+        color: #f8f9fa;
+        font-weight: 600;
+    }
+    .btnContainer {
+        padding: 0vw;
+    }
+    .title .btnStartToExplore {
+        font-size: 5vw;
+        padding: 2vw 5vw;
+    }
+}
+
+@media only screen and (max-width: 770px) and (min-width: 430px) /* tablet */ {
+    .nav a {
+        font-size: 1rem;
+    }
+}
+
+@keyframes scaled1 {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+}
+@keyframes scaled2 {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+}
+@keyframes fadeIn {
+    0%, 50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
