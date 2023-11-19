@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
+    <link rel="stylesheet" href="../../../../../css/destination/alfonso/kaen/resto/theBlueRoomDiningTagaytay.css">
+    <title>The Blue Room Dining Tagaytay</title>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+        <nav class="nav">
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../../../../startToExplore.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link active navBtn" href="../../../../aboutUs.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </nav>
+    </nav> 
+
+    <div class="headerContainer container-fluid">
+    <!-- header image -->
+    <img src="../../../../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/blueRoomCover.jpg" alt="Cover Image" class="headerImage">
+    <!-- blurred part -->
+    <div class="container-fluid blurBg">
+        <p class="businessDesc">Enjoy an elegant dining experience with a menu that showcases culinary excellence in a sophisticated setting.
+        </p>
+        <p class="businessName">The Blue Room Dining Tagaytay</p>
+    </div>
+</div> 
+
+    <!-- sample images -->
+    <div class="sampleImagesWrapper">
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/IMG_20231105_220636_135.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/IMG_20231105_220636_211.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/IMG_20231105_220636_484.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/IMG_20231105_220636_956.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+    </div><!--sample images-->
+    
+    <!-- route -->
+    <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
+        <div class="routeWrapper"> <!--route wrapper-->
+            <div class="mainRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/3/embed?mid=18C6T3uVA4k9kkWv2aV5xR_ElPBl6_s4&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1iJMcUC64E0NqfMDNrilEARJsj4cMB9s&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1gMRJk5KIcySbP_l-QkuJbHHVI1rej7U&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer4" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1nU1DEMJ9BA_NAdinxwkcpeAn1r2Tj-o&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div class="legendWrapper">
+                <!-- route button -->
+                <div class="btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                        Routes
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn4" onclick="revealAlternativeRoute4()">Route #4</button></li>
+                    </ul>
+                </div><!-- route button -->
+            </div><!--legend wrapper-->
+        </div><!--route wrapper-->
+        
+    </div><!-- route -->
+
+    <!-- nearest landmark note -->
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
+
+    <div class="frontWrapper">
+        <img src="../../../../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/blueRoomCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Sikat, Alfonso</p>
+    </div>
+
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+              
+            </p>
+        </div>
+    </div>
+
+  </div>
+        <div class="card" id="nearestLandmarkNote">
+
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Nearest Landmark
+                </button>
+                </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <p>inside <a href="../../tulugan/hotel/hillcreekGardensTagaytay.html" data-bs-toggle="tooltip" data-bs-title="click for more info">Hillcreek Gardens Tagaytay</a></p>
+                </div><!--note for the nearest landmark-->
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+
+
+    <!-- capsule back to top and back button -->
+    <div class="container-fluid backTopBtnContainer" data-animate="slideDownBackToptn">
+        <div class="backTopBtnWrapper container">
+            <button type="button" class="btn backBtn"><a href="../../../../municipality/alfonso.html" style="color: #e9dfdf;">Back</a></button>
+            <button type="button" class="btn topBtn"><a href="#" style="color: #fff;">Top</a></button>
+        </div>
+    </div>
+    
+    <script src="../../../../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../../../../javascript/animationOfSampleImageOnScroll.js"></script>
+</body>
+</html>
