@@ -1,17 +1,20 @@
 .blurBg {
-    background-color: #ce101092;
+    background-color: #ce101096;
 }
 .routeAndFrontkWrapper {
     background-color: #ce1010;
 }
-.frontWrapper p {
-    color: #ce1010
-}
-#accordion .card-header {
+.frontWrapper {
     background-color: #ce1010;
 }
-#accordion .card-body {
-    background-color: #ce1010e0;
+.nearestLandmarkContainer {
+    background-color: #ce1010;
+}
+.landmarkNote {
+    color: #ce1010;
+}
+.landmarkNote a {
+    color: #ce1010;
 }
 .topBtn {
     background-color: #ce1010;
@@ -20,7 +23,7 @@
     color: #ce1010;
 }
 .otherBranchesWrapper {
-    border-color: #ce1010
+    border-color: #ce1010;
 }
 .otherBranchesWrapper .destination .choicesWrapper a {
     color: #ce1010;
