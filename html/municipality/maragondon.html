@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/municipalityMainCss.css">
+    <link rel="stylesheet" href="../../css/municipality/maragondon.css">
+    <title>Maragondon</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+      <nav class="nav">
+          <ul class="nav justify-content-start">
+              <li class="nav-item">
+                  <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../startToExplore.html">HOME</a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="nav">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <a class="navbar-brand nav-link active navBtn" href="../aboutUs.html">ABOUT US</a> 
+              </li>
+          </ul>
+      </nav>
+  </nav>   
+  
+    <!-- carousel image for header -->
+    <div id="defaultCarousel" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="../../images/maragondon/whereToExplore/museum/bonifacioTrialHouse/bonifacioTrialHouseCover.jpg" class="d-block w-100">
+            </div>
+            <!-- use this to locate the image you want to add in the list, THE LIST IS ON THE JAVASCRIPT FILE NAMED: maragondonHeaderCarousel.js -->
+            <!-- <div class="carousel-item">
+              <img src="../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" class="d-block w-100" alt="...">
+            </div> -->
+
+        </div>
+    </div>
+    
+    <div id="carouselWhereToEat" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/maragondon/whereToEat/cafe/battercaf/battercafCover.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../images/maragondon/whereToEat/resto/honoriosRestaurant/honoriosCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselWhereToStay" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/maragondon/whereToStay/resorts/riverfrontGardenResort/riverfrontCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+    </div>
+    
+    <div id="carouselWhereToExplore" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/maragondon/whereToExplore/park/andresBonifacioShrineAndEcoTourismPark/andresBonifacioShrineCover.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselChurches" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/maragondon/church/ourLadyOfAssumptionParishChurch/ourLadyOfAssumptionCover.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- shield to prevent hovering the carousel -->
+    <div class="carouselShield"></div>
+
+    <!-- header -->
+    <div class="headerWrapper">
+        <div class="blurBg container">
+            <p class="tagaytayWord tagaytayLabel">MARAGONDON</p>
+            <p class="shortDesc">Embark on a captivating journey to Maragondon, Cavite, Philippines, 
+                and uncover a treasure trove of historical landmarks and natural wonders. From the 
+                iconic Bonifacio Trial House, where the Katipunan leader was tried, to the picturesque 
+                Pico de Loro mountain, offering breathtaking hiking adventures, Maragondon is a 
+                destination that seamlessly blends history and nature, promising an unforgettable 
+                experience for all who visit.</p>
+        </div>
+
+        <div class="choices">
+
+            <a href="#whereToEat" onclick="revealWhereToEat()">
+                <div class="whereToBtn whereToEatBtn">
+                    <img src="../../images/magallanes/wheretoeatMagallanesButton.png" alt="where to eat picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Eat</p>
+                </div>
+            </a>
+
+            <a href="#whereToStay"  onclick="revealWhereToStay(), insertContentToWhereToStay()">
+                <div class="whereToBtn">
+                    <img src="../../images/maragondon/wheretostayMaragondonButton.png" alt="where to stay picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Stay</p>
+                </div>
+            </a>
+
+            <a href="#whereToExplore"  onclick="revealWhereToExplore(), insertContentToWhereToExplore()">
+                <div class="whereToBtn">
+                    <img src="../../images/maragondon/wheretoexploreMaragondonButton.png" alt="where to explore picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Explore</p>
+                </div>
+            </a>
+
+            <a href="#whereToChurches"  onclick="revealWhereToChurches()">
+                <div class="whereToBtn">
+                    <img src="../../images/maragondon/churchesMaragondonButton.png" alt="other destination picture" class="whereToPic">
+                    <p class="whereToLabel">Churches</p>
+                </div>
+            </a>
+
+        </div> <!--choices-->
+    </div>
+    <!-- body -->
+
+    <!-- WHERE TO EAT -->
+    <div class="bodyWrapper" id="whereToEat">
+        <p class="bodyTitle">WHERE TO EAT</p> 
+
+        <p class="choiceName">Restaurants</p>
+
+        <!-- first row of choices for restaurants-->
+        <div class="destination resto">
+            <div class="choicesWrapper">
+              
+                <a href="../destination/maragondon/whereToEat/resto/honoriosRestaurant.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToEat/resto/honoriosRestaurant/honoriosCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Honorio's Restaurant</h5>
+                            <p class="card-text desc">Garita A</p>
+                        </div>
+                    </div>
+                </a>
+                  
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+        <p class="choiceName">Cafes</p>
+
+        <!-- first row of choices for cafe -->
+        <div class="destination cafesResto">
+            <div class="choicesWrapper">
+            
+                <a href="../destination/maragondon/whereToEat/cafe/batterCaf.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToEat/cafe/battercaf/battercafCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Battercaf</h5>
+                            <p class="card-text desc">Caingin</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+    </div> <!--where to eat-->
+
+    <!-- WHERE TO STAY -->
+    <div class="bodyWrapper" id="whereToStay">
+        <p class="bodyTitle">WHERE TO STAY</p> 
+
+        <p class="choiceName">Resorts</p>
+
+        <!-- choices for Resort/Hotel Resort -->
+        <div class="destination resort">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/maragondon/whereToStay/resort/dagisdisNgMaragondon.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToStay/resorts/dagisdisNgMaragondon/dagisdisNgMaragondon.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Dagisdis ng Maragondon</h5>
+                            <p class="card-text desc">Talipusngo</p>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="../destination/maragondon/whereToStay/resort/leVeRaHidden.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToStay/resorts/leVeRaHidden/leVeRaHiddenCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Le Ve Ra Hidden</h5>
+                            <p class="card-text desc">Pantihan IV (Pulo Ni Sara)</p>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="../destination/maragondon/whereToStay/resort/riverfrontGardenResorts.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToStay/resorts/riverfrontGardenResort/riverfrontCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Riverfront Garden Resort</h5>
+                            <p class="card-text desc">Pinagsanhan B</p>
+                        </div>
+                    </div>
+                </a>
+        
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to stay-->
+
+    <!-- WHERE TO EXPLORE -->
+    <div class="bodyWrapper" id="whereToExplore">
+        <p class="bodyTitle">WHERE TO EXPLORE</p> 
+
+        <p class="choiceName">Museums</p>
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/maragondon/whereToExplore/museum/bonifacioTrialHouse.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToExplore/museum/bonifacioTrialHouse/bonifacioTrialHouseCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Bonifacio Trial House</h5>
+                            <p class="card-text desc">Poblacion II B</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Parks</p>
+
+        <!-- choices for resto -->
+        <div class="destination amusementPark">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/maragondon/whereToExplore/park/andresBonifacioShrineAndEcoTourismPark.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToExplore/park/andresBonifacioShrineAndEcoTourismPark/andresBonifacioShrineCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Andres Bonifacio Shrine and Eco-Tourism Park</h5>
+                            <p class="card-text desc">Pinagsanhan I B</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Natural Attractions</p>
+
+        <!-- choices for resto -->
+        <div class="destination museum">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/maragondon/whereToExplore/naturalAttraction/mountBuntis.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToExplore/naturalAttraction/mtBuntis/mtBuntisCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Mt. Buntis</h5>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="../destination/maragondon/whereToExplore/naturalAttraction/mountMarami.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToExplore/naturalAttraction/mtMarami/mtMaramiCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Mt. Marami</h5>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/maragondon/whereToExplore/naturalAttraction/pantihanFalls.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/whereToExplore/naturalAttraction/pantihanFalls/pantihanFallsCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Pantihan Falls</h5>
+                            <p class="card-text desc">Pantihan I (Balayungan)</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to explore-->
+
+    <!-- CHURCHES -->
+    <div class="bodyWrapper" id="whereToChurches">
+        <p class="bodyTitle">CHURCHES</p> 
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/maragondon/churches/ourLadyOfAsumptionParishChurch.html">
+                    <div class="card">
+                        <img src="../../images/maragondon/church/ourLadyOfAssumptionParishChurch/ourLadyOfAssumptionCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Our Lady of Assumptions Parish Church</h5>
+                            <p class="card-text desc">Poblacion I A</p>
+                        </div>
+                    </div>
+                </a>
+        
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div><!--churches-->
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+    
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../javascript/revealChoices.js"></script>
+    <script src="../../javascript/municipality/maragondonHeaderCarousel.js"></script>
+  </body>
+</html>

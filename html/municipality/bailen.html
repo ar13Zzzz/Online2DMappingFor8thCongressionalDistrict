@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/municipalityMainCss.css">
+    <link rel="stylesheet" href="../../css/municipality/bailen.css">
+    <title>General Emilio Aguinaldo</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+      <nav class="nav">
+          <ul class="nav justify-content-start">
+              <li class="nav-item">
+                  <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../startToExplore.html">HOME</a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="nav">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <a class="navbar-brand nav-link active navBtn" href="../aboutUs.html">ABOUT US</a> 
+              </li>
+          </ul>
+      </nav>
+  </nav>   
+  
+    <!-- carousel image for header -->
+    <div id="defaultCarousel" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="../../images/bailen/whereToEat/cafe/tagpuanCafe/tagpuanCover.jpg" class="d-block w-100">
+            </div>
+            <!-- use this to locate the image you want to add in the list, THE LIST IS ON THE JAVASCRIPT FILE NAMED: bailenHeaderCarousel.js -->
+            <!-- <div class="carousel-item">
+              <img src="../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" class="d-block w-100" alt="...">
+            </div> -->
+
+        </div>
+    </div>
+
+    <div id="carouselWhereToEat" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/bailen/whereToEat/resto/arFoodBistro/arFoodBistroCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselWhereToStay" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/bailen/whereToStay/resort/talaRiverPark/talaRiverParkCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+    </div>
+    
+    <div id="carouselWhereToExplore" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/malibiclibicCover.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselChurches" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/bailen/church/stJosephParish/stJosephParishCover.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- shield to prevent hovering the carousel -->
+    <div class="carouselShield"></div>
+
+    <!-- header -->
+    <div class="headerWrapper">
+        <div class="blurBg container">
+            <p class="tagaytayWord tagaytayLabel">GENERAL EMILIO AGUINALDO</p>
+            <p class="shortDesc">Discover the hidden gem of Bailen, Cavite, Philippines, 
+              where breathtaking natural landscapes and rich historical heritage blend 
+              seamlessly. Immerse yourself in the tranquil beauty of lush mountains, 
+              vibrant rice terraces, and the warmth of the local culture, offering an 
+              unforgettable escape from the bustling city life.</p>
+        </div>
+
+        <div class="choices">
+
+            <a href="#whereToEat" onclick="revealWhereToEat(), insertContentToWhereToEat()">
+                <div class="whereToBtn whereToEatBtn">
+                    <img src="../../images/bailen/wheretoeatBailenButton.png" alt="where to eat picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Eat</p>
+                </div>
+            </a>
+
+            <a href="#whereToStay"  onclick="revealWhereToStay(), insertContentToWhereToStay()">
+                <div class="whereToBtn">
+                    <img src="../../images/bailen/wheretostayBailenButton.png" alt="where to stay picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Stay</p>
+                </div>
+            </a>
+
+            <a href="#whereToExplore"  onclick="revealWhereToExplore()">
+                <div class="whereToBtn">
+                    <img src="../../images/bailen/churchesBailenButton.png" alt="where to explore picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Explore</p>
+                </div>
+            </a>
+
+            <a href="#whereToChurches"  onclick="revealWhereToChurches()">
+                <div class="whereToBtn">
+                    <img src="../../images/tagaytay/whereToOtherBg.png" alt="other destination picture" class="whereToPic">
+                    <p class="whereToLabel">Churches</p>
+                </div>
+            </a>
+
+        </div> <!--choices-->
+    </div>
+    <!-- body -->
+
+    <!-- WHERE TO EAT -->
+    <div class="bodyWrapper" id="whereToEat">
+        <p class="bodyTitle">WHERE TO EAT</p> 
+
+        <p class="choiceName">Restaurants</p>
+
+        <!-- first row of choices for restaurants-->
+        <div class="destination resto">
+            <div class="choicesWrapper">
+            
+                <a href="../destination/bailen/whereToEat/resto/arFoodBistro.html">
+                    <div class="card">
+                        <img src="../../images/bailen/whereToEat/resto/arFoodBistro/arFoodBistroCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">AR Food-Bistro</h5>
+                            <p class="card-text desc">Poblacion II</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../destination/bailen/whereToEat/resto/dannielsDen.html">
+                    <div class="card">
+                        <img src="../../images/bailen/whereToEat/resto/dannielsDen/dannielsDenCover.png" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Danniel's Den - Coffee and Board Games</h5>
+                            <p class="card-text desc">Castanos Cerca</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+        <p class="choiceName">Cafes</p>
+
+        <!-- first row of choices for cafe -->
+        <div class="destination cafesResto">
+            <div class="choicesWrapper">
+            
+                <a href="../destination/bailen/whereToEat/cafe/tagpuanCafe.html">
+                    <div class="card">
+                        <img src="../../images/bailen/whereToEat/cafe/tagpuanCafe/tagpuanCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">TagPuan Café</h5>
+                            <p class="card-text desc">Poblacion II</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+    </div> <!--where to eat-->
+
+    <!-- WHERE TO STAY -->
+    <div class="bodyWrapper" id="whereToStay">
+        <p class="bodyTitle">WHERE TO STAY</p> 
+
+        <p class="choiceName">Resorts</p>
+
+        <!-- choices for Resort/Hotel Resort -->
+        <div class="destination resort">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/bailen/whereToStay/resort/bangisNgBailen.html">
+                    <div class="card">
+                        <img src="../../images/bailen/whereToStay/resort/bangisNgBailen/bangisNgBailenCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Bangis ng Bailen</h5>
+                            <p class="card-text desc">Buntog</p>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="../destination/bailen/whereToStay/resort/laFamiliaFarmAndResort.html">
+                    <div class="card">
+                        <img src="../../images/bailen/whereToStay/resort/laFamiliaFarmAndResort/laFamiliaCover.png" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">La Familia Farm and Resort</h5>
+                            <p class="card-text desc">Kaymisas</p>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="../destination/bailen/whereToStay/resort/talaRiverPark.html">
+                    <div class="card">
+                        <img src="../../images/bailen/whereToStay/resort/talaRiverPark/talaRiverParkCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Tala River Park</h5>
+                            <p class="card-text desc">Poblacion III</p>
+                        </div>
+                    </div>
+                </a>
+        
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to stay-->
+
+    <!-- WHERE TO EXPLORE -->
+    <div class="bodyWrapper" id="whereToExplore">
+        <p class="bodyTitle">WHERE TO EXPLORE</p> 
+
+        <p class="choiceName">Natural Attactions</p>
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/bailen/whereToExplore/natural/malibiclibicFalls.html">
+                    <div class="card">
+                        <img src="../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/malibiclibicCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Malibic-libic Falls</h5>
+                            <p class="card-text desc">Lumipa</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to explore-->
+
+    <!-- CHURCHES -->
+    <div class="bodyWrapper" id="whereToChurches">
+        <p class="bodyTitle">CHURCHES</p> 
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/bailen/churches/stJosephParish.html">
+                    <div class="card">
+                        <img src="../../images/bailen/church/stJosephParish/stJosephParishCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">St. Joseph Parish</h5>
+                            <p class="card-text desc">Poblacion II</p>
+                        </div>
+                    </div>
+                </a>
+        
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div><!--churches-->
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+    
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../javascript/revealChoices.js"></script>
+    <script src="../../javascript/municipality/bailenHeaderCarousel.js"></script>
+  </body>
+</html>

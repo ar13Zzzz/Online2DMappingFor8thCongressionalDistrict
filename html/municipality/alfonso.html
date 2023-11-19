@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/municipalityMainCss.css">
+    <link rel="stylesheet" href="../../css/municipality/alfonso.css">
+    <title>Alfonso</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+      <nav class="nav">
+          <ul class="nav justify-content-start">
+              <li class="nav-item">
+                  <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../startToExplore.html">HOME</a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="nav">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <a class="navbar-brand nav-link active navBtn" href="../aboutUs.html">ABOUT US</a> 
+              </li>
+          </ul>
+      </nav>
+  </nav>   
+  
+    <!-- carousel image for header -->
+    <div id="defaultCarousel" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="../../images/alfonso/whereToEat/restoLang/burgersAhuy/burgersAhuyCover.jpg" class="d-block w-100">
+            </div>
+            <!-- use this to locate the image you want to add in the list, THE LIST IS ON THE JAVASCRIPT FILE NAMED: alfonsoHeaderCarousel.js -->
+            <!-- <div class="carousel-item">
+              <img src="../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" class="d-block w-100" alt="...">
+            </div> -->
+
+        </div>
+    </div>
+
+    <div id="carouselWhereToEat" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/blueRoomCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselWhereToStay" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/alfonso/whereToStay/hotel/abaganTiManila/abagatanCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+    </div>
+    
+    <div id="carouselWhereToExplore" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/alfonso/whereToExplore/saluysoyFalls/saluysoyFallsCover.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselChurches" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/alfonso/churches/stJohnNepomucenoParishChuch/stJohnNepomucenoCover.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- shield to prevent hovering the carousel -->
+    <div class="carouselShield"></div>
+
+    <!-- header -->
+    <div class="headerWrapper">
+        <div class="blurBg container">
+            <p class="tagaytayWord tagaytayLabel">ALFONSO</p>
+            <p class="shortDesc">Discover the breathtaking charm of Alfonso, Cavite in the 
+              Philippines, where lush mountains and tranquil landscapes create a haven for 
+              nature enthusiasts seeking serenity and adventure. Embark on an unforgettable 
+              journey as you explore scenic hiking trails, embrace the cool climate, and 
+              experience the warm hospitality of the locals amidst this picturesque destination.</p>
+        </div>
+
+        <div class="choices">
+
+            <a href="#whereToEat" onclick="revealWhereToEat(), insertContentToWhereToEat()">
+                <div class="whereToBtn whereToEatBtn">
+                    <img src="../../images/alfonso/wheretoeatAlfonsoButton.png" alt="where to eat picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Eat</p>
+                </div>
+            </a>
+
+            <a href="#whereToStay"  onclick="revealWhereToStay(), insertContentToWhereToStay()">
+                <div class="whereToBtn">
+                    <img src="../../images/alfonso/wheretostayAlfonsoButton.png" alt="where to stay picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Stay</p>
+                </div>
+            </a>
+
+            <a href="#whereToExplore"  onclick="revealWhereToExplore(), insertContentToWhereToExplore()">
+                <div class="whereToBtn">
+                    <img src="../../images/alfonso/wheretoexploreAlfonsoButton.png" alt="where to explore picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Explore</p>
+                </div>
+            </a>
+
+            <a href="#whereToChurches"  onclick="revealWhereToChurches()">
+                <div class="whereToBtn">
+                    <img src="../../images/alfonso/churchesAlfonsoButton.png" alt="other destination picture" class="whereToPic">
+                    <p class="whereToLabel">Churches</p>
+                </div>
+            </a>
+
+        </div> <!--choices-->
+    </div>
+    <!-- body -->
+
+    <!-- WHERE TO EAT -->
+    <div class="bodyWrapper" id="whereToEat">
+        <p class="bodyTitle">WHERE TO EAT</p> 
+
+        <p class="choiceName">Restaurants</p>
+
+        <!-- Restaurants-->
+        <div class="destination resto">
+            <div class="choicesWrapper">
+              
+                <a href="../destination/alfonso/kainan/resto/alfresco1911Restaurant.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/alfrescoRestaurant1911/alfrescoDiningCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">1911 ALFRESCO RESTAURANT</h5>
+                            <p class="card-text desc">Barangay 1</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/burgersAhuy.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/burgersAhuy/burgersAhuyCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Burgers Ahuy</h5>
+                            <p class="card-text desc">Esperanza Ilaya</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/crosswings.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/crosswings/crosswingsCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Crosswings</h5>
+                            <p class="card-text desc">Sikat</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/girasolRestaurant.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/girasolTagaytay/girasolCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Girasol Tagaytay</h5>
+                            <p class="card-text desc">Tagaytay - Nasugbu Hwy.</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/kashingsBistro.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/kashingsBistro/kashingsCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Kashing's Bistro</h5>
+                            <p class="card-text desc">Luksuhin Ilaya</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/marciaAdamsRestaurant.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/marciaAdamsRestaurant/marciaAdamsCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Marcia Adams' Restaurant</h5>
+                            <p class="card-text desc">Sikat</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/monsRestaurant.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/monsRestaurant/monsRestaurantCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">MON's Restaurant</h5>
+                            <p class="card-text desc">Taywanak Ilaya</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/queensStrawerryFarm.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/queensStrawberryFarm/queensStrawberryFarmCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Queens Strawberry Farm</h5>
+                            <p class="card-text desc">Upli</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/sonyasGarden.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/sonyasGarden/sonyasGardenCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Sonya's Garden (Bed and Breakfast)</h5>
+                            <p class="card-text desc">Buck Estate</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/tanawinSaGulod.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/tanawinSaGulod/tanawinSaGulodCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Tanawin sa Gulod</h5>
+                            <p class="card-text desc">Tagaytay - Nasugbu Hwy.</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/teresitoz.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/teresetoz/teresitozCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Teresitoz</h5>
+                            <p class="card-text desc">Esperanza Ibaba</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/theBlueRoomDiningTagaytay.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/theBlueRoomDIningTagaytay/blueRoomCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">The Blue Room Dining Tagaytay</h5>
+                            <p class="card-text desc">Hillcreek Gardens Tagaytay</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/tiyaDelisGarden.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/tiyaDelisGardenRestaurant/tiyaDelisCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Tiya Deli's Garden Restaurant</h5>
+                            <p class="card-text desc">Mangas II</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/alfonso/kainan/resto/verdiviewRestaurant.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/restoLang/verdiviewRestaurant/verdiviewCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Verdiview Restaurant</h5>
+                            <p class="card-text desc">Luksuhin Ilaya</p>
+                        </div>
+                    </div>
+                </a>
+                  
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+        <p class="choiceName">Japanese Restaurant</p>
+
+        <!-- Japanese Resto -->
+        <div class="destination japaneseResto">
+            <div class="choicesWrapper">
+            
+                <a href="../destination/alfonso/kainan/japan/suruginRamenHouse.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/japaneseResto/suruginRamenHouse/suruginCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Surugin Ramen House</h5>
+                            <p class="card-text desc">Sulsugin</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/japan/zenzenJapaneseFoodHaulAndCafe.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/japaneseResto/zenzenJapaneseFoodHaulAndCafe/zenzenCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Zenzen Japanese Food Haul and Cafe</h5>
+                            <p class="card-text desc">Upli</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+        <p class="choiceName">Cafes</p>
+
+        <!-- cafes -->
+        <div class="destination cafesResto">
+            <div class="choicesWrapper">
+<!--             
+                <a href="../destination/alfonso/kainan/kape/cafeEnrique.html">
+                    <div class="card">
+                        <img src="../../images/tagaytay/tagaytayBg.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title title">Cafe Enrique Gourmet Farm Tagaytay</h5>
+                            <p class="card-text desc"></p>
+                        </div>
+                    </div>
+                </a> -->
+
+                <a href="../destination/alfonso/kainan/kape/highGrindCafe.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/highGrindCafe/highGrindCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">High Grind Cafe</h5>
+                            <p class="card-text desc">Luksuhin Ilaya</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/kapeanCoffeePh.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/kapeanCoffeePh/kapeanCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Kap'ean Coffee Ph</h5>
+                            <p class="card-text desc">Amuyong</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/khalakuti.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/khalakutiCafe/khalakutiCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Khalakuti Cafe</h5>
+                            <p class="card-text desc">Matagbak II</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/lequestriaCafe.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/lequestriaCafe/lequestriaCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">L'equestria Cafe</h5>
+                            <p class="card-text desc">Kaytitinga III</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/linley'sKitchenCafe.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/linleysKitchenCafe/linleysCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Linley's Kitchen x Cafe</h5>
+                            <p class="card-text desc">Tagaytay - Nasugbu Hwy.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/theRidgeCafe.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/theRidgeCafeTagaytay/theRidgeCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">The Ridge Cafe - Tagaytay</h5>
+                            <p class="card-text desc">Tagaytay - Nasugbu Hwy.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/theTigerAlleyFarmGardenCafe.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/theTigerAlleyFarmAndGardenCafe/tigerAlleyCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">The Tiger Alley Farm and Garden Cafe</h5>
+                            <p class="card-text desc">Mangas II</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/theWhiteDomeCafe.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/theWhiteDomeCafe/whiteDomeCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">The White Dome Cafe</h5>
+                            <p class="card-text desc">Buck Estate</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/kainan/kape/yssasCoffeeHouse.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToEat/cafe/yssasCoffeeHouse/yssaCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Yssa's Coffee House</h5>
+                            <p class="card-text desc">Sinaliw Na Munti</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+    </div> <!--where to eat-->
+
+    <!-- WHERE TO STAY -->
+    <div class="bodyWrapper" id="whereToStay">
+        <p class="bodyTitle">WHERE TO STAY</p> 
+
+        <p class="choiceName">Hotels</p>
+
+        <!-- choices for hotel -->
+        <div class="destination hotel">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/alfonso/tulugan/hotel/abagatanTiManila.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToStay/hotel/abaganTiManila/abagatanCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Abagatan ti Manila</h5>
+                            <p class="card-text desc">Amuyong</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/alfonso/tulugan/hotel/hillcreekGardensTagaytay.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToStay/hotel/hillcreekGardensTagaytay/hillcreekCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Hillcreek Gardens Tagaytay</h5>
+                            <p class="card-text desc">Sikat</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Resorts</p>
+
+        <!-- choices for Resort/Hotel Resort -->
+        <div class="destination resort">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/alfonso/tulugan/resort/campBenjamin.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToStay/resort/campBenjamin/campBenjaminCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Camp Benjamin</h5>
+                            <p class="card-text desc">Taywanak Ibaba</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="../destination/alfonso/tulugan/resort/eljoysForestResort.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToStay/resort/eljoysForestResort/eljoyCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Eljoy's Forest Resort</h5>
+                            <p class="card-text desc">Mangas II</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="../destination/alfonso/tulugan/resort/pintoresco.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToStay/resort/pintoresco/pintorescoCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Pintoresco</h5>
+                            <p class="card-text desc">Esperanza Ilaya</p>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="../destination/alfonso/tulugan/resort/pollaResortAndLeisureFar.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToStay/resort/pollasResortAndLeisureFarm/pollasFarmCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Polla's Resort and Leisure Farm</h5>
+                            <p class="card-text desc">Matagbak I</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="../destination/alfonso/tulugan/resort/teusFarmAndRiverStoneResort.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToStay/resort/teusFarmAndRiverStoneResort/teusFarmCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Teus Farm and River Stone Resort</h5>
+                            <p class="card-text desc">Sinaliw Na Munti</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to stay-->
+
+    <!-- WHERE TO EXPLORE -->
+    <div class="bodyWrapper" id="whereToExplore">
+        <p class="bodyTitle">WHERE TO EXPLORE</p> 
+
+        <p class="choiceName">Parks</p>
+
+        <!-- choices for park -->
+        <div class="destination park">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/alfonso/pasyalan/park/reptilandAdventure.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToExplore/reptilandAdventure/reptilandCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Reptiland Adventure</h5>
+                            <p class="card-text desc">Palumlum</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../destination/alfonso/pasyalan/park/gingerBreadHouse.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToExplore/theGingerBreadHouse/gingerBreadHouseCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">The Gingerbread House</h5>
+                            <p class="card-text desc">Palumlum</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Natural Attraction</p>
+
+        <!-- choices for resto -->
+        <div class="destination amusementPark">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/alfonso/pasyalan/natural/saluysoyFalls.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/whereToExplore/saluysoyFalls/saluysoyFallsCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Saluysoy Falls</h5>
+                            <p class="card-text desc">Sinaliw Na Muntil</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to explore-->
+
+    <!-- CHURCHES -->
+    <div class="bodyWrapper" id="whereToChurches">
+        <p class="bodyTitle">CHURCHES</p> 
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/alfonso/simbahan/stJohnNepomucenoParishChurch.html">
+                    <div class="card">
+                        <img src="../../images/alfonso/churches/stJohnNepomucenoParishChuch/stJohnNepomucenoCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">St. John Nepomuceno Parish Church</h5>
+                            <p class="card-text desc">Barangay 3</p>
+                        </div>
+                    </div>
+                </a>
+        
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div><!--churches-->
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+    
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../javascript/revealChoices.js"></script>
+    <script src="../../javascript/municipality/alfonsoHeaderCarousel.js"></script>
+  </body>
+</html>

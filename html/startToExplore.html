@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/startToExplore.css">
+    <script src="../javascript/jquery-3.7.1.js"></script>
     <title>Start To Explore</title>
 </head>
 <body>
@@ -30,35 +31,42 @@
         </nav>
 
         <div class="container-fluid title">
-            <p class="DistrictOfCavite">8th District of Cavite</p>
+            <p class="DistrictOfCavite"><span class="eigth">8<sup>th</sup></span> District of Cavite</p>
             <p class="caviteDesc">Welcome to the vibrant 8<sup>th</sup> Congressional District of Cavite - 
                 where history meets progress and community thrives! Discover a land of adverse landscapes,
                  rich natural heritage, and dynamic opportunities as we unite to build a better future.</p>
         </div>
         <!-- loading="lazy" -->
-        <div class="container-xxl wrapper">  
+        <div class="container-fluid wrapper">  
             <!-- <img src="../images/startToExploreImage/guide.png" class="guide"> -->
-            <img src="../images/startToExploreImage/maragondon.png" alt="map of Maragondon" id="maragondonMap" class="imgMap" draggable="false">
-            <img src="../images/startToExploreImage/tagaytay.png" alt="map of Tagaytay" id="tagaytayMap" class="imgMap" draggable="false">
-            <img src="../images/startToExploreImage/mendez.png" alt="map of Mendez" id="mendezMap" class="imgMap" draggable="false">
-            <img src="../images/startToExploreImage/alfonso.png" alt="map of Alfonso" id="alfonsoMap" class="imgMap" draggable="false">
-            <img src="../images/startToExploreImage/magallanes.png" alt="map of Magallanes" id="magallanesMap" class="imgMap" draggable="false">
-            <img src="../images/startToExploreImage/ternate.png" alt="map of Ternate" id="ternateMap" class="imgMap" draggable="false">
-            <img src="../images/startToExploreImage/bailen.png" alt="map of Bailen" id="bailenMap" class="imgMap" draggable="false">
-            <img src="../images/startToExploreImage/naic.png" alt="map of Naic" id="naicMap" class="imgMap" draggable="false">  
+            <img src="../images/startToExploreImage/maragondon.png" alt="map of Maragondon" id="maragondonMap" class="imgMap" draggable="false" loading="eager">
+            <img src="../images/startToExploreImage/tagaytay.png" alt="map of Tagaytay" id="tagaytayMap" class="imgMap" draggable="false" loading="eager">
+            <img src="../images/startToExploreImage/mendez.png" alt="map of Mendez" id="mendezMap" class="imgMap" draggable="false" loading="eager">
+            <img src="../images/startToExploreImage/alfonso.png" alt="map of Alfonso" id="alfonsoMap" class="imgMap" draggable="false" loading="eager">
+            <img src="../images/startToExploreImage/magallanes.png" alt="map of Magallanes" id="magallanesMap" class="imgMap" draggable="false" loading="eager">
+            <img src="../images/startToExploreImage/ternate.png" alt="map of Ternate" id="ternateMap" class="imgMap" draggable="false" loading="eager">
+            <img src="../images/startToExploreImage/bailen.png" alt="map of Bailen" id="bailenMap" class="imgMap" draggable="false" loading="eager">
+            <img src="../images/startToExploreImage/naic.png" alt="map of Naic" id="naicMap" class="imgMap" draggable="false" loading="eager">  
         </div>
 
         <div class="dropPin">
-            <img src="../images/startToExploreImage/alfonsoDropPin.png" alt="click here to open Alfonso" class="dropPinAlfonso" onclick="openModalAlfonso()" data-bs-toggle="tooltip" data-bs-title="Alfonso (click for more info)">
-            <img src="../images/startToExploreImage/tagaytayDropPin.png" alt="click here to open Tagaytay City" class="dropPinTagaytay" onclick="openModalTagaytay()" data-bs-toggle="tooltip" data-bs-title="Tagaytay City (click for more info)">
-            <img src="../images/startToExploreImage/mendezDropPin.png" alt="click here to open Mendez" class="dropPinMendez" onclick="openModalMendez()" data-bs-toggle="tooltip" data-bs-title="Mendez-Nuñez (click for more info)">
-            <img src="../images/startToExploreImage/bailenDropPin.png" alt="click here to open General Emilio Aguinaldo" class="dropPinBailen" onclick="openModalBailen()" data-bs-toggle="tooltip" data-bs-title="General Emilio Aguinaldo (click for more info)">
-            <img src="../images/startToExploreImage/magallanesDropPin.png" alt="click here to open Magallanes" class="dropPinMagallanes" onclick="openModalMagallanes()" data-bs-toggle="tooltip" data-bs-title="Magallanes (click for more info)">
-            <img src="../images/startToExploreImage/maragondonDropPin.png" alt="click here to open Maragondon" class="dropPinMaragondon" onclick="openModalMaragondon()" data-bs-toggle="tooltip" data-bs-title="Maragondon (click for more info)">
-            <img src="../images/startToExploreImage/ternateDropPin.png" alt="click here to open Ternate" class="dropPinTernate" onclick="openModalTernate()" data-bs-toggle="tooltip" data-bs-title="Ternate (click for more info)">
-            <img src="../images/startToExploreImage/naicDropPin.png" alt="click here to open Naic" class="dropPinNaic" onclick="openModalNaic()" data-bs-toggle="tooltip" data-bs-title="Naic (click for more info)">
+            <img src="#" data-original="../images/startToExploreImage/alfonsoDropPin.png" class="dropPinAlfonso load-delay" onclick="openModalAlfonso()" data-bs-toggle="tooltip" data-bs-title="Alfonso (click for more info)" loading="eager">
+            <img src="#" data-original="../images/startToExploreImage/tagaytayDropPin.png" class="dropPinTagaytay load-delay" onclick="openModalTagaytay()" data-bs-toggle="tooltip" data-bs-title="Tagaytay City (click for more info)" loading="eager">
+            <img src="#" data-original="../images/startToExploreImage/mendezDropPin.png" class="dropPinMendez load-delay" onclick="openModalMendez()" data-bs-toggle="tooltip" data-bs-title="Mendez-Nuñez (click for more info)" loading="eager">
+            <img src="#" data-original="../images/startToExploreImage/bailenDropPin.png" class="dropPinBailen load-delay" onclick="openModalBailen()" data-bs-toggle="tooltip" data-bs-title="General Emilio Aguinaldo (click for more info)" loading="eager">
+            <img src="#" data-original="../images/startToExploreImage/magallanesDropPin.png" class="dropPinMagallanes load-delay" onclick="openModalMagallanes()" data-bs-toggle="tooltip" data-bs-title="Magallanes (click for more info)" loading="eager">
+            <img src="#" data-original="../images/startToExploreImage/maragondonDropPin.png" class="dropPinMaragondon load-delay" onclick="openModalMaragondon()" data-bs-toggle="tooltip" data-bs-title="Maragondon (click for more info)" loading="eager">
+            <img src="#" data-original="../images/startToExploreImage/ternateDropPin.png" class="dropPinTernate load-delay" onclick="openModalTernate()" data-bs-toggle="tooltip" data-bs-title="Ternate (click for more info)" loading="eager">
+            <img src="#" data-original="../images/startToExploreImage/naicDropPin.png" class="dropPinNaic load-delay" onclick="openModalNaic()" data-bs-toggle="tooltip" data-bs-title="Naic (click for more info)" loading="eager">
         </div>
         
+        <div class="caviteDescForPhone container-fluid">
+            <p class="systemNoteForPhone">Note: The starting point of the routes is always on the Tagaytay Rotonda.</p>
+            <p class="caviteDescForPhone">Welcome to the vibrant 8<sup>th</sup> Congressional District of Cavite - 
+                where history meets progress and community thrives! Discover a land of adverse landscapes,
+                 rich natural heritage, and dynamic opportunities as we unite to build a better future.</p>
+        </div>
+
     </div>
 
     <!-- modal -->

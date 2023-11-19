@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/municipalityMainCss.css">
+    <link rel="stylesheet" href="../../css/municipality/mendez.css">
+    <title>Mendez-Nuñez</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+      <nav class="nav">
+          <ul class="nav justify-content-start">
+              <li class="nav-item">
+                  <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../startToExplore.html">HOME</a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="nav">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <a class="navbar-brand nav-link active navBtn" href="../aboutUs.html">ABOUT US</a> 
+              </li>
+          </ul>
+      </nav>
+  </nav>   
+  
+    <!-- carousel image for header -->
+    <div id="defaultCarousel" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="../../images/mendez/whereToEat/resto/mannaCafeAndRestaurant/mannaCover.jpg" class="d-block w-100">
+            </div>
+            <!-- use this to locate the image you want to add in the list, THE LIST IS ON THE JAVASCRIPT FILE NAMED: mendezHeaderCarousel.js -->
+            <!-- <div class="carousel-item">
+              <img src="../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" class="d-block w-100" alt="...">
+            </div> -->
+
+        </div>
+    </div>
+    
+    <div id="carouselWhereToEat" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/mendez/whereToEat/resto/juddiesBulaloAtInihawExpress/juddiesCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselWhereToStay" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/mendez/whereToStay/resort/cabanaDeAceron/cabanaDeAceronCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+    </div>
+    
+    <div id="carouselWhereToExplore" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/mendez/whereToExplore/zoo/yokisFarm/yokisFarmCover.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../../images/mendez/whereToExplore/zoo/paradozooThemeFarm/paradizooCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+      </div>
+    </div>
+
+    <!-- shield to prevent hovering the carousel -->
+    <div class="carouselShield"></div>
+
+    <!-- header -->
+    <div class="headerWrapper">
+        <div class="blurBg container">
+            <p class="tagaytayWord tagaytayLabel">MENDEZ-NUÑEZ</p>
+            <p class="shortDesc">Discover the hidden gem of Mendez, Cavite, Philippines, where the perfect 
+                fusion of nature and tranquility awaits. Immerse yourself in the stunning landscapes of 
+                vineyards and fruit orchards, indulge in farm-to-table experiences, and take in the 
+                awe-inspiring views of the Taal Volcano. Experience a serene escape surrounded by nature's 
+                beauty, making Mendez an ideal destination for relaxation and rejuvenation.</p>
+        </div>
+
+        <div class="choices">
+
+            <a href="#whereToEat" onclick="revealWhereToEat(), insertContentToWhereToEat()">
+                <div class="whereToBtn whereToEatBtn">
+                    <img src="../../images/mendez/wheretoeatMendezButton.png" alt="where to eat picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Eat</p>
+                </div>
+            </a>
+
+            <a href="#whereToStay"  onclick="revealWhereToStay(), insertContentToWhereToStay()">
+                <div class="whereToBtn">
+                    <img src="../../images/mendez/wheretostayMendezButton.png" alt="where to stay picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Stay</p>
+                </div>
+            </a>
+
+            <a href="#whereToExplore"  onclick="revealWhereToExplore()">
+                <div class="whereToBtn">
+                    <img src="../../images/mendez/wheretoexploreMendezButton.png" alt="where to explore picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Explore</p>
+                </div>
+            </a>
+
+            <!-- <a href="#whereToChurches"  onclick="revealWhereToChurches()">
+                <div class="whereToBtn">
+                    <img src="../../images/tagaytay/whereToOtherBg.png" alt="other destination picture" class="whereToPic">
+                    <p class="whereToLabel">Churches</p>
+                </div>
+            </a> -->
+
+        </div> <!--choices-->
+    </div>
+    <!-- body -->
+
+    <!-- WHERE TO EAT -->
+    <div class="bodyWrapper" id="whereToEat">
+        <p class="bodyTitle">WHERE TO EAT</p> 
+
+        <p class="choiceName">Restaurants</p>
+
+        <!-- first row of choices for restaurants-->
+        <div class="destination resto">
+            <div class="choicesWrapper">
+              
+                <a href="../destination/mendez/whereToEat/resto/eduardosGrillAndResto.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/resto/eduardosGrillAndResto/eduardosCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Eduardo's Grill and Resto</h5>
+                            <p class="card-text desc">Anuling Cerca 1</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/mendez/whereToEat/resto/juddiesBulaloAtInihawExpress.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/resto/juddiesBulaloAtInihawExpress/juddiesCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">JUDDIES Bulalo at Inihaw Express</h5>
+                            <p class="card-text desc">Galicia I</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/mendez/whereToEat/resto/mannaCafeAndRestaurant.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/resto/mannaCafeAndRestaurant/mannaCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">MANNA Cafe and Restaurant</h5>
+                            <p class="card-text desc">Anuling Lejos II</p>
+                        </div>
+                    </div>
+                </a>
+                 
+                <a href="../destination/mendez/whereToEat/resto/theTapsishopMendez.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/resto/theTapsishopMendez/tapsishopCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">The Tapsishop Mendez</h5>
+                            <p class="card-text desc">Anuling Lejos I</p>
+                        </div>
+                    </div>
+                </a>
+                 
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+      <p class="choiceName">Cafes</p>
+
+        <!-- first row of choices for cafe -->
+        <div class="destination cafesResto">
+            <div class="choicesWrapper">
+            
+                <a href="../destination/mendez/whereToEat/cafe/cafeJulita.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/cafe/cafeJulita/cafeJulitaCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Cafe Julita</h5>
+                            <p class="card-text desc">Anuling Cerca II</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToEat/cafe/kapeñaPastriesAndBrews.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/cafe/kapenaPastriesAndBrews/kapeñaCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">KaPeña Pastries and Brews</h5>
+                            <p class="card-text desc">Anuling Lejos I</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToEat/cafe/mugnifico.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/cafe/mugnifico/mugnificoCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Mugnifico</h5>
+                            <p class="card-text desc">Palocpoc II</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToEat/cafe/noonCafe.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToEat/cafe/noonCafe/noonCafeCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">NOON Cafe</h5>
+                            <p class="card-text desc">Anuling Lejos II</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+    </div> <!--where to eat-->
+
+    <!-- WHERE TO STAY -->
+    <div class="bodyWrapper" id="whereToStay">
+        <p class="bodyTitle">WHERE TO STAY</p> 
+
+        <p class="choiceName">Hotels</p>
+
+        <!-- choices for hotel -->
+        <div class="destination hotel">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/mendez/whereToStay/hotel/epFarmTagaytay.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToStay/hotel/epFarmTagaytay/epFarmCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">EP FARM TAGAYTAY - Beauty and Relaxation Farm</h5>
+                            <p class="card-text desc">Anuling Cerca I</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Resorts</p>
+
+        <!-- choices for Resort/Hotel Resort -->
+        <div class="destination resort">
+            <div class="choicesWrapper">
+                
+
+                <a href="../destination/mendez/whereToStay/resort/cabañaDeAceron.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToStay/resort/cabanaDeAceron/cabanaDeAceronCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Cabaña De Aceron</h5>
+                            <p class="card-text desc">Anuling Cerca I</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToStay/resort/enchanteFarm.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToStay/resort/enchanteFarm/enchanteFarmCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Enchante Farm</h5>
+                            <p class="card-text desc">Palocpoc I</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToStay/resort/juanasPrivateResortTagaytay.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToStay/resort/juanasPrivateResortTagaytay/juanasPrivateResortCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Juana's Private Resort Tagaytay</h5>
+                            <p class="card-text desc">Galacia I</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToStay/resort/kinshipsResort.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToStay/resort/kinshipsResort/kinshipsCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Kinship's Resort</h5>
+                            <p class="card-text desc">Galacia I</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToStay/resort/stJuliansSereneResort.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToStay/resort/stJuliansSereneResort/stJuliansCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">St. Julian's Serene Resort</h5>
+                            <p class="card-text desc">Miguel Mojica</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/mendez/whereToStay/resort/villaDoroteoPrivateResort.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToStay/resort/villaDoroteoPrivateResort/villaDoroteoCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Villa Doroteo Private Resort</h5>
+                            <p class="card-text desc">Banayad</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to stay-->
+
+    <!-- WHERE TO EXPLORE -->
+    <div class="bodyWrapper" id="whereToExplore">
+        <p class="bodyTitle">WHERE TO EXPLORE</p> 
+
+        <p class="choiceName">Zoo</p>
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/mendez/whereToExplore/zoo/paradizooThemeFarm.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToExplore/zoo/paradozooThemeFarm/paradizooCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Paradizoo Theme Farm</h5>
+                            <p class="card-text desc">Panungyan I</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="../destination/mendez/whereToExplore/zoo/yokisFarm.html">
+                    <div class="card">
+                        <img src="../../images/mendez/whereToExplore/zoo/yokisFarm/yokisFarmCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Yoki's Farm</h5>
+                            <p class="card-text desc">Palocpoc I</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to explore-->
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+    
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../javascript/modified/modifiedRevealChoicesWithOutChurches.js"></script>
+    <script src="../../javascript/municipality/mendezHeaderCarousel.js"></script>
+  </body>
+</html>

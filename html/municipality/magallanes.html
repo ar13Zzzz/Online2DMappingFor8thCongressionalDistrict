@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/municipalityMainCss.css">
+    <link rel="stylesheet" href="../../css/municipality/magallanes.css">
+    <title>Magallanes</title>
+</head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+      <nav class="nav">
+          <ul class="nav justify-content-start">
+              <li class="nav-item">
+                  <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../startToExplore.html">HOME</a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="nav">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <a class="navbar-brand nav-link active navBtn" href="../aboutUs.html">ABOUT US</a> 
+              </li>
+          </ul>
+      </nav>
+  </nav>   
+  
+    <!-- carousel image for header -->
+    <div id="defaultCarousel" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="../../images/magallanes/whereToExplore/naturalAttraction/buhayForest/buhayForestCover.jpg" class="d-block w-100">
+            </div>
+            <!-- use this to locate the image you want to add in the list, THE LIST IS ON THE JAVASCRIPT FILE NAMED: magallanesHeaderCarousel.js -->
+            <!-- <div class="carousel-item">
+              <img src="../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" class="d-block w-100" alt="...">
+            </div> -->
+
+        </div>
+    </div>
+
+    <div id="carouselWhereToEat" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/magallanes/whereToEat/resto/aripungyaw/aripungyawCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselWhereToStay" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../../images/magallanes/whereToStay/hotel/papingsStaycationAndCampsite/papingsCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+    </div>
+    
+    <div id="carouselWhereToExplore" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/magallanes/whereToExplore/naturalAttraction/buhayForest/buhayForestCover.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../../images/magallanes/whereToExplore/naturalAttraction/utodRiverAndFalls/utodCover.jpg" class="d-block w-100" alt="...">
+          </div>
+
+      </div>
+    </div>
+    
+    <div id="carouselChurches" class="carousel slide carousel-fade tagaytayBgImage" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="1500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="../../images/magallanes/churches/nuestraSenoraDeGuiaParish/nuestraSenoraCover.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- shield to prevent hovering the carousel -->
+    <div class="carouselShield"></div>
+
+    <!-- header -->
+    <div class="headerWrapper">
+        <div class="blurBg container">
+            <p class="tagaytayWord tagaytayLabel">MAGALLANES</p>
+            <p class="shortDesc">Escape to the idyllic beauty of Magallanes, Cavite, Philippines, 
+                where lush greenery, pristine waterfalls, and tranquil rivers await. Indulge in 
+                the serenity of nature as you explore stunning hiking trails, experience 
+                exhilarating water activities, and immerse yourself in the town's laid-back charm, 
+                offering a perfect retreat from the bustling city life.</p>
+        </div>
+
+        <div class="choices">
+
+            <a href="#whereToEat" onclick="revealWhereToEat(), insertContentToWhereToEat()">
+                <div class="whereToBtn whereToEatBtn">
+                    <img src="../../images/magallanes/wheretoeatMagallanesButton.png" alt="where to eat picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Eat</p>
+                </div>
+            </a>
+
+            <a href="#whereToStay"  onclick="revealWhereToStay(), insertContentToWhereToStay()">
+                <div class="whereToBtn">
+                    <img src="../../images/magallanes/wheretostayMagallanesButton.png" alt="where to stay picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Stay</p>
+                </div>
+            </a>
+
+            <a href="#whereToExplore"  onclick="revealWhereToExplore()">
+                <div class="whereToBtn">
+                    <img src="../../images/magallanes/wheretoexploreMagallanesButton.png" alt="where to explore picture" class="whereToPic">
+                    <p class="whereToLabel">Where To Explore</p>
+                </div>
+            </a>
+
+            <a href="#whereToChurches"  onclick="revealWhereToChurches()">
+                <div class="whereToBtn">
+                    <img src="../../images/magallanes/churchesMagallanesButton.png" alt="other destination picture" class="whereToPic">
+                    <p class="whereToLabel">Churches</p>
+                </div>
+            </a>
+
+        </div> <!--choices-->
+    </div>
+    <!-- body -->
+
+    <!-- WHERE TO EAT -->
+    <div class="bodyWrapper" id="whereToEat">
+        <p class="bodyTitle">WHERE TO EAT</p> 
+
+        <p class="choiceName">Restaurants</p>
+
+        <!-- first row of choices for restaurants-->
+        <div class="destination resto">
+            <div class="choicesWrapper">
+              
+                <a href="../destination/magallanes/whereToEat/resto/aripungyaw.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToEat/resto/aripungyaw/aripungyawCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Aripungyaw</h5>
+                            <p class="card-text desc">Urdaneta</p>
+                        </div>
+                    </div>
+                </a>
+                  
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+        <p class="choiceName">Cafes</p>
+
+        <!-- first row of choices for cafes -->
+        <div class="destination cafesResto">
+            <div class="choicesWrapper">
+            
+                <a href="../destination/magallanes/whereToEat/cafe/earthsCupCoffeeAndCacaoFarm.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToEat/cafe/earthsCupCoffeeAndCacaoFarm/earthsCupCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Earth's Cup Coffee and Cacao Farm</h5>
+                            <p class="card-text desc">Ramirez</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/magallanes/whereToEat/cafe/kniCoffeeAndSnacks.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToEat/cafe/kniCoffeeAndSnacks/kniCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">KNI Coffee and Snacks</h5>
+                            <p class="card-text desc">Poblacion IV</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="../destination/magallanes/whereToEat/cafe/salipitCoffeeFarm.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToEat/cafe/salipitCoffeeFarm/salipitCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Salipit Coffee Farm</h5>
+                            <p class="card-text desc">Urdaneta</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!--wrapper-->
+        </div><!--destinations-->
+
+    </div> <!--where to eat-->
+
+    <!-- WHERE TO STAY -->
+    <div class="bodyWrapper" id="whereToStay">
+        <p class="bodyTitle">WHERE TO STAY</p> 
+
+        <p class="choiceName">Hotels</p>
+
+        <!-- choices for hotel -->
+        <div class="destination hotel">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/magallanes/whereToStay/hotel/papingsStaycationAndCampsite.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToStay/hotel/papingsStaycationAndCampsite/papingsCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">PAPINGS Staycation and Campsite</h5>
+                            <p class="card-text desc">Caluangan</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+        <p class="choiceName">Resorts</p>
+
+        <!-- choices for Resort/Hotel Resort -->
+        <div class="destination resort">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/magallanes/whereToStay/resort/ePlaceResort.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToStay/resort/eplaceResort/ePlaceCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">E-place Resort</h5>
+                            <p class="card-text desc">Ramirez</p>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="../destination/magallanes/whereToStay/resort/theBrut.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToStay/resort/theBrut/theBrutCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">The Brut</h5>
+                            <p class="card-text desc">Kabulusan</p>
+                        </div>
+                    </div>
+                </a>
+        
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to stay-->
+
+    <!-- WHERE TO EXPLORE -->
+    <div class="bodyWrapper" id="whereToExplore">
+        <p class="bodyTitle">WHERE TO EXPLORE</p> 
+
+        <p class="choiceName">Natural Attractions</p>
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/magallanes/whereToExplore/natural/buhayForest.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToExplore/naturalAttraction/buhayForest/buhayForestCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Buhay Forest</h5>
+                            <p class="card-text desc">Ramirez</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="../destination/magallanes/whereToExplore/natural/utodRiverAndFalls.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/whereToExplore/naturalAttraction/utodRiverAndFalls/utodCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Utod River and Falls</h5>
+                            <p class="card-text desc">Tua</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div> <!--where to explore-->
+
+    <!-- CHURCHES -->
+    <div class="bodyWrapper" id="whereToChurches">
+        <p class="bodyTitle">CHURCHES</p> 
+
+        <!-- choices for resto -->
+        <div class="destination zoo">
+            <div class="choicesWrapper">
+                
+                <a href="../destination/magallanes/churches/nuestraSeñoraDeGuiaParish.html">
+                    <div class="card">
+                        <img src="../../images/magallanes/churches/nuestraSenoraDeGuiaParish/nuestraSenoraCover.jpg" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title title">Nuestra Señora De Guia Parish</h5>
+                            <p class="card-text desc">Poblacion III</p>
+                        </div>
+                    </div>
+                </a>
+        
+            </div><!--wrapper-->
+        </div><!--destinations-->
+        
+    </div><!--churches-->
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+    
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../javascript/revealChoices.js"></script>
+    <script src="../../javascript/municipality/magallanesHeaderCarousel.js"></script>
+  </body>
+</html>
