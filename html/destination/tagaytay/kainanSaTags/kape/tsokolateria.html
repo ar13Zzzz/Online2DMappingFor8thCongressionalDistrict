@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
     <link rel="stylesheet" href="../../../../../css/destination/tagaytay/whereToEatTagaytay/kape/tsokolateria.css">
     <title>Tsokolateria</title>
 <body>
@@ -30,7 +31,7 @@
     <!-- header image -->
     <img src="../../../../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCover.jpg" alt="Cover Image" class="headerImage">
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Indulge in a chocolate lover's paradise at Tsokolateria Tagaytay! Immerse
              yourself in the rich flavors of Filipino cacao amidst captivating views of Taal Volcano - a
               delectable experience not to be missed.
@@ -55,51 +56,48 @@
     <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
         <div class="routeWrapper"> <!--route wrapper-->
             <div class="mainRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/2/embed?mid=1lTvfS0ZeG0qemrroxIS0AGeHX1OcLHg&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d7738.864777618693!2d120.95298809159938!3d14.110650595278594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m5!1s0x33bd771835e8f4a7%3A0xaabe641513db1f1b!2sGorio%E2%80%99s%20Roadside%20Restaurant%2C%20Tagaytay%20-%20Nasugbu%20Highway%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.10596!2d120.95499099999999!4m5!1s0x33bd7766a897e85f%3A0x61ba3f3ea4fe6e61!2sTsokolateria%2C%20The%20Boutique%20Bed%20%26%20Breakfast%2C%20Emilio%20Aguinaldo%20Highway%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.112045199999999!2d120.9592776!5e0!3m2!1sen!2sph!4v1700355420984!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1WI5w3O4BRwz_7nf01b9amxpGkWwfGJ0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m38!1m12!1m3!1d7738.801115572367!2d120.95305654159944!3d14.112525445271903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m23!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m3!3m2!1d14.117865799999999!2d120.96031529999999!4m5!1s0x33bd771835e8f4a7%3A0xaabe641513db1f1b!2sGorio%E2%80%99s%20Roadside%20Restaurant%2C%20Tagaytay%20-%20Nasugbu%20Highway%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.10596!2d120.95499099999999!4m5!1s0x33bd7766a897e85f%3A0x61ba3f3ea4fe6e61!2sTsokolateria%2C%20The%20Boutique%20Bed%20%26%20Breakfast%2C%20Emilio%20Aguinaldo%20Highway%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.112045199999999!2d120.9592776!5e0!3m2!1sen!2sph!4v1700355448247!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="legendWrapper">
                 <!-- route button -->
                 <div class="btn-group dropend">
-                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
                         Routes
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
                     </ul>
                 </div><!-- route button -->
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>Silang Junction South, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Nearest Landmark
-                </button>
-                </h5>
-            </div>
-        
-            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                <div class="card-body">
-                    In front of Ayala Mall Serin (Silang Junction South, Tagaytay City)
-                </div><!--note for the nearest landmark-->
-            </div>
+    <div class="frontWrapper">
+        <img src="../../../../../images/tagaytay/whereToEat/cafe/tsokolateria/tsokolateriaCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Silang Junction South, Tagaytay City</p>
+    </div>
 
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+                In front of Ayala Mall Serin (Silang Junction South, Tagaytay City)
+            </p>
         </div>
     </div>
+
+  </div>
+  
     <!-- appearing back to top button -->
     <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
     <link rel="stylesheet" href="../../../../../css/destination/tagaytay/whereToEatTagaytay/korean/bonchon.css">
     <title>Bonchon</title>
 <body>
@@ -30,7 +31,7 @@
     <!-- header image -->
     <img src="../../../../../images/tagaytay/whereToEat/koreanResto/bonchonFora/bonchonCover.jpg" alt="Cover Image" class="headerImage">
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Relish Korean fried chicken and Asian fusion dishes at Bonchon. This restaurant offers a 
             tasty blend of Korean and Filipino flavors.
         </p>
@@ -54,7 +55,7 @@
     <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
         <div class="routeWrapper"> <!--route wrapper-->
             <div class="mainRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1ivwyFpF8_5Jsvi1bUfprZzpSPIiajbY&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3869.34995186164!2d120.95877702507349!3d14.115505636315381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m5!1s0x33bd77472f01cb45%3A0xe40db33e92ac87cf!2sBonchon%20Fora%20Tagaytay%2C%20Tagaytay%20Rotonda%2C%20Silang%20Junction%20North%2C%20Tagaytay%2C%20Cavite!3m2!1d14.115853999999999!2d120.9606113!5e0!3m2!1sen!2sph!4v1700348132728!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="legendWrapper">
                 <!-- route button? -->
@@ -63,32 +64,29 @@
                 </div>
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../images/tagaytay/whereToEat/koreanResto/bonchonFora/bonchonCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>Silang Junction South, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Nearest Landmark
-                </button>
-                </h5>
-            </div>
-        
-            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                <div class="card-body">
-                    Inside Fora Mall Tagaytay (Silang Junction South, Tagaytay City)
-                </div><!--note for the nearest landmark-->
-            </div>
+    <div class="frontWrapper">
+        <img src="../../../../../images/tagaytay/whereToEat/koreanResto/bonchonFora/bonchonCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Silang Junction South, Tagaytay City</p>
+    </div>
 
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+                Inside Fora Mall Tagaytay (Silang Junction South, Tagaytay City)
+            </p>
         </div>
     </div>
+
+  </div>
+  
     <!-- appearing back to top button -->
     <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
 

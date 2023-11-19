@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
     <link rel="stylesheet" href="../../../../../../../css/destination/tagaytay/whereToEatTagaytay/restoLang/secondRow/ceciliasDiners.css">
     <title>Diner's ORIGINAL BULALO</title>
 </head>
@@ -32,7 +33,7 @@
     <img src="../../../../../../../images/tagaytay/whereToEat/restoLang/secondRow/ceciliasAllDayBreakfastAndResto/allDaysDinersOrigBul/dinersCover.jpg" alt="Cover Image" class="headerImage">
 
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Satisfy your bulalo (beef shank stew) cravings at Diner's Original Bulalo. This eatery is known for its hearty and flavorful bulalo.
         </p>
         <p class="businessName">Diner's ORIGINAL BULALO</p>
@@ -55,51 +56,52 @@
     <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
         <div class="routeWrapper"> <!--route wrapper-->
             <div class="mainRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1T8Qp9iAUIOK5RPUB2ZkyXpAwuwU-DOI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7739.030760877685!2d120.94586681642214!3d14.105761233140022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33bd776053693423%3A0x1640e546f506ca16!2sTagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1151444!2d120.96193559999999!4m5!1s0x33bd77726b2b031f%3A0x91319c804e94d5fe!2sDiner&#39;s%20Bulalo%20Restaurant%2C%20Magallanes%20Drive%2C%20Silang%2C%20Cavite!3m2!1d14.102703499999999!2d120.9521405!5e0!3m2!1sen!2sph!4v1700300222677!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1U2fxb_iEYqFUKI6xHxbbvsVyReIzCx4&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d7738.795402342892!2d120.95337700166398!3d14.112693688192952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd776053693423%3A0x1640e546f506ca16!2sTagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1151444!2d120.96193559999999!4m3!3m2!1d14.117673799999999!2d120.9603425!4m5!1s0x33bd77726b2b031f%3A0x91319c804e94d5fe!2sDiner&#39;s%20Bulalo%20Restaurant%2C%20Magallanes%20Drive%2C%20Silang%2C%20Cavite!3m2!1d14.102703499999999!2d120.9521405!5e0!3m2!1sen!2sph!4v1700300331071!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d15477.147692475688!2d120.94809841463835!3d14.119207136651928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd776053693423%3A0x1640e546f506ca16!2sTagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1151444!2d120.96193559999999!4m3!3m2!1d14.125687699999999!2d120.94365379999999!4m5!1s0x33bd77726b2b031f%3A0x91319c804e94d5fe!2sDiner&#39;s%20Bulalo%20Restaurant%2C%20Magallanes%20Drive%2C%20Silang%2C%20Cavite!3m2!1d14.102703499999999!2d120.9521405!5e0!3m2!1sen!2sph!4v1700300347155!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="legendWrapper">
                 <!-- route button -->
                 <div class="btn-group dropend">
-                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
                         Routes
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #2</button></li>
                     </ul>
                 </div><!-- route button -->
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../../../images/tagaytay/whereToEat/restoLang/secondRow/ceciliasAllDayBreakfastAndResto/allDaysDinersOrigBul/dinersCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>Silang Junction South, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Nearest Landmark
-            </button>
-            </h5>
-        </div>
-    
-        <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-            <div class="card-body">
-                100 meters from Total Gasoline Station (Mendez Crossing East, Tagaytay City)
-            </div><!--note for the nearest landmark-->
-        </div>
+    <div class="frontWrapper">
+        <img src="../../../../../../../images/tagaytay/whereToEat/restoLang/secondRow/ceciliasAllDayBreakfastAndResto/allDaysDinersOrigBul/dinersCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Silang Junction South, Tagaytay City</p>
+    </div>
 
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+                pakiayos eto yung branch na malapit sa hiraya
+            </p>
         </div>
     </div>
+
+  </div>
 
     <!-- other branches -->
     <div class="container-fluid otherBranchesContainer">
@@ -112,7 +114,7 @@
                     
                     <a href="ceciliasAllDay.html">
                         <div class="card">
-                            <img src="../../../../../../../images/tagaytay/whereToEat//restoLang/secondRow/ceciliasAllDayBreakfastAndResto/allDaysSilangJunctionSouth/ceciliasAllDayAndRestaurantCover.jpg" class="card-img-top" alt="...">
+                            <img src="../../../../../../../images/tagaytay/whereToEat//restoLang/secondRow/ceciliasAllDayBreakfastAndResto/allDaysSilangJunctionSouth/ceciliasAllDayAndRestaurantCover.jpg" class="card-img-top" loading="lazy">
                             <div class="card-body">
                                 <h5 class="card-title title">Cecilia's ALL DAY BREAKFAST AND RESTAURANT</h5>
                                 <p class="card-text desc">Silang Junction South</p>

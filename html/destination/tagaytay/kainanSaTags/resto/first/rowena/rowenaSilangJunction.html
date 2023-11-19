@@ -32,7 +32,7 @@
     <img src="../../../../../../../images/tagaytay/whereToEat/restoLang/firstRow/rowenasPasalubongTags/rowenasPasalubongEmilioAguinaldoHwy/rowenasEmilioAguinaldHwyCover.jpg" alt="Cover Image" class="headerImage">
 
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Relish Filipino comfort food and find local souvenirs at Rowenas Pasalubong and Restaurant. It's a one-stop destination to enjoy delicious meals and shop for
              traditional Tagaytay keepsakes.
         </p>
@@ -67,45 +67,41 @@
             <div class="legendWrapper">
                 <!-- route button -->
                 <div class="btn-group dropend">
-                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
                         Routes
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
                     </ul>
                 </div><!-- route button -->
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../../../images/tagaytay/whereToEat/restoLang/firstRow/rowenasPasalubongTags/rowenasPasalubongEmilioAguinaldoHwy/rowenasEmilioAguinaldHwyCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>Maharlika East, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Nearest Landmark
-            </button>
-            </h5>
-        </div>
-    
-        <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-            <div class="card-body">
+    <div class="frontWrapper">
+        <img src="../../../../../../../images/tagaytay/whereToEat/restoLang/firstRow/rowenasPasalubongTags/rowenasPasalubongEmilioAguinaldoHwy/rowenasEmilioAguinaldHwyCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Maharlika East, Tagaytay City</p>
+    </div>
+
+    <div class="nearestLandmarkContainer">
+        <img src="../../../../../../../images/tagaytay/whereToEat/cafe/starbs/starbsReserveHiraya/starbsHirayaCover.jpg" alt="..." class="nearestLandmarkImg">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNote">
                 220 meters from <a href="../../../kape/starbs/starbsHiraya.html" data-bs-toggle="tooltip" data-bs-title="click for more info">Starbucks Reserve Hiraya</a>
-            </div><!--note for the nearest landmark-->
-        </div>
-
+            </p>
         </div>
     </div>
+
+  </div>
 
     <!-- appearing back to top button -->
     <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>

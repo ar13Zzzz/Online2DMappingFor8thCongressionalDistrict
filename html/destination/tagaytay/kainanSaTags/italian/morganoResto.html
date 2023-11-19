@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
     <link rel="stylesheet" href="../../../../../css/destination/tagaytay/whereToEatTagaytay/italy/morgano.css">
     <title>Morgano Restaurant</title>
 <body>
@@ -26,7 +27,7 @@
     <!-- header image -->
     <img src="../../../../../images/tagaytay/whereToEat/italianResto/morganoResto/morganoCover.jpg" alt="Cover Image" class="headerImage">
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Indulge in Italian cuisine with a view at Morgano Restaurant. It's a place to enjoy the 
             flavors of Italy while taking in scenic surroundings.
         </p>
@@ -50,56 +51,53 @@
     <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
         <div class="routeWrapper"> <!--route wrapper-->
             <div class="mainRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=16ySbGaiuiVg-0N9FjfvTRWTZXaOcCIM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7738.5350619929!2d120.95535379160009!3d14.120358095244042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m5!1s0x33bd79643c61f19b%3A0xed3c23d305b0d8d9!2sMorgano%20Restaurant%2C%20Arnoldus%20Road%2C%20Tagaytay%2C%20Cavite!3m2!1d14.125392699999999!2d120.96057689999999!5e0!3m2!1sen!2sph!4v1700356841225!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1Q9oDEWE3lzKy57K5rnd__R6vIsdYX9s&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d7738.5350619928995!2d120.95696184159988!3d14.12035809524408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m3!3m2!1d14.118547699999999!2d120.96464499999999!4m5!1s0x33bd79643c61f19b%3A0xed3c23d305b0d8d9!2sMorgano%20Restaurant%2C%20Arnoldus%20Road%2C%20Tagaytay%2C%20Cavite!3m2!1d14.125392699999999!2d120.96057689999999!5e0!3m2!1sen!2sph!4v1700356870044!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1TDu75eMPvydzu7zkfH73Ce7gBJpLXOU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d8686.035728522593!2d120.95982136200152!3d14.12497562202775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m3!3m2!1d14.128886!2d120.96659199999999!4m5!1s0x33bd79643c61f19b%3A0xed3c23d305b0d8d9!2sMorgano%20Restaurant%2C%20Arnoldus%20Road%2C%20Tagaytay%2C%20Cavite!3m2!1d14.125392699999999!2d120.96057689999999!5e0!3m2!1sen!2sph!4v1700356898355!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="legendWrapper">
                 <!-- route button -->
                 <div class="btn-group dropend">
-                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
                         Routes
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
                     </ul>
                 </div><!-- route button -->
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../images/tagaytay/whereToEat/italianResto/morganoResto/morganoCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>Arnaldus Road, Maitim 2nd East, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Nearest Landmark
-                </button>
-                </h5>
-            </div>
-        
-            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                <div class="card-body">
-                    230 meters from Aquila Crystal Palace Tagaytay (Maitim 2nd East, Tagaytay City)
-                </div><!--note for the nearest landmark-->
-            </div>
+    <div class="frontWrapper">
+        <img src="../../../../../images/tagaytay/whereToEat/italianResto/morganoResto/morganoCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Arnaldus Road, Maitim 2nd East, Tagaytay City</p>
+    </div>
 
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+                230 meters from Aquila Crystal Palace Tagaytay (Maitim 2nd East, Tagaytay City)
+            </p>
         </div>
     </div>
+
+  </div>
+  
     <!-- appearing back to top button -->
     <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
 
