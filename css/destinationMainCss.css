@@ -1,5 +1,6 @@
 body {
     scroll-behavior: smooth;
+    background-color: #f8f9fa;
 }
 /* nav bar */
 .navbar {
@@ -49,15 +50,15 @@ body {
     flex-direction: column-reverse;
     top: 0vw;
     left: 0vw;
-    background-color: #1f402792;
+    background-color: #1f412896;
     width: 50%;
     height: 100%;
-    box-shadow: 50px 0px 50px rgba(0, 0, 0, 0.318);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     overflow: hidden;
     animation: revealBlurBg 2s 1;
     -webkit-animation: revealBlurBg 2s 1;
+    box-shadow: 50px 0px 50px rgba(0, 0, 0, 0.197);
 }
 .businessName {
     color: rgb(250, 250, 250);
@@ -133,7 +134,7 @@ body {
     height: 90%;
 }
 .routeWrapper {
-    width: 60vw;
+    width: 100%;
     height: 100%;
 }
 .routeImg {
@@ -159,6 +160,9 @@ body {
     margin-left: 1vw;
     text-align: center;
 }
+.legendWrapper .dropend .dropdown-menu {
+    min-width: 6rem;
+}
 .legendWrapper .routeBtn:focus, .routeBtn:active {
     background-color: #f8f9fa;
     outline: none !important;
@@ -171,99 +175,73 @@ body {
     color: #f8f9fa;
 }
 
-/* business cover and address */
+/* front image, address, and nearest landmark */
+.frontAndNearestLandmarkContainer {
+    position: relative;
+    z-index: 2;
+    background-color: #f8f9fa;
+    height: 50vw;
+    width: 100%;
+    padding: 2vw 3vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* front image and complete address */
 .frontWrapper {
     text-align: center;
-    margin-left: 2vw;
-    width: 31vw;
+    width: 35%;
     height: 100%;
-    background-color: rgb(250, 250, 250);
+    background-color: #1f4027;
     padding: 1vw;
 }
 .frontWrapper .cover {
     width: 100%;
     height: 80%;
-    object-fit: cover;
 }
 .frontWrapper p {
     padding-top: 1vw;
-    color: #1f4027;
+    color: #f8f9fa;
     font-size: 2vw;
 }
 
-/* nearest landmark note */
-#accordion {
-    width: 100%;
-    padding-top: 1vw;
-    margin-bottom: 1vw;
-    height: 100%;
+/* nearest landmark image and note */
+.nearestLandmarkContainer {
+    width: 60%;
     overflow: hidden;
-    position: relative;
-    z-index: 3;
-    background-color: white;
-}
-#accordion .card {
-    float: right;
-    width: 16.5vw;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-right: 3%;
-}
-#accordion  .btn {
-    box-shadow: none;
-}
-#accordion  .btn:active {
-    box-shadow: none;
-    color: #f3ecec;
-}
-#accordion .btn:hover, .btn:focus {
-    animation: scaled 300ms linear; /*animation: name duration timing function delay iteration-count direction fill-mode play-state*/
-    -webkit-animation: scaled 300ms linear;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    color: #f3ecec;
-    box-shadow: none;
-}
-
-#accordion .btn-link {
-    text-decoration: none;
-    margin: auto;
-    color: #f3ecec;
-    font-size: 1.5vw;
-    width: 100%;
-}
-#accordion .btn-link:active {
-    box-shadow: none;
-    color: #f3ecec;
-}
-#accordion .btn:focus .btn:hover{
-    box-shadow: none;
-    color: #f3ecec;
-} /*to remove the blue outline after clicking*/
-#accordion .btn-link:hover, .btn-link:focus {
-    text-decoration: none;
-    color: #f3ecec;
-    animation: scaled 300ms linear;
-    -webkit-animation: scaled 300ms linear;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-}
-
-#accordion .card-header {
-    padding: 0;
-    text-align: center;
+    padding: 1vw;
     background-color: #1f4027;
-    overflow: hidden;
 }
-#accordion .card-body {
-    background-color: #1f4027e0;
-    color: #ffffff;
-    font-size: 1.1vw;
+.nearestLandmarkImg {
+    width: 100%;
+    height: 70%;
 }
-#accordion #collapseOne .card-body a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bolder;
+#addressInsideNearestLandmark {
+    display: none;
+}
+.landmarkNoteContainer {
+    background-color: #f8f9fa;
+    width: 95%;
+    height: 9vw;
+    margin-top: 3vw;
+    margin-inline: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 1vw 1vw 1vw;
+}
+.landmarkNoteHeader {
+    /* display: none; */
+}
+.landmarkNote {
+    margin-top: 3vw;
+    font-size: 1.75vw;
+    color: #1f4027;
+}
+.landmarkNote a {
+    color: #1f4027;
+    font-weight: 700;
 }
 
 /* other branches */
@@ -272,10 +250,6 @@ body {
     z-index: 1;
     overflow: hidden;
     background-color: white;
-}
-.otherBranchesWrapper .destination .choicesWrapper a {
-    text-decoration: none;
-    color: #1f4027;
 }
 .otherBranchesWrapper {
     border: 1px solid #1f4027;
@@ -307,10 +281,14 @@ body {
     margin: 0vw 1vw 1vw 1vw;
     z-index: 6;
 }
+.otherBranchesWrapper .destination .choicesWrapper a {
+    text-decoration: none;
+    color: #1f4027;
+}
 /* card */
 .otherBranchesWrapper .card {
     /* position: static; */
-    width: 13vw;
+    width: 17vw;
     height: auto;
     margin:  0.5vw 1vw;
     border-radius: 10px;
@@ -375,7 +353,6 @@ body {
     z-index: 0;
     transform: translateY(-100px);
     -webkit-transform: translateY(-100px);
-    border: 1px solid red;
 }
 .backTopBtnWrapper {
     display: flex;
@@ -394,8 +371,8 @@ a {
 }
 
 .backBtn {
-    background-color: #2a6908;
     font-size: 1.5vw;
+    background-color: #2a6908;
     line-height: 1vw;
     padding: .5vw 2vw;
     border-radius: 10px 0px 0px 10px;
@@ -408,8 +385,8 @@ a {
 }
 
 .topBtn {
-    background-color: #1f4027;
     font-size: 1.5vw;
+    background-color: #1f4027;
     line-height: 1vw;
     padding: .5vw 2vw;
     border-radius: 0px 10px 10px 0px;
@@ -424,10 +401,6 @@ a {
 }
 
 /* animations to be added after scrolling */
-.swipeBlurBg {
-    animation: revealSampleImage 1s 1 reverse;
-    -webkit-animation: revealSampleImage 1s 1 reverse;
-}
 .sampleImagesAnimation {
     animation: revealSampleImage 1s 1;
     -webkit-animation: revealSampleImage 1s 1;
@@ -439,11 +412,11 @@ a {
     -webkit-animation: slideToLeft 1.3s 1;
     opacity: 1;
 }
-.slideDownCard {
-    animation: slideToDown 1.5s 1;
-    -webkit-animation: slideToDown 1.5s 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
+.frontAddressAndNearestLandmarkAnimation {
+    animation: revealFrontAddressAndNearestLandmrk 1s 1;
+    -webkit-animation: revealFrontAddressAndNearestLandmrk 1s 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
 }
 .revealOtherBranch {
     animation: revealFromLeft 3s ease 1;
@@ -456,6 +429,7 @@ a {
     transform: translateY(0);
     -webkit-transform: translateY(0);
 }
+
 
 /* animations */
 @keyframes scaled {
@@ -502,16 +476,6 @@ a {
         padding-left: 3vw;
     }
 }
-@keyframes slideToDown {
-    from {
-        transform: translateY(-100px);
-        -webkit-transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-    }
-}
 @keyframes revealFromLeft {
     from {
         width: 0%;
@@ -528,6 +492,16 @@ a {
     to {
         transform: translateY(0px);
         -webkit-transform: translateY(0px);
+    }
+}
+@keyframes revealFrontAddressAndNearestLandmrk {
+    0% {
+        transform: scale(.01, 0);
+        -webkit-transform: scale(.01, 0);
+    }
+    50% {
+        transform: scale(.01, 1);
+        -webkit-transform: scale(.01, 1);
     }
 }
 
@@ -580,6 +554,21 @@ a {
         -webkit-transform: scale(1);
     }
 
+    /* embedded route */
+    .routeAndFrontkWrapper {
+        height: 80vw;
+        margin: 1vw 0vw 0vw 0vw;
+        padding: 1vw;
+    }
+    .legendWrapper .routeBtn {
+        font-size: 3vw;
+        width: 25vw;
+    }
+    .dropdown-item {
+        font-size: 3vw;
+        padding: 0 0 0 3vw;
+    }
+
     /* legend text */
     .legendWrapper p {
         font-size: 2.3vw;
@@ -590,24 +579,8 @@ a {
         font-size: 2.5vw;
     }
 
-    /* nearest landmark note */
-    #accordion .card {
-        width: 32vw;
-    }
-    #accordion h5 {
-        font-size: 0;
-    }
-    #accordion .btn-link {
-        padding: 0vw;
-        font-size: 3vw;
-    }
-    #accordion .card-header {
-        padding: 0vw;
-    }
-    #accordion .card-body {
-        padding: .5vw 2vw 2vw 2vw;
-        font-size: 2.5vw;
-    }
+    /* front, address, and nearest landmark */
+
 
     /* other branches */
     .otherBranchesWrapper {
@@ -713,7 +686,7 @@ a {
         }
     }
     
-    #accordion {
+    .frontAndNearestLandmarkContainer {
         animation: slideToDown 3.8s linear 1;
         -webkit-animation: slideToDown 3.8s linear 1;
         transform: translateY(0vw);
@@ -721,8 +694,8 @@ a {
     }
     @keyframes slideToDown {
         0% {
-            transform: translateY(-160vw);
-            -webkit-transform: translateY(-160vw);
+            transform: translateY(-200vw);
+            -webkit-transform: translateY(-200vw);
         }
         100% {
             transform: translateY(0vw);
@@ -749,12 +722,10 @@ a {
     }
 
     .backTopBtnContainer {
-        /* animation: slideDownBackTopBtn 5s linear 1;
+        animation: slideDownBackTopBtn 5s linear 1;
         -webkit-animation: slideDownBackTopBtn 5s linear 1;
         transform: translateY(0);
-        -webkit-transform: translateY(0); */
-        animation: none;
-        transform: none;
+        -webkit-transform: translateY(0);
     }
     @keyframes slideDownBackTopBtn {
         0% {

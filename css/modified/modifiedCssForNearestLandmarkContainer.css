@@ -1,0 +1,62 @@
+/* front image and complete address */
+.frontWrapper {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+.frontWrapper .cover {
+    width: 80%;
+    height: 100%;
+}
+.frontWrapper p {
+    display: none;
+}
+
+/* nearest landmark image and note */
+.nearestLandmarkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+    overflow: hidden;
+    padding: 5%;
+}
+.nearestLandmarkImg {
+    display: none;
+}
+#addressInsideNearestLandmark {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1.5vw;
+    width: 100%;
+    height: 40%;
+    font-size: 1.75vw;
+}
+.landmarkNoteContainer {
+    width: 100%;
+    height: 40%;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.landmarkNoteHeader {
+    width: 100%;
+    background-color: #f0f0f0;
+    font-size: 1.5vw;
+    line-height: 3vw;
+    font-weight: 500;
+}
+.landmarkNote {
+    margin-top: 3vw;
+    font-size: 1.75vw;
+}
+.landmarkNote a {
+    color: #1f4027;
+    font-weight: 700;
+}

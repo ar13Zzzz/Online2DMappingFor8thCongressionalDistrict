@@ -1,0 +1,12 @@
+body {
+    background-color: #21c088;
+}
+.blurBg {
+    background-color: #21c08851;
+    padding-top: 25vw;
+}
+@media only screen and (max-width: 430px) {
+    .blurBg {
+        padding-top: 17vw;
+    }
+}

@@ -19,7 +19,7 @@
     -webkit-transform: scale(1.2);
 }
 
-#bgVideo {
+#bgVideoForPc, #bgVideoForPhone {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -27,6 +27,9 @@
     top: 0;
     left: 0;
     z-index: -1;
+}
+#bgVideoForPhone {
+    display: none;
 }
 .title {
     margin-top: 25vw;
@@ -75,6 +78,12 @@
         font-size: .5rem;
     }
 
+    #bgVideoForPc {
+        display: none;
+    }
+    #bgVideoForPhone {
+        display: block;
+    }
     .btnStartToExplore {
         width: 25vw;
         font-size: 2vw;

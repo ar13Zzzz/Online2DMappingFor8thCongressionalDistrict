@@ -5,7 +5,7 @@ a {
     text-decoration: none;
 }
 body {
-    background-image: url(../images/bgImage/aboutUsBg1.jpg);
+    background-image: url(../images/bgImage/aboutUsBgLandscape.jpg);
     background-size: cover;
 }
 .nav {
@@ -25,18 +25,19 @@ body {
     -webkit-transform: scale(1.2);
 }
 
-.profiles {
-    padding-top: 1%;
-}
 .containerProfile {
-    color: #f7f5f5;
+    color: #f8f9fa;
+}
+.profile {
+    margin-top: -.5vw;
+    height: 23vw;
 }
 .profilePicWrapper {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -45,22 +46,23 @@ body {
     height: 210px;
 }
 .profileMotto {
-    margin-top: calc(-1vw);
+    margin-top: -1vw;
+    font-size: 1.25vw;
 }
 .profileGmailLogo {
-    margin-top: calc(-2.5vw);
-    width: 20px;
-    height: 20px;
+    margin-top: -3vw;
+    width: 15px;
+    height: 15px;
 }
 .profiles .containerProfile .profile a {
     color: #ffffff;
-    border-bottom: 5vw;
+    font-size: 1.1vw;
     position: relative;
-    bottom: 1.1vw;
+    bottom: 1.5vw;
 }
 
 .profiles .containerProfile .profile a:hover {
-    color: #ffffff;
+    color: #0d6efd;
 }
 .profiles .containerProfile .profile .profilePic:hover {    
     animation: scaled 500ms ease 1 ;
@@ -86,5 +88,13 @@ body {
     }
     .nav a {
         font-size: .5rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    body {
+        background-image: url(../images/bgImage/aboutUsBgPortrate1.jpg);
+        background-size: contain;
+        background-position: 100vw 18vh;
     }
 }

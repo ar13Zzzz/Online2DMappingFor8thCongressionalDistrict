@@ -1,0 +1,17 @@
+body {
+    background-color: #0a0442;
+}
+.blurBg {
+    background-color: #0a044251;
+    padding-top: 25vw;
+}
+.tagaytayWord {
+    font-size: 3.75vw;
+    line-height: 3.75vw;
+}
+@media only screen and (max-width: 430px) {
+    .tagaytayWord {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+}
