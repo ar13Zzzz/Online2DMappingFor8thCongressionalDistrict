@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
+    <link rel="stylesheet" href="../../../../../css/destination/mendez/whereToStay/hotel/epFarmTagaytay.css">
+    <title>EP FARM Tagaytay - Beauty and Relaxation Farm</title>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+        <nav class="nav">
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../../../../startToExplore.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link active navBtn" href="../../../../aboutUs.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </nav>
+    </nav> 
+
+    <div class="headerContainer container-fluid">
+    <!-- header image -->
+    <img src="../../../../../images/mendez/whereToStay/hotel/epFarmTagaytay/epFarmCover.jpg" alt="Cover Image" class="headerImage">
+    <!-- blurred part -->
+    <div class="container-fluid blurBg">
+        <p class="businessDesc">EP FARM Tagaytay, nestled in Mendez, Cavite, transcends the 
+            ordinary hotel stay, offering a retreat into beauty and relaxation amidst the 
+            scenic landscapes of Tagaytay.
+        </p>
+        <p class="businessName">EP FARM Tagaytay - Beauty and Relaxation Farm</p>
+    </div>
+</div> 
+
+    <!-- sample images -->
+    <div class="sampleImagesWrapper">
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/mendez/whereToStay/hotel/epFarmTagaytay/IMG_20231106_201850_703.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/mendez/whereToStay/hotel/epFarmTagaytay/IMG_20231106_201857_422.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/mendez/whereToStay/hotel/epFarmTagaytay/IMG_20231106_201903_362.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/mendez/whereToStay/hotel/epFarmTagaytay/IMG_20231106_201913_251.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+    </div><!--sample images-->
+    
+    <!-- route -->
+    <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
+        <div class="routeWrapper"> <!--route wrapper-->
+            <div class="mainRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1WN9bqBOO0zFHk7EpI_yH2uS_Z4zAqX8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1epxKAMjCrbpihnE018XMfFzS9Ut9BFU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1g9MS1sijYh-fLBYXJIRg-hh1A_MzTC4&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer4" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=10NlSNHOf0_jSY6Fn1oyNJH-ZT8LLtZw&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div class="legendWrapper">
+                <!-- route button -->
+                <div class="btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                        Routes
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn4" onclick="revealAlternativeRoute4()">Route #4</button></li>
+                    </ul>
+                </div><!-- route button -->
+            </div><!--legend wrapper-->
+        </div><!--route wrapper-->
+        
+    </div><!-- route -->
+
+    <!-- nearest landmark note -->
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
+
+    <div class="frontWrapper">
+        <img src="../../../../../images/mendez/whereToStay/hotel/epFarmTagaytay/epFarmCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Anuling Cerca I, Mendez-nuñez</p>
+    </div>
+
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+              
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+
+
+    <!-- capsule back to top and back button -->
+    <div class="container-fluid backTopBtnContainer" data-animate="slideDownBackToptn">
+        <div class="backTopBtnWrapper container">
+            <button type="button" class="btn backBtn"><a href="../../../../municipality/mendez.html" style="color: #e9dfdf;">Back</a></button>
+            <button type="button" class="btn topBtn"><a href="#" style="color: #fff;">Top</a></button>
+        </div>
+    </div>
+    
+    <script src="../../../../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../../../../javascript/animationOfSampleImageOnScroll.js"></script>
+</body>
+</html>

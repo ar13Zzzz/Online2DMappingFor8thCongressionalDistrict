@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
+    <link rel="stylesheet" href="../../../../../css/destination/bailen/whereToExplore/natural/malibiclibicFalls.css">
+    <title>Malibic-libic Falls</title>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+        <nav class="nav">
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../../../../startToExplore.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link active navBtn" href="../../../../aboutUs.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </nav>
+    </nav> 
+
+    <div class="headerContainer container-fluid">
+    <!-- header image -->
+    <img src="../../../../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/malibiclibicCover.jpg" alt="Cover Image" class="headerImage">
+    <!-- blurred part -->
+    <div class="container-fluid blurBg">
+        <p class="businessDesc">Prepare to be captivated by the cascading beauty of Malibic-libic Falls. Hidden amidst the 
+            serene landscapes of Bailen, Cavite, this hidden gem invites you to take a refreshing dip in its cool waters 
+            and immerse yourself in the tranquil ambiance of nature.
+        </p>
+        <p class="businessName">Malibic-libic Falls</p>
+    </div>
+</div> 
+
+    <!-- sample images -->
+    <div class="sampleImagesWrapper">
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/IMG_20231106_110625_720.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/IMG_20231106_110629_334.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/IMG_20231106_110636_431.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/IMG_20231106_110642_908.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+    </div><!--sample images-->
+    
+    <!-- route -->
+    <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
+        <div class="routeWrapper"> <!--route wrapper-->
+            <div class="mainRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/3/embed?mid=1aYKDNPeJWxerSNmu23exvtMpGY_gMno&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1OrtV4GO8-o32sn3i8pxaz-rUO-irexE&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1gYvlG1apZyFaGYH1mL4SweJP95l0aQc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer4" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1ep2uzhyNnvrEGdpWEJv055_DfAlVsxY&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div class="legendWrapper">
+                <!-- route button -->
+                <div class="btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                        Routes
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn4" onclick="revealAlternativeRoute4()">Route #4</button></li>
+                    </ul>
+                </div><!-- route button -->
+            </div><!--legend wrapper-->
+        </div><!--route wrapper-->
+        
+    </div><!-- route -->
+
+    <!-- nearest landmark note -->
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
+
+    <div class="frontWrapper">
+        <img src="../../../../../images/bailen/whereToExplore/naturalAttraction/malibiclibicFalls/malibiclibicCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Lumipa, General Emilio Aguinaldo</p>
+    </div>
+
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+              
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+
+
+    <!-- capsule back to top and back button -->
+    <div class="container-fluid backTopBtnContainer" data-animate="slideDownBackToptn">
+        <div class="backTopBtnWrapper container">
+            <button type="button" class="btn backBtn"><a href="../../../../municipality/bailen.html" style="color: #e9dfdf;">Back</a></button>
+            <button type="button" class="btn topBtn"><a href="#" style="color: #fff;">Top</a></button>
+        </div>
+    </div>
+    
+    <script src="../../../../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../../../../javascript/animationOfSampleImageOnScroll.js"></script>
+</body>
+</html>

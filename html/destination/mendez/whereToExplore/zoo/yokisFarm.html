@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
+    <link rel="stylesheet" href="../../../../../css/destination/mendez/whereToExplore/zoo/yokisFarm.css">
+    <title>Yoki's Farm</title>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-fluid bg-body-tertiary nav">
+        <nav class="nav">
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="navbar-brand active nav-link navBtn" aria-current="page" href="../../../../startToExplore.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link active navBtn" href="../../../../aboutUs.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </nav>
+    </nav> 
+
+    <div class="headerContainer container-fluid">
+    <!-- header image -->
+    <img src="../../../../../images/mendez/whereToExplore/zoo/yokisFarm/yokisFarmCover.jpg" alt="Cover Image" class="headerImage">
+    <!-- blurred part -->
+    <div class="container-fluid blurBg">
+        <p class="businessDesc">Welcome to Yoki's Farm in Mendez, Cavite - a haven of 
+            agricultural delight! Immerse yourself in the lush greenery and vibrant 
+            charm of this organic paradise. From interactive farm tours to picking your 
+            own fresh produce, Yoki's Farm offers a unique and educational experience 
+            for every nature enthusiast.
+        </p>
+        <p class="businessName">Yoki's Farm</p>
+    </div>
+</div> 
+
+    <!-- sample images -->
+    <div class="sampleImagesWrapper">
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/mendez/whereToExplore/zoo/yokisFarm/IMG_20231106_205035_727.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/mendez/whereToExplore/zoo/yokisFarm/IMG_20231106_205041_936.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+        <div class="sampleImagesRow">
+            <img src="../../../../../images/mendez/whereToExplore/zoo/yokisFarm/IMG_20231106_205047_431.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+            <img src="../../../../../images/mendez/whereToExplore/zoo/yokisFarm/IMG_20231106_205055_869.jpg" class="sampleImages" data-animate="sampleImagesAnimation">
+        </div>
+    </div><!--sample images-->
+    
+    <!-- route -->
+    <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
+        <div class="routeWrapper"> <!--route wrapper-->
+            <div class="mainRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1dg2mc-HC_s1cZPRXVQ2JZVxnvoVqYdg&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1yFx60DB2g-HaWdjHEXalK-Wz800ednA&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1TKoiJvgUMZ_oBGRSb5fnWTWYh6u496o&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div id="alternativeRouteContainer4" class="alternativeRouteContainer">
+                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1CJAej3FfLfjFALjHEF0BqJs1jedfqog&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </div>
+            <div class="legendWrapper">
+                <!-- route button -->
+                <div class="btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                        Routes
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item altRouteBtn4" onclick="revealAlternativeRoute4()">Route #4</button></li>
+                    </ul>
+                </div><!-- route button -->
+            </div><!--legend wrapper-->
+        </div><!--route wrapper-->
+        
+    </div><!-- route -->
+
+    <!-- nearest landmark note -->
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
+
+    <div class="frontWrapper">
+        <img src="../../../../../images/mendez/whereToExplore/zoo/yokisFarm/yokisFarmCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Palocpoc I, Mendez-nuñez</p>
+    </div>
+
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+              
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- appearing back to top button -->
+    <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
+
+
+    <!-- capsule back to top and back button -->
+    <div class="container-fluid backTopBtnContainer" data-animate="slideDownBackToptn">
+        <div class="backTopBtnWrapper container">
+            <button type="button" class="btn backBtn"><a href="../../../../municipality/mendez.html" style="color: #e9dfdf;">Back</a></button>
+            <button type="button" class="btn topBtn"><a href="#" style="color: #fff;">Top</a></button>
+        </div>
+    </div>
+    
+    <script src="../../../../../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../../../../javascript/animationOfSampleImageOnScroll.js"></script>
+</body>
+</html>
