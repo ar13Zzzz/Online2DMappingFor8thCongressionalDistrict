@@ -1,23 +1,19 @@
 var carouselWhereToEat = document.getElementById('carouselWhereToEat');
 var carouselWhereToStay = document.getElementById('carouselWhereToStay');
-var carouselWhereToExplore = document.getElementById('carouselWhereToExplore');
 var carouselChurches = document.getElementById('carouselChurches');
 
 var choicesWhereToEat = document.getElementById('whereToEat');
 var choicesWhereToStay = document.getElementById('whereToStay');
-var choicesWhereToExplore = document.getElementById('whereToExplore');
 var choicesChurches = document.getElementById('whereToChurches');
 
 function revealWhereToEat() {
     if (window.innerWidth >= 770) {
         carouselWhereToEat.style.display = "block";
         carouselWhereToStay.style.display = "none";
-        carouselWhereToExplore.style.display = "none";
         carouselChurches.style.display = "none";
 
         choicesWhereToEat.style.display = "block";
         choicesWhereToStay.style.display = "none";
-        choicesWhereToExplore.style.display = "none";
         choicesChurches.style.display = "none";
     }
 }
@@ -25,25 +21,10 @@ function revealWhereToStay() {
     if (window.innerWidth >= 770) {
         carouselWhereToEat.style.display = "none";
         carouselWhereToStay.style.display = "block";
-        carouselWhereToExplore.style.display = "none";
         carouselChurches.style.display = "none";
         
         choicesWhereToEat.style.display = "none";
         choicesWhereToStay.style.display = "block";
-        choicesWhereToExplore.style.display = "none";
-        choicesChurches.style.display = "none";
-    }
-}
-function revealWhereToExplore() {
-    if (window.innerWidth >= 770) {
-        carouselWhereToEat.style.display = "none";
-        carouselWhereToStay.style.display = "none";
-        carouselWhereToExplore.style.display = "block";
-        carouselChurches.style.display = "none";
-        
-        choicesWhereToEat.style.display = "none";
-        choicesWhereToStay.style.display = "none";
-        choicesWhereToExplore.style.display = "block";
         choicesChurches.style.display = "none";
     }
 }
@@ -51,12 +32,10 @@ function revealWhereToChurches() {
     if (window.innerWidth >= 770) {
         carouselWhereToEat.style.display = "none";
         carouselWhereToStay.style.display = "none";
-        carouselWhereToExplore.style.display = "none";
         carouselChurches.style.display = "block";
         
         choicesWhereToEat.style.display = "none";
         choicesWhereToStay.style.display = "none";
-        choicesWhereToExplore.style.display = "none";
         choicesChurches.style.display = "block";
     }
 }
