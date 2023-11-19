@@ -1,5 +1,5 @@
 .blurBg {
-    background-color: #77813c92;
+    background-color: #77813c96;
 }
 .routeAndFrontkWrapper {
     background-color: #77813c;
@@ -7,11 +7,17 @@
 .frontWrapper p {
     color: #77813c;
 }
-#accordion .card-header {
+.frontWrapper {
     background-color: #77813c;
 }
-#accordion .card-body {
-    background-color: #77813ce0;
+.nearestLandmarkContainer {
+    background-color: #77813c;
+}
+.landmarkNote {
+    color: #77813c;
+}
+.landmarkNote a {
+    color: #77813c;
 }
 .topBtn {
     background-color: #77813c;
