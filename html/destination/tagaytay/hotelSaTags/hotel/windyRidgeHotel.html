@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
     <link rel="stylesheet" href="../../../../../css/destination/tagaytay/whereToStayTagaytay/hotel/windyRidgeHotel.css">
     <title>The Windy Ridge Hotel</title>
 <body>
@@ -30,7 +31,7 @@
     <!-- header image -->
     <img src="../../../../../images/tagaytay/whereToStay/hotel/windyRidgeHotel/windyRidgeHotelTagaytayCover.jpg" alt="Cover Image" class="headerImage">
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Experience cool breezes and scenic views at The 
             Windy Ridge Hotel, a serene retreat that lets you unwind amidst 
             Tagaytay's natural beauty.
@@ -54,51 +55,48 @@
     <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
         <div class="routeWrapper"> <!--route wrapper-->
             <div class="mainRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/3/embed?mid=1WD41Bq4EFyY5v4u3ZOJQ6S8DvtgcNXM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3869.348175483434!2d120.95977902507347!3d14.115610236315298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m5!1s0x33bd7760519df047%3A0xd77b1ac0b839536c!2sWindy%20Ridge%20Tagaytay%2C%20Tagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.115948699999999!2d120.96286769999999!5e0!3m2!1sen!2sph!4v1700367885336!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1G-WQiZ7dO5USzz2OK_1Z9MjNRGFnimU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d1934.6634174180865!2d120.9619457386049!3d14.116866796578558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m3!3m2!1d14.118328!2d120.9624959!4m5!1s0x33bd7760519df047%3A0xd77b1ac0b839536c!2sWindy%20Ridge%20Tagaytay%2C%20Tagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.115948699999999!2d120.96286769999999!5e0!3m2!1sen!2sph!4v1700367952111!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="legendWrapper">
                 <!-- route button -->
                 <div class="btn-group dropend">
-                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
                         Routes
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
                     </ul>
                 </div><!-- route button -->
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../images/tagaytay/whereToStay/hotel/windyRidgeHotel/windyRidgeHotelTagaytayCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>Silang Junction South, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Nearest Landmark
-                </button>
-                </h5>
-            </div>
-        
-            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                <div class="card-body">
-                    110 kilometers from Tagaytay Rotonda
-                </div><!--note for the nearest landmark-->
-            </div>
+    <div class="frontWrapper">
+        <img src="../../../../../images/tagaytay/whereToStay/hotel/windyRidgeHotel/windyRidgeHotelTagaytayCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Silang Junction South, Tagaytay City</p>
+    </div>
 
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+                110 kilometers from Tagaytay Rotonda
+            </p>
         </div>
     </div>
+
+  </div>
+  
     <!-- appearing back to top button -->
     <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
 

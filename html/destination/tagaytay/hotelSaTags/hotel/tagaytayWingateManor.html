@@ -30,7 +30,7 @@
     <!-- header image -->
     <img src="../../../../../images/tagaytay/whereToStay/hotel/wingateManor/tagaytayWingateManorCover.jpg" alt="Cover Image" class="headerImage">
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Experience tranquility at Tagaytay Wingate Manor, 
             a boutique hotel offering peaceful surroundings and personalized 
             service for a memorable stay.
@@ -54,56 +54,53 @@
     <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
         <div class="routeWrapper"> <!--route wrapper-->
             <div class="mainRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/3/embed?mid=1rIeZVRI24u0RxNn-RWYsIeET_YBpQO8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15477.289724307719!2d120.94275234899307!3d14.117126081020658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m5!1s0x33bd7779520ca82d%3A0x3fc85a197b635b28!2sTagaytay%20Wingate%20Manor%2C%20Barangay%2C%20Magallanes%20Drive%2C%20Tagaytay%2C%20Cavite!3m2!1d14.118822199999999!2d120.9450329!5e0!3m2!1sen!2sph!4v1700367419763!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=1PauQp130n1XixeVNZzR9IuWCYB9qhPc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d7738.7844690688535!2d120.94832874159947!3d14.11301564527017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m3!3m2!1d14.1137965!2d120.95176459999999!4m5!1s0x33bd7779520ca82d%3A0x3fc85a197b635b28!2sTagaytay%20Wingate%20Manor%2C%20Barangay%2C%20Magallanes%20Drive%2C%20Tagaytay%2C%20Cavite!3m2!1d14.118822199999999!2d120.9450329!5e0!3m2!1sen!2sph!4v1700367448119!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/0/embed?mid=17XZsnyg_h82SG9fHpmi78uUkq8fhjS8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d13788.20911593311!2d120.94376783810478!3d14.125186279010975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd77685f854f8b%3A0x1e092b2cb5c327e0!2sTAGAYTAY%20ROTONDA%2C%204X86%2B4Q4%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1152713!2d120.96195569999999!4m3!3m2!1d14.125798699999999!2d120.9436334!4m5!1s0x33bd7779520ca82d%3A0x3fc85a197b635b28!2sTagaytay%20Wingate%20Manor%2C%20Barangay%2C%20Magallanes%20Drive%2C%20Tagaytay%2C%20Cavite!3m2!1d14.118822199999999!2d120.9450329!5e0!3m2!1sen!2sph!4v1700367462086!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="legendWrapper">
                 <!-- route button -->
                 <div class="btn-group dropend">
-                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
                         Routes
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
                     </ul>
                 </div><!-- route button -->
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../images/tagaytay/whereToStay/hotel/wingateManor/tagaytayWingateManorCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>Magallanes Drive, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Nearest Landmark
-                </button>
-                </h5>
-            </div>
-        
-            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                <div class="card-body">
-                    2 kilometers from <a href="../../kainanSaTags/kape/starbs/starbsHiraya.html" data-bs-toggle="tooltip" data-bs-title="click for more info">Starbucks Reserve Hiraya</a>
-                </div><!--note for the nearest landmark-->
-            </div>
+    <div class="frontWrapper">
+        <img src="../../../../../images/tagaytay/whereToStay/hotel/wingateManor/tagaytayWingateManorCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">Magallanes Drive, Tagaytay City</p>
+    </div>
 
+    <div class="nearestLandmarkContainer">
+        <img src="../../../../../images/tagaytay/whereToEat/cafe/starbs/starbsReserveHiraya/starbsHirayaCover.jpg" alt="..." class="nearestLandmarkImg">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNote">
+                2 kilometers from <a href="../../kainanSaTags/kape/starbs/starbsHiraya.html" data-bs-toggle="tooltip" data-bs-title="click for more info">Starbucks Reserve Hiraya</a>
+            </p>
         </div>
     </div>
+
+  </div>
+  
     <!-- appearing back to top button -->
     <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
 

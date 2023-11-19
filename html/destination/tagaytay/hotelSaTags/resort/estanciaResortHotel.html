@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../../bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../../../../css/destinationMainCss.css">
+    <link rel="stylesheet" href="../../../../../css/modified/modifiedCssForNearestLandmarkContainer.css">
     <link rel="stylesheet" href="../../../../../css/destination/tagaytay/whereToStayTagaytay/resort/estanciaResortHotel.css">
     <title>Estancia Resort Hotel</title>
 <body>
@@ -30,7 +31,7 @@
     <!-- header image -->
     <img src="../../../../../images/tagaytay/whereToStay/resort/estanciaResortHotel/estanciaCover.jpg" alt="Cover Image" class="headerImage">
     <!-- blurred part -->
-    <div class="container blurBg">
+    <div class="container-fluid blurBg">
         <p class="businessDesc">Experience the beauty of nature at Estancia Resort 
             Hotel, where you can enjoy comfortable accommodations amid lush gardens 
             and cool breezes.
@@ -55,56 +56,53 @@
     <div class="containerfluid routeAndFrontkWrapper" data-animate="routeAndFrontWrapperSlideToLeftAnimation">
         <div class="routeWrapper"> <!--route wrapper-->
             <div class="mainRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/3/embed?mid=1DYhQXx73GTgIvWD-svZOsdim5iYngf4&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7738.545253132595!2d120.96081994160014!3d14.120058145245144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33bd776053693423%3A0x1640e546f506ca16!2sTagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1151444!2d120.96193559999999!4m5!1s0x33bb0311974b8f2f%3A0x34c81260ad6a9fcd!2sEstancia%20Resort%20Hotel%2C%20Tagaytay%2C%20Cavite!3m2!1d14.124703!2d120.97000399999999!5e0!3m2!1sen!2sph!4v1700371267829!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer2" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=1FeuYSyLBWh-imHrwuzlGSWP-LkhHK3A&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d7738.545253132595!2d120.96081994160014!3d14.120058145245144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd776053693423%3A0x1640e546f506ca16!2sTagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1151444!2d120.96193559999999!4m3!3m2!1d14.1182456!2d120.9622711!4m5!1s0x33bb0311974b8f2f%3A0x34c81260ad6a9fcd!2sEstancia%20Resort%20Hotel%2C%20Tagaytay%2C%20Cavite!3m2!1d14.124703!2d120.97000399999999!5e0!3m2!1sen!2sph!4v1700371300833!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="alternativeRouteContainer3" class="alternativeRouteContainer">
-                <iframe class="routeImg" src="https://www.google.com/maps/d/u/1/embed?mid=14TOumbJRvDt3nuvrmsdowrp6vf7XQp8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                <iframe class="routeImg" src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d7738.446261764718!2d120.96081994160014!3d14.122971437573097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m5!1s0x33bd776053693423%3A0x1640e546f506ca16!2sTagaytay%20Rotonda%2C%20Silang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!3m2!1d14.1151444!2d120.96193559999999!4m3!3m2!1d14.1282403!2d120.9601862!4m5!1s0x33bb0311974b8f2f%3A0x34c81260ad6a9fcd!2sEstancia%20Resort%20Hotel%2C%20Tagaytay%2C%20Cavite!3m2!1d14.124703!2d120.97000399999999!5e0!3m2!1sen!2sph!4v1700371332064!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="legendWrapper">
                 <!-- route button -->
                 <div class="btn-group dropend">
-                    <button type="button" class="btn dropdown-toggle routeBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle routeBtn" id="dropendRouteBtn" data-bs-toggle="dropdown" aria-expanded="false">
                         Routes
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" onclick="revealMainRoute()">Main Route</button></li>
+                        <li><button class="dropdown-item mainRouteBtn" onclick="revealMainRoute()">Main Route</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute2()">Route #2</button></li>
+                        <li><button class="dropdown-item altRouteBtn2" onclick="revealAlternativeRoute2()">Route #2</button></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><button class="dropdown-item" onclick="revealAlternativeRoute3()">Route #3</button></li>
+                        <li><button class="dropdown-item altRouteBtn3" onclick="revealAlternativeRoute3()">Route #3</button></li>
                     </ul>
                 </div><!-- route button -->
             </div><!--legend wrapper-->
         </div><!--route wrapper-->
-        <div class="frontWrapper">
-            <img src="../../../../../images/tagaytay/whereToStay/resort/estanciaResortHotel/estanciaCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
-            <p>San Jose, Tagaytay City</p>
-        </div>
+        
     </div><!-- route -->
 
     <!-- nearest landmark note -->
-    <div id="accordion" data-animate="slideDownCard">
-        <div class="card" id="nearestLandmarkNote">
+  <div class="container-fluid frontAndNearestLandmarkContainer" data-animate="frontAddressAndNearestLandmarkAnimation">
 
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Nearest Landmark
-                </button>
-                </h5>
-            </div>
-        
-            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                <div class="card-body">
-                    1.1 kilometers from McDonald's (San Jose, Tagaytay City)
-                </div><!--note for the nearest landmark-->
-            </div>
+    <div class="frontWrapper">
+        <img src="../../../../../images/tagaytay/whereToStay/resort/estanciaResortHotel/estanciaCoverBody.jpg" alt="cover" class="cover"> <!--ratio 4:3-->
+        <p id="touristDestinationLandmarkAddress">San Jose, Tagaytay City</p>
+    </div>
 
+    <div class="nearestLandmarkContainer">
+        <p id="addressInsideNearestLandmark"></p>
+        <div class="landmarkNoteContainer">
+            <p class="landmarkNoteHeader">LANDMARK NOTE:</p>
+            <p class="landmarkNote">
+                1.1 kilometers from McDonald's (San Jose, Tagaytay City)
+            </p>
         </div>
     </div>
+
+  </div>
+  
     <!-- appearing back to top button -->
     <a href="#" id="backToTopBtn" title="Back to Top">&utrif;</a>
 
