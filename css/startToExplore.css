@@ -1,9 +1,8 @@
 body {
     scroll-behavior: smooth;
     background-image: url("../images/bgImage/startToExploreBgPC1.jpg");
-    background-size: cover;
-    object-fit: cover;
-    background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
 }
 /* nav bar */
 .navbar {
@@ -27,7 +26,6 @@ body {
 .map {
     height: 100vh;
     width: 100%;
-    overflow: hidden;
 } 
 
 /* 8th district of cavite text */
@@ -56,11 +54,34 @@ body {
     line-height: 1.5vw;
     width: 30vw;
 }
-.caviteDescForPhoneContainer {
-    display: none;
+.systemNoteForPhone {
+    text-align: center;
+    font-size: 1vw;
+    color: #0e0e0e;
+    width: 100%;
+}
+.instructionNotePicturesContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.noteAndInstructionContainer {
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff73;
+    padding: 1vw;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-content: center;
+}
+.instructionForPhone {
+    font-size: 1.25vw;
 }
 #carouselExampleFade {
-    display: none;
+    width: 50vw;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 /* guide pic */
@@ -71,7 +92,7 @@ body {
 /* municapality/city */
 .wrapper {
     animation: fadeIn 1s linear 0s;
-    height: auto;
+    height: 34vw;
     position: relative;
     top: -8vw;
     text-align: center;
@@ -323,6 +344,7 @@ body {
     /* map */
     .map {
         height: 100vh;
+        overflow: hidden;
     }
     .guide {
         width: 95vw;
@@ -357,6 +379,9 @@ body {
         display: block;
         width: 100%;
     }
+    .instructionNotePicturesContainer {
+        display: block;
+    }
     .systemNoteForPhone {
         font-size: 2vw;
         color: #121212;
@@ -364,12 +389,16 @@ body {
         padding: 0;
         margin-bottom: 2vw;
     }
+    .instructionNotePicturesContainer {
+        display: block;
+    }
     .instructionForPhone {
         font-size: 3vw;
         color: #fff;
         padding: 0;
         margin-bottom: 2vw;
         padding: 1vw;
+        width: 90vw;
     }
     .caviteDescForPhone {
         display: block;
@@ -379,12 +408,20 @@ body {
         margin-bottom: 0;
         background-color: #ffffff7d;
         border-radius: 20px;
+        width: 90vw;
     }
     #carouselExampleFade {
         margin-top: 6vw;
         display: block;
         overflow: hidden;
         border-radius: 15px;
+        width: 90vw;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .noteAndInstructionContainer {
+        display: block;
+        background-color: transparent;
     }
 
     /* maps */
@@ -532,6 +569,12 @@ body {
         line-height: 1.75vw;
         width: 50vw;
         border-radius: 0px 0px 100px 0px;
+    }
+    .caviteDescForPhone {
+        font-size: 1.75vw;
+    }
+    .wrapper {
+        height: 44vw;
     }
 
     /* maps */
