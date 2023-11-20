@@ -2,6 +2,8 @@ body {
     scroll-behavior: smooth;
     background-image: url("../images/bgImage/startToExploreBgPC1.jpg");
     background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 /* nav bar */
 .navbar {
@@ -25,6 +27,7 @@ body {
 .map {
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 } 
 
 /* 8th district of cavite text */
@@ -53,7 +56,10 @@ body {
     line-height: 1.5vw;
     width: 30vw;
 }
-.caviteDescForPhone {
+.caviteDescForPhoneContainer {
+    display: none;
+}
+#carouselExampleFade {
     display: none;
 }
 
@@ -345,7 +351,8 @@ body {
     .caviteDesc {
         display: none;
     }
-    .caviteDescForPhone {
+    .caviteDescForPhoneContainer {
+        position: relative;
         text-align: center;
         display: block;
         width: 100%;
@@ -357,11 +364,27 @@ body {
         padding: 0;
         margin-bottom: 2vw;
     }
-    .caviteDescForPhone {
-        font-size: 3.5vw;
-        color: #f8f9fa;
+    .instructionForPhone {
+        font-size: 3vw;
+        color: #fff;
         padding: 0;
+        margin-bottom: 2vw;
+        padding: 1vw;
+    }
+    .caviteDescForPhone {
+        display: block;
+        font-size: 3.5vw;
+        color: #1e1e1e;
+        padding: 2vw;
         margin-bottom: 0;
+        background-color: #ffffff7d;
+        border-radius: 20px;
+    }
+    #carouselExampleFade {
+        margin-top: 6vw;
+        display: block;
+        overflow: hidden;
+        border-radius: 15px;
     }
 
     /* maps */
@@ -410,42 +433,42 @@ body {
     .dropPinAlfonso {
         height: 20vw;
         top: 65vw;
-        left: 50vw;
+        left: 52vw;
     }
     .dropPinTagaytay {
         height: 20vw;
         top: 62vw;
-        left: 76vw;
+        left: 78vw;
     }
     .dropPinMendez {
         height: 20vw;
         top: 60vw;
-        left: 61vw;
+        left: 63vw;
     }
     .dropPinBailen {
         height: 20vw;
         top: 53vw;
-        left: 42vw;
+        left: 44vw;
     }
     .dropPinMagallanes {
         height: 20vw;
         top: 56vw;
-        left: 32vw;
+        left: 34vw;
     }
     .dropPinMaragondon {
         height: 20vw;
         top: 39vw;
-        left: 32vw;
+        left: 34vw;
     }
     .dropPinTernate {
         height: 20vw;
         top: 36vw;
-        left: 13vw;
+        left: 15vw;
     }
     .dropPinNaic {
         height: 20vw;
         top: 27vw;
-        left: 41vw;
+        left: 43vw;
     }
 
     /* modal */

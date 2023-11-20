@@ -19,18 +19,28 @@
     -webkit-transform: scale(1.2);
 }
 
-#bgVideoForPc, #bgVideoForPhone {
+#defaultCarousel {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
-#bgVideoForPhone {
-    display: none;
+#dedefaultCarousel .carousel-inner {
+    width: 100vw;
+    height: 10vh;
 }
+#dedefaultCarousel .carousel-inner .carousel-item, .carousel-item {
+    width: 100vw;
+    height: 100vh;
+}
+#dedefaultCarousel .carousel-inner .carousel-item, .carousel-item img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
 .title {
     margin-top: 25vw;
     padding-left: 6vw;
