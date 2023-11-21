@@ -1,17 +1,28 @@
-body {
-    background-color: #5123b9;
-}
 .blurBg {
     background-color: #5123b951;
     padding-top: 25vw;
 }
-.tagaytayWord {
-    font-size: 3.5vw;
-    line-height: 3.5vw;
+.whereToPic {
+    border: 1px solid #5123b951;
+}
+.bodyTitle {
+    color: #5123b9;
+}
+.choiceName {
+    color: #5123b9;
+}
+.card {
+    box-shadow: 3px 7px 5px #5123b9e0;
 }
 @media only screen and (max-width: 430px) {
-    .tagaytayWord {
-        font-size: 5vw;
-        line-height: 5vw;
+    .blurBg {
+        background-color: #5123b951;
+        padding-top: 23vw;
+    }
+    .tagaytayWord::after {
+        content: "";
+    }
+    .choices {
+        background-color: #5123b9;
     }
 }

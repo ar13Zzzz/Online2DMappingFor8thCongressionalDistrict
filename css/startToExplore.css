@@ -1,8 +1,5 @@
 body {
     scroll-behavior: smooth;
-    background-image: url("../images/bgImage/startToExploreBgPC1.jpg");
-        background-size: cover;
-        object-fit: cover;
 }
 /* nav bar */
 .navbar {
@@ -21,11 +18,22 @@ body {
     transform: scale(1.2);
 }
 
-
+.bgImageContainer {
+    background-color: #000080;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    display: none;
+}
+.bgImage {
+    display: none;
+}
 /* map */
 .map {
-    height: 100vh;
-    width: 100%;
+    background-image: url("../images/bgImage/startToExploreBgPC1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 } 
 
 /* 8th district of cavite text */
@@ -57,7 +65,7 @@ body {
 .systemNoteForPhone {
     text-align: center;
     font-size: 1vw;
-    color: #0e0e0e;
+    color: #f8f9fa;
     width: 100%;
 }
 .instructionNotePicturesContainer {
@@ -70,13 +78,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: #ffffff73;
-    padding: 1vw;
+    padding: 2vw;
     border-radius: 20px;
     justify-content: space-around;
     align-content: center;
 }
 .instructionForPhone {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
+}
+.caviteDescForPhone {
+    display: none;
 }
 #carouselExampleFade {
     width: 50vw;
@@ -343,8 +354,8 @@ body {
 
     /* map */
     .map {
-        height: 100vh;
         overflow: hidden;
+        text-align: center;
     }
     .guide {
         width: 95vw;
@@ -356,7 +367,7 @@ body {
         width: 100vw;
         padding: 0;
         margin: 0;
-        height: 37vh;
+        height: 77vw;
     }
     
     /* header text */
@@ -378,16 +389,16 @@ body {
         text-align: center;
         display: block;
         width: 100%;
+        padding: 0;
+        justify-content: center;
     }
     .instructionNotePicturesContainer {
         display: block;
     }
     .systemNoteForPhone {
-        font-size: 2vw;
-        color: #121212;
-        height: 1vw;
+        font-size: 2.75vw;
         padding: 0;
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
     }
     .instructionNotePicturesContainer {
         display: block;
@@ -418,6 +429,7 @@ body {
         width: 90vw;
         border-radius: 30px;
         overflow: hidden;
+        margin-inline: auto;
     }
     .noteAndInstructionContainer {
         display: block;
@@ -540,15 +552,11 @@ body {
     }
 }
 
+
 @media only screen and (min-width: 431px) and (max-width: 768px) /*tablet*/ {
     /* nav bar */
     .nav a {
         font-size: 1rem;
-    }
-
-    .map {
-        top: 6.5vw;
-        height: 50vw;
     }
 
     /* header text */
@@ -611,7 +619,7 @@ body {
         top: 45.5vw;
     }
     .dropPinMendez {
-        top: 44.5vw;
+        top: 47.5vw;
     }
     .dropPinBailen {
         top: 37.5vw;

@@ -1,12 +1,28 @@
-body {
-    background-color: #f2779b;
-}
 .blurBg {
     background-color: #f2779b51;
     padding-top: 25vw;
 }
+.whereToPic {
+    border: 1px solid #f2779b51;
+}
+.bodyTitle {
+    color: #f2779b;
+}
+.choiceName {
+    color: #f2779b;
+}
+.card {
+    box-shadow: 3px 7px 5px #f2779be0;
+}
 @media only screen and (max-width: 430px) {
     .blurBg {
-        padding-top: 17vw;
+        background-color: #f2779b51;
+        padding-top: 15vw;
+    }
+    .tagaytayWord::after {
+        content: "";
+    }
+    .choices {
+        background-color: #f2779b;
     }
 }
