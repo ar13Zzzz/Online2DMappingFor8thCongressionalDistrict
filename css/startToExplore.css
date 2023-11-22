@@ -10,6 +10,7 @@ body {
 .nav a {
     color: #f8f9fa;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 .navBtn:hover {
     color: #f8f9fa;
