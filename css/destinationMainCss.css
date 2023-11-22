@@ -231,9 +231,6 @@ body {
     justify-content: center;
     padding: 0 1vw 1vw 1vw;
 }
-.landmarkNoteHeader {
-    /* display: none; */
-}
 .landmarkNote {
     margin-top: 3vw;
     font-size: 1.75vw;

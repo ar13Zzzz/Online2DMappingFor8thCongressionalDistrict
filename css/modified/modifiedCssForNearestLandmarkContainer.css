@@ -51,9 +51,10 @@
     font-size: 1.5vw;
     line-height: 3vw;
     font-weight: 500;
+    margin-bottom: 2vw;
 }
 .landmarkNote {
-    margin-top: 3vw;
+    margin-top: 1vw;
     font-size: 1.75vw;
 }
 .landmarkNote a {
