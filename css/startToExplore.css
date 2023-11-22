@@ -31,7 +31,8 @@ body {
 }
 /* map */
 .map {
-    background-image: url("../images/bgImage/startToExploreBgPC1.jpg");
+    background-image: url("../images/bgImage/startToExploreBg1.jpg");
+    background-position: -20vw;
     background-repeat: no-repeat;
     background-size: cover;
 } 
@@ -61,6 +62,9 @@ body {
     font-weight: 400;
     line-height: 1.5vw;
     width: 30vw;
+}
+.caviteDescForPhoneContainer {
+    padding-bottom: 2vw;
 }
 .systemNoteForPhone {
     text-align: center;
@@ -337,7 +341,7 @@ body {
 
 @media only screen and (max-width: 430px) /*phone*/ {
     body {
-        background-image: url("../images/bgImage/startToExploreBgPhone1.jpg");
+        background-color: #04aaf8;
     }
     /* nav bar */
     .navbar {
@@ -356,6 +360,7 @@ body {
     .map {
         overflow: hidden;
         text-align: center;
+        background-position: center;
     }
     .guide {
         width: 95vw;
@@ -390,6 +395,7 @@ body {
         display: block;
         width: 100%;
         padding: 0;
+        padding-bottom: 3vw;
         justify-content: center;
     }
     .instructionNotePicturesContainer {
@@ -426,7 +432,7 @@ body {
         display: block;
         overflow: hidden;
         border-radius: 15px;
-        width: 90vw;
+        width: 85vw;
         border-radius: 30px;
         overflow: hidden;
         margin-inline: auto;
