@@ -1,5 +1,6 @@
 body {
     scroll-behavior: smooth;
+        background-color: #04aaf8;
 }
 /* nav bar */
 .navbar {
@@ -17,18 +18,6 @@ body {
     animation: scaled 250ms linear 0s 1 normal;
     -webkit-animation: scaled 250ms linear 0s 1 normal;
     transform: scale(1.2);
-}
-
-.bgImageContainer {
-    background-color: #000080;
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100vw;
-    display: none;
-}
-.bgImage {
-    display: none;
 }
 /* map */
 .map {
@@ -64,6 +53,98 @@ body {
     line-height: 1.5vw;
     width: 30vw;
 }
+
+/* municapality/city */
+.wrapper {
+    animation: fadeIn 1s linear 0s;
+    height: 34vw;
+    position: relative;
+    top: -8vw;
+    text-align: center;
+}
+.wholeDistrictOfCaviteMap {
+    position: relative;
+    height: 43vw;
+    top: -1vw;
+    left: 5vw;
+    filter: drop-shadow(-3px 7px 12px #222222);
+}
+
+/* drop pins */
+.dropPin {
+    animation: fadeIn 2s linear 0s;
+}
+.dropPinAlfonso {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 32.5vw;
+    left: 54.5vw;
+}
+.dropPinTagaytay {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 30.5vw;
+    left: 74vw;
+}
+.dropPinMendez {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 28.5vw;
+    left: 64vw;
+}
+.dropPinBailen {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 21.5vw;
+    left: 48.4vw;
+}
+.dropPinMagallanes {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 24.5vw;
+    left: 40vw;
+}
+.dropPinMaragondon {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 12.5vw;
+    left: 38vw;
+}
+.dropPinTernate {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 12vw;
+    left: 27vw;
+}
+.dropPinNaic {
+    cursor: pointer;
+    position: absolute;
+    height: 12vw;
+    top: 5.5vw;
+    left: 47.5vw;
+}
+.dropPinAlfonso:hover, .dropPinAlfonso:focus, 
+.dropPinTagaytay:hover, .dropPinTagaytay:focus,
+.dropPinMendez:hover, .dropPinMendez:focus,
+.dropPinBailen:hover, .dropPinBailen:focus,
+.dropPinMagallanes:hover, .dropPinMagallanes:focus,
+.dropPinMaragondon:hover, .dropPinMaragondon:focus,
+.dropPinTernate:hover, .dropPinTernate:focus,
+.dropPinNaic:hover, .dropPinNaic:focus
+{
+    animation: bounce 3s both ease-in-out infinite;
+    -webkit-animation: bounce 3s both ease-in-out infinite;
+    transform: scale(1.2);
+}
+
+/* note, instruction, and pictures */
 .caviteDescForPhoneContainer {
     padding-bottom: 2vw;
 }
@@ -98,146 +179,6 @@ body {
     width: 50vw;
     border-radius: 30px;
     overflow: hidden;
-}
-
-/* guide pic */
-.guide {
-    height: 43vw;
-}
-
-/* municapality/city */
-.wrapper {
-    animation: fadeIn 1s linear 0s;
-    height: 34vw;
-    position: relative;
-    top: -8vw;
-    text-align: center;
-}
-#tagaytayMap {
-    height: 11.1vw;
-    position: absolute;
-    top: 28.6vw;
-    left: 59.2vw;
-    filter: drop-shadow(-1px 3px 3px #222222);
-}
-#mendezMap {
-    height: 7.6vw;
-    position: absolute;
-    top: 28.2vw;
-    left: 57.2vw;
-}
-#alfonsoMap {
-    height: 16vw;
-    position: absolute;
-    top: 26vw;
-    left: 48vw;
-    filter: drop-shadow(-1px 3px 3px #222222);
-}
-#bailenMap {
-    height: 15.5vw;
-    position: absolute;
-    top: 16.5vw;
-    left: 43.2vw;
-}
-#magallanesMap {
-    height: 18.5vw;
-    position: absolute;
-    top: 19vw;
-    left: 33.9vw;
-    filter: drop-shadow(-1px 3px 3px #222222);
-}
-#maragondonMap {
-    height: 20.6vw;
-    position: absolute;
-    top: 7.6vw;
-    left: 16.5vw;
-    filter: drop-shadow(-1px 3px 3px #222222);
-}
-#ternateMap {
-    height: 12.5vw;
-    position: absolute;
-    top: 6vw;
-    left: 22.1vw;
-}
-#naicMap {
-    height: 18vw;
-    position: absolute;
-    top: 0.5vw;
-    left: 37.3vw;
-}
-
-/* drop pins */
-.dropPin {
-    animation: fadeIn 2s linear 0s;
-}
-.dropPinAlfonso {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 34.5vw;
-    left: 51.5vw;
-}
-.dropPinTagaytay {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 30.5vw;
-    left: 69vw;
-}
-.dropPinMendez {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 30.5vw;
-    left: 59vw;
-}
-.dropPinBailen {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 23.5vw;
-    left: 46.4vw;
-}
-.dropPinMagallanes {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 25.5vw;
-    left: 39vw;
-}
-.dropPinMaragondon {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 13.5vw;
-    left: 37vw;
-}
-.dropPinTernate {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 12vw;
-    left: 25vw;
-}
-.dropPinNaic {
-    cursor: pointer;
-    position: absolute;
-    height: 13vw;
-    top: 6.5vw;
-    left: 43.5vw;
-}
-.dropPinAlfonso:hover, .dropPinAlfonso:focus, 
-.dropPinTagaytay:hover, .dropPinTagaytay:focus,
-.dropPinMendez:hover, .dropPinMendez:focus,
-.dropPinBailen:hover, .dropPinBailen:focus,
-.dropPinMagallanes:hover, .dropPinMagallanes:focus,
-.dropPinMaragondon:hover, .dropPinMaragondon:focus,
-.dropPinTernate:hover, .dropPinTernate:focus,
-.dropPinNaic:hover, .dropPinNaic:focus
-{
-    animation: bounce 3s both ease-in-out infinite;
-    -webkit-animation: bounce 3s both ease-in-out infinite;
-    transform: scale(1.2);
 }
 
 /* modal */
@@ -341,9 +282,6 @@ body {
 }
 
 @media only screen and (max-width: 430px) /*phone*/ {
-    body {
-        background-color: #04aaf8;
-    }
     /* nav bar */
     .navbar {
         padding-top: 0;
@@ -444,87 +382,52 @@ body {
     }
 
     /* maps */
-    #tagaytayMap {
-        height: 16.1vw;
-        top: 47.6vw;
-        left: 62.1vw;
-    }
-    #mendezMap {
-        height: 11vw;
-        top: 47.2vw;
-        left: 59.1vw;
-    }
-    #alfonsoMap {
-        height: 22.3vw;
-        top: 44.4vw;
-        left: 46.6vw;
-    }
-    #bailenMap {
-        height: 22vw;
-        top: 30.5vw;
-        left: 39.6vw;
-    }
-    #magallanesMap {
-        height: 26.4vw;
-        top: 34vw;
-        left: 26.1vw;
-    }
-    #maragondonMap {
-        height: 30vw;
-        top: 17.5vw;
-        left: 0.8vw;
-    }
-    #ternateMap {
-        height: 18vw;
-        top: 15.4vw;
-        left: 9.5vw;
-    }
-    #naicMap {
-        height: 25.5vw;
-        top: 7.5vw;
-        left: 31.4vw;
+    .wholeDistrictOfCaviteMap {
+        height: 61vw;
+        top: 4vw;
+        left: -3vw;
     }
 
     /* drop pins */
     .dropPinAlfonso {
-        height: 20vw;
-        top: 65vw;
-        left: 52vw;
+        height: 18vw;
+        top: 60vw;
+        left: 51vw;
     }
     .dropPinTagaytay {
-        height: 20vw;
-        top: 62vw;
+        height: 18vw;
+        top: 58vw;
         left: 78vw;
     }
     .dropPinMendez {
-        height: 20vw;
-        top: 60vw;
+        height: 18vw;
+        top: 56vw;
         left: 63vw;
     }
     .dropPinBailen {
-        height: 20vw;
-        top: 53vw;
-        left: 44vw;
+        height: 18vw;
+        top: 44vw;
+        left: 42vw;
     }
     .dropPinMagallanes {
-        height: 20vw;
-        top: 56vw;
-        left: 34vw;
+        height: 18vw;
+        top: 50vw;
+        left: 31vw;
     }
     .dropPinMaragondon {
-        height: 20vw;
-        top: 39vw;
-        left: 34vw;
+        height: 18vw;
+        top: 34vw;
+        left: 30vw;
     }
     .dropPinTernate {
-        height: 20vw;
-        top: 36vw;
-        left: 15vw;
+        height: 18vw;
+        top: 30vw;
+        left: 11vw;
     }
     .dropPinNaic {
-        height: 20vw;
-        top: 27vw;
-        left: 43vw;
+        height: 18vw;
+        top: 20vw;
+        left: 40vw;
     }
 
     /* modal */
@@ -589,59 +492,56 @@ body {
         font-size: 1.75vw;
     }
     .wrapper {
-        height: 44vw;
+        height: 53vw;
     }
 
     /* maps */
-    #tagaytayMap {
-        top: 36.6vw;
-    }
-    #mendezMap {
-        top: 36.2vw;
-    }
-    #alfonsoMap {
-        top: 34vw;
-    }
-    #bailenMap {
-        top: 24.5vw;
-    }
-    #magallanesMap {
-        top: 27vw;
-    }
-    #maragondonMap {
-        top: 15.6vw;
-    }
-    #ternateMap {
-        top: 14vw;
-    }
-    #naicMap {
-        top: 8.5vw;
+    .wholeDistrictOfCaviteMap {
+        height: 50vw;
+        top: 10vw;
+        left: 0vw;
     }
 
     /* drop pins */
     .dropPinAlfonso {
-        top: 48.5vw;
+        height: 13vw;
+        top: 57.5vw;
+        left: 51.5vw;
     }
     .dropPinTagaytay {
-        top: 45.5vw;
+        height: 13vw;
+        top: 54.5vw;
+        left: 74vw;
     }
     .dropPinMendez {
-        top: 47.5vw;
+        height: 13vw;
+        top: 52.5vw;
+        left: 61vw;
     }
     .dropPinBailen {
-        top: 37.5vw;
+        height: 13vw;
+        top: 42.5vw;
+        left: 43.4vw;
     }
     .dropPinMagallanes {
-        top: 41.5vw;
+        height: 13vw;
+        top: 47.5vw;
+        left: 35vw;
     }
     .dropPinMaragondon {
-        top: 29.5vw;
+        height: 13vw;
+        top: 33.5vw;
+        left: 33vw;
     }
     .dropPinTernate {
-        top: 28vw;
+        height: 13vw;
+        top: 31vw;
+        left: 19vw;
     }
     .dropPinNaic {
-        top: 23.5vw;
+        height: 13vw;
+        top: 24.5vw;
+        left: 43.5vw;
     }
 
     /* modal */

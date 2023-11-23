@@ -280,11 +280,16 @@ a {
 .destination::-webkit-scrollbar-thumb {
     background: #848080;
     border-radius: 50px;
-}.bodyWrapper .destination .choicesWrapper .card .card-img-top:hover, .card-img-top:focus {
-    animation: scaleImgCard 800ms ease 1;
-    -webkit-animation: scaleImgCard 800ms ease 1;
+}
+.bodyWrapper .destination .choicesWrapper .card .card-img-top {
     transform: scale(2);
     -webkit-transform: scale(2);
+}
+.bodyWrapper .destination .choicesWrapper .card .card-img-top:hover, .card-img-top:focus {
+    animation: scaleImgCard 500ms linear reverse;
+    -webkit-animation: scaleImgCard 500ms linear reverse;
+    transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
 /* back to top button */
