@@ -14,110 +14,102 @@
     <div class="container-fluid map">
 
       <!-- navigation bar -->
-        <nav class="navbar navbar-fluid bg-body-tertiary nav">
-            <nav class="nav">
-                <ul class="nav justify-content-start">
-                    <li class="nav-item">
-                        <a class="navbar-brand nav-link navBtn" aria-current="page" href="../index.html">HOME</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="nav">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="navbar-brand nav-link active navBtn" href="aboutUs.html">ABOUT US</a> 
-                    </li>
-                </ul>
-            </nav>
-        </nav>
+      <nav class="navbar navbar-fluid bg-body-tertiary nav">
+          <nav class="nav">
+              <ul class="nav justify-content-start">
+                  <li class="nav-item">
+                      <a class="navbar-brand nav-link navBtn" aria-current="page" href="../index.html">HOME</a>
+                  </li>
+              </ul>
+          </nav>
+          <nav class="nav">
+              <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                      <a class="navbar-brand nav-link active navBtn" href="aboutUs.html">ABOUT US</a> 
+                  </li>
+              </ul>
+          </nav>
+      </nav>
 
-        <div class="container-fluid title">
-            <p class="DistrictOfCavite"><span class="eigth">8<sup>th</sup></span> District of Cavite</p>
-            <p class="caviteDesc">Welcome to the vibrant 8<sup>th</sup> Congressional District of Cavite - 
-                where history meets progress and community thrives! Discover a land of adverse landscapes,
-                 rich natural heritage, and dynamic opportunities as we unite to build a better future.</p>
-        </div>
-        <!-- loading="lazy" -->
-        <div class="container-fluid wrapper">  
-            <!-- <img src="../images/startToExploreImage/guide.png" class="guide"> -->
-            <img src="../images/startToExploreImage/maragondon.png" alt="map of Maragondon" id="maragondonMap" class="imgMap" draggable="false" loading="eager">
-            <img src="../images/startToExploreImage/tagaytay.png" alt="map of Tagaytay" id="tagaytayMap" class="imgMap" draggable="false" loading="eager">
-            <img src="../images/startToExploreImage/mendez.png" alt="map of Mendez" id="mendezMap" class="imgMap" draggable="false" loading="eager">
-            <img src="../images/startToExploreImage/alfonso.png" alt="map of Alfonso" id="alfonsoMap" class="imgMap" draggable="false" loading="eager">
-            <img src="../images/startToExploreImage/magallanes.png" alt="map of Magallanes" id="magallanesMap" class="imgMap" draggable="false" loading="eager">
-            <img src="../images/startToExploreImage/ternate.png" alt="map of Ternate" id="ternateMap" class="imgMap" draggable="false" loading="eager">
-            <img src="../images/startToExploreImage/bailen.png" alt="map of Bailen" id="bailenMap" class="imgMap" draggable="false" loading="eager">
-            <img src="../images/startToExploreImage/naic.png" alt="map of Naic" id="naicMap" class="imgMap" draggable="false" loading="eager">  
-        </div>
+      <div class="container-fluid title">
+          <p class="DistrictOfCavite"><span class="eigth">8<sup>th</sup></span> District of Cavite</p>
+          <p class="caviteDesc">Welcome to the vibrant 8<sup>th</sup> Congressional District of Cavite - 
+              where history meets progress and community thrives! Discover a land of adverse landscapes,
+                rich natural heritage, and dynamic opportunities as we unite to build a better future.</p>
+      </div>
 
-        <div class="dropPin">
-            <img src="#" data-original="../images/startToExploreImage/alfonsoDropPin.png" class="dropPinAlfonso load-delay" onclick="openModalAlfonso()" data-bs-toggle="tooltip" data-bs-title="Alfonso (click for more info)" loading="eager">
-            <img src="#" data-original="../images/startToExploreImage/tagaytayDropPin.png" class="dropPinTagaytay load-delay" onclick="openModalTagaytay()" data-bs-toggle="tooltip" data-bs-title="Tagaytay City (click for more info)" loading="eager">
-            <img src="#" data-original="../images/startToExploreImage/mendezDropPin.png" class="dropPinMendez load-delay" onclick="openModalMendez()" data-bs-toggle="tooltip" data-bs-title="Mendez-Nuñez (click for more info)" loading="eager">
-            <img src="#" data-original="../images/startToExploreImage/bailenDropPin.png" class="dropPinBailen load-delay" onclick="openModalBailen()" data-bs-toggle="tooltip" data-bs-title="General Emilio Aguinaldo (click for more info)" loading="eager">
-            <img src="#" data-original="../images/startToExploreImage/magallanesDropPin.png" class="dropPinMagallanes load-delay" onclick="openModalMagallanes()" data-bs-toggle="tooltip" data-bs-title="Magallanes (click for more info)" loading="eager">
-            <img src="#" data-original="../images/startToExploreImage/maragondonDropPin.png" class="dropPinMaragondon load-delay" onclick="openModalMaragondon()" data-bs-toggle="tooltip" data-bs-title="Maragondon (click for more info)" loading="eager">
-            <img src="#" data-original="../images/startToExploreImage/ternateDropPin.png" class="dropPinTernate load-delay" onclick="openModalTernate()" data-bs-toggle="tooltip" data-bs-title="Ternate (click for more info)" loading="eager">
-            <img src="#" data-original="../images/startToExploreImage/naicDropPin.png" class="dropPinNaic load-delay" onclick="openModalNaic()" data-bs-toggle="tooltip" data-bs-title="Naic (click for more info)" loading="eager">
-        </div>
+      <div class="container-fluid wrapper">
+          <img src="../images/startToExploreImage/mapImageForStartToExplore-removebg.png" class="wholeDistrictOfCaviteMap">
+      </div>
+
+      <div class="dropPin">
+          <img src="#" data-original="../images/startToExploreImage/alfonsoDropPin.png" class="dropPinAlfonso load-delay" onclick="openModalAlfonso()" data-bs-toggle="tooltip" data-bs-title="Alfonso">
+          <img src="#" data-original="../images/startToExploreImage/tagaytayDropPin.png" class="dropPinTagaytay load-delay" onclick="openModalTagaytay()" data-bs-toggle="tooltip" data-bs-title="Tagaytay City">
+          <img src="#" data-original="../images/startToExploreImage/mendezDropPin.png" class="dropPinMendez load-delay" onclick="openModalMendez()" data-bs-toggle="tooltip" data-bs-title="Mendez-Nuñez">
+          <img src="#" data-original="../images/startToExploreImage/bailenDropPin.png" class="dropPinBailen load-delay" onclick="openModalBailen()" data-bs-toggle="tooltip" data-bs-title="General Emilio Aguinaldo">
+          <img src="#" data-original="../images/startToExploreImage/magallanesDropPin.png" class="dropPinMagallanes load-delay" onclick="openModalMagallanes()" data-bs-toggle="tooltip" data-bs-title="Magallanes">
+          <img src="#" data-original="../images/startToExploreImage/maragondonDropPin.png" class="dropPinMaragondon load-delay" onclick="openModalMaragondon()" data-bs-toggle="tooltip" data-bs-title="Maragondon">
+          <img src="#" data-original="../images/startToExploreImage/ternateDropPin.png" class="dropPinTernate load-delay" onclick="openModalTernate()" data-bs-toggle="tooltip" data-bs-title="Ternate">
+          <img src="#" data-original="../images/startToExploreImage/naicDropPin.png" class="dropPinNaic load-delay" onclick="openModalNaic()" data-bs-toggle="tooltip" data-bs-title="Naic">
+      </div>
         
         <div class="caviteDescForPhoneContainer container-fluid">
-            <p class="systemNoteForPhone">
-                Note: The starting point of the routes is always on the Tagaytay Rotonda.
-            </p>
-              <div class="instructionNotePicturesContainer">
-                <div class="noteAndInstructionContainer">
-                  <p class="instructionForPhone">
-                    This 2D map represents the 8th Congressional District of Cavite.
-                    Each municipality and city has its own seal. Clicking on a seal provides a brief
-                    introduction, while clicking "Explore" takes you to the home page with tourist 
-                    destination.
-                  </p>
-                  <p class="caviteDescForPhone">
-                      Welcome to the vibrant 8<sup>th</sup> Congressional District of Cavite - 
-                      where history meets progress and community thrives! Discover a land of adverse landscapes,
-                      rich natural heritage, and dynamic opportunities as we unite to build a better future.
-                  </p>
+          <p class="systemNoteForPhone">
+              Note: The starting point of the routes is always on the Tagaytay Rotonda.
+          </p>
+            <div class="instructionNotePicturesContainer">
+              <div class="noteAndInstructionContainer">
+                <p class="instructionForPhone">
+                  This 2D map represents the 8th Congressional District of Cavite.
+                  Each municipality and city has its own seal. Clicking on a seal provides a brief
+                  introduction, while clicking "Explore" takes you to the home page with tourist 
+                  destination.
+                </p>
+                <p class="caviteDescForPhone">
+                    Welcome to the vibrant 8<sup>th</sup> Congressional District of Cavite - 
+                    where history meets progress and community thrives! Discover a land of adverse landscapes,
+                    rich natural heritage, and dynamic opportunities as we unite to build a better future.
+                </p>
+              </div>
+              
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../images/bgImage/alfonsoBg.jpg" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bgImage/BailenBg.jpg" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bgImage/magallanesBg.JPG" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bgImage/maragondonBg.jpg" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bgImage/mendezBg.jpg" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bgImage/naicBg.jpg" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bgImage/tagaytayBg.JPG" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bgImage/ternateBg.jpg" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
                 
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../images/bgImage/alfonsoBg.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/bgImage/BailenBg.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/bgImage/magallanesBg.JPG" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/bgImage/maragondonBg.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/bgImage/mendezBg.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/bgImage/naicBg.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/bgImage/tagaytayBg.JPG" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../images/bgImage/ternateBg.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  
-              </div>
+            </div>
 
         </div>
 
