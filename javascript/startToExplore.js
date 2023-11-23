@@ -26,7 +26,7 @@ function openModalTagaytay() {
 }
 function openModalAlfonso() {
     showModal();
-    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/alfonsoBg.JPG')";
+    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/alfonsoBg.jpg')";
     document.getElementById("modalTitle").innerHTML = "Alfonso";
     document.getElementById("modalTitle").style.color = "#fafafa";
     document.getElementById("modalDescription").innerHTML = "Known for its scenic countryside, lush farmlands, and proximity to popular tourist destinations such as Tagaytay City and Taal Volcano.";
@@ -37,7 +37,7 @@ function openModalAlfonso() {
 }
 function openModalBailen() {
     showModal();
-    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/BailenBg.JPG')";
+    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/BailenBg.jpg')";
     document.getElementById("modalTitle").innerHTML = "Bailen";
     document.getElementById("modalTitle").style.color = "#fff";
     document.getElementById("modalDescription").innerHTML = "Known for its rich historical heritage and significant contributions to the country's struggle for independence.";
@@ -59,7 +59,7 @@ function openModalMagallanes() {
 }
 function openModalMaragondon() {
     showModal();
-    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/maragondonBg.JPG')";
+    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/maragondonBg.jpg')";
     document.getElementById("modalTitle").innerHTML = "Maragondon";
     document.getElementById("modalTitle").style.color = "#fff";
     document.getElementById("modalDescription").innerHTML = "Known for its historical significance, being the sight of significant events during the Philippines Revolution against Spanish colonial rule.";
@@ -70,7 +70,7 @@ function openModalMaragondon() {
 }
 function openModalMendez() {
     showModal();
-    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/mendezBg.JPG')";
+    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/mendezBg.jpg')";
     document.getElementById("modalTitle").innerHTML = "Mendez";
     document.getElementById("modalTitle").style.color = "#fff";
     document.getElementById("modalDescription").innerHTML = "Known for its breathtaking landscape and cool climate, making it popular destination for nature lovers and weekend getaways.";
@@ -81,7 +81,7 @@ function openModalMendez() {
 }
 function openModalNaic() {
     showModal();
-    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/naicBg.JPG')";
+    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/naicBg.jpg')";
     document.getElementById("modalTitle").innerHTML = "Naic";
     document.getElementById("modalTitle").style.color = "#fff";
     document.getElementById("modalDescription").innerHTML = "Known for its historical heritage, including the iconic Naic Church and its role in the Philippines revolution against Spanish colonization.";
@@ -92,7 +92,7 @@ function openModalNaic() {
 }
 function openModalTernate() {
     showModal();
-    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/ternateBg.JPG')";
+    document.getElementById('modalContentContainer').style.backgroundImage = "url('../images/bgImage/ternateBg.jpg')";
     document.getElementById("modalTitle").innerHTML = "Ternate";
     document.getElementById("modalTitle").style.color = "#fff";
     document.getElementById("modalDescription").innerHTML = "Known for its stunning beaches, crystal-clear waters, captivating marine life, making it a sought-after destination for beach enthusiasts and divers.";
@@ -103,10 +103,8 @@ function openModalTernate() {
 }
 
 // bootstrap tooltip
-if (window.innerWidth >= 770) {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-}
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // to delay the loading of the drop pins
 $(document).ready(function () {
