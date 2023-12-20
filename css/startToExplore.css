@@ -1,12 +1,14 @@
 body {
     scroll-behavior: smooth;
-        background-color: #04aaf8;
+    background-color: #04aaf8;
+    background-image: url("../images/bgImage/mapBg.jpg");
 }
 /* nav bar */
 .navbar {
     background-color: transparent;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
+    justify-content: flex-end;
 }
 .nav a {
     color: #f8f9fa;
@@ -19,13 +21,9 @@ body {
     -webkit-animation: scaled 250ms linear 0s 1 normal;
     transform: scale(1.2);
 }
-/* map */
-.map {
-    background-image: url("../images/bgImage/startToExploreBg1.jpg");
-    background-position: -20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
+.navBtn:visited {
+    color: #f8f9fa;
+}
 
 /* 8th district of cavite text */
 .title {
@@ -46,10 +44,10 @@ body {
     font-size: 5vw;
 }
 .caviteDesc {
-    color: #f8f9fa;
+    color: #171437;
     margin-left: 1vw;
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 1.5vw;
     width: 30vw;
 }
@@ -151,7 +149,7 @@ body {
 .systemNoteForPhone {
     text-align: center;
     font-size: 1vw;
-    color: #f8f9fa;
+    color: #050329;
     width: 100%;
 }
 .instructionNotePicturesContainer {
@@ -296,11 +294,6 @@ body {
 
 
     /* map */
-    .map {
-        overflow: hidden;
-        text-align: center;
-        background-position: center;
-    }
     .guide {
         width: 95vw;
         height: auto;

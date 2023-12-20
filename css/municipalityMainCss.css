@@ -11,16 +11,21 @@ a {
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     z-index: 6;
+    justify-content: flex-end;
 }
 .nav a {
     color: #f8f9fa;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 .navBtn:hover {
     color: #f8f9fa;
     animation: scaled 250ms linear 0s 1 normal;
     -webkit-animation: scaled 250ms linear 0s 1 normal;
     transform: scale(1.2);
+}
+.navBtn:visited {
+    color: #f8f9fa;
 }
 
 /* header */
@@ -154,7 +159,7 @@ a {
 .whereToEatSeparator {
     display: none;
 }
-.choices > a:hover, a:focus {
+.headerWrapper .choices a:hover {
    animation: upChoices 500ms ease 1;
    -webkit-animation: upChoices 500ms ease 1;
    transform: translateY(-50px);
@@ -227,7 +232,7 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
-.bodyWrapper .destination .choicesWrapper > a:hover, a:focus{
+.bodyWrapper .destination .choicesWrapper > a:hover{
     animation: choicesAnimaiton 400ms ease 1;
     -webkit-animation: choicesAnimaiton 400ms ease 1;
     transform: translateY(-10px) scale(1.05);
@@ -285,7 +290,7 @@ a {
     transform: scale(2);
     -webkit-transform: scale(2);
 }
-.bodyWrapper .destination .choicesWrapper .card .card-img-top:hover, .card-img-top:focus {
+.bodyWrapper .destination .choicesWrapper .card .card-img-top:hover {
     animation: scaleImgCard 500ms linear reverse;
     -webkit-animation: scaleImgCard 500ms linear reverse;
     transform: scale(1);
@@ -312,7 +317,7 @@ a {
     text-align: center;
     overflow: hidden;
 }
-#backToTopBtn:hover, #backToTopBtn:focus {
+#backToTopBtn:hover {
     text-decoration: none;
     color: #030328;
     animation: scaled 500ms 1;

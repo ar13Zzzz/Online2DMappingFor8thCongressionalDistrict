@@ -5,6 +5,7 @@ body {
 /* nav bar */
 .navbar {
     height: 50px;
+    justify-content: flex-end;
 }
 .nav {
     /* box-shadow: 0px 10px 50px rgba(255, 255, 255, 0.053); */
@@ -14,7 +15,9 @@ body {
     z-index: 8;
 }
 .nav a {
-    color: #fff;
+    color: #f8f9fa;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 .navBtn:hover, .navBtn:focus {
     color: #fff;
