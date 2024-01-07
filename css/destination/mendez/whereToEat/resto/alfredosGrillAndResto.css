@@ -4,6 +4,9 @@
 .routeAndFrontkWrapper {
     background-color: #3a5f0b;
 }
+.frontWrapper p {
+    color: #3a5f0b;
+}
 .frontWrapper {
     background-color: #3a5f0b;
 }
