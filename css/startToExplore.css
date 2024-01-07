@@ -2,6 +2,7 @@ body {
     scroll-behavior: smooth;
     background-color: #04aaf8;
     background-image: url("../images/bgImage/mapBg.jpg");
+    backdrop-filter: blur(3px);
 }
 /* nav bar */
 .navbar {
@@ -44,12 +45,13 @@ body {
     font-size: 5vw;
 }
 .caviteDesc {
-    color: #171437;
+    color: #e7eaee;
     margin-left: 1vw;
     font-size: 1vw;
     font-weight: 900;
     line-height: 1.5vw;
-    width: 30vw;
+    width: 25vw;
+    filter: drop-shadow(3px 3px 3px #000080);
 }
 
 /* municapality/city */
@@ -149,8 +151,9 @@ body {
 .systemNoteForPhone {
     text-align: center;
     font-size: 1vw;
-    color: #050329;
+    color: #f8f9fa;
     width: 100%;
+    filter: drop-shadow(3px 3px 3px #000080);
 }
 .instructionNotePicturesContainer {
     display: flex;
