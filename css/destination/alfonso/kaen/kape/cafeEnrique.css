@@ -1,14 +1,14 @@
 .blurBg {
-    background-color: #1c212496;
+    background-color: #b5795d96;
 }
 .routeAndFrontkWrapper {
-    background-color: #1c2124;
+    background-color: #b5795d;
 }
 .frontWrapper {
-    background-color: #1c2124;
+    background-color: #b5795d;
 }
 .nearestLandmarkContainer {
-    background-color: #1c2124;
+    background-color: #b5795d;
 }
 .landmarkNote {
     color: #1e1e1e;
@@ -20,14 +20,14 @@
     background-color: #fe5f37;
 }
 .topBtn {
-    background-color: #1c2124;
+    background-color: #b5795d;
 }
 .otherBranchesWrapper .otherBranchHeader {
-    color: #3a5f0b;
+    color: #b5795d;
 }
 .otherBranchesWrapper {
-    border-color: #3a5f0b;
+    border-color: #b5795d;
 }
 .otherBranchesWrapper .destination .choicesWrapper a {
-    color: #3a5f0b;
+    color: #b5795d;
 }

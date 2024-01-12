@@ -1,0 +1,27 @@
+.blurBg {
+    background-color: #70903996;
+}
+.routeAndFrontkWrapper {
+    background-color: #709039;
+}
+/* .frontWrapper p {
+    color: #709039
+} */
+.frontWrapper {
+    background-color: #709039;
+}
+.nearestLandmarkContainer {
+    background-color: #709039;
+}
+.landmarkNote {
+    color: #1e1e1e;
+}
+.landmarkNote a {
+    color: #1e1e1e;
+}
+.backBtn {
+    background-color: #fe5f37;
+}
+.topBtn {
+    background-color: #709039;
+}
