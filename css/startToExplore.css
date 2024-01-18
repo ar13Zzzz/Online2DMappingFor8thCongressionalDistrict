@@ -223,6 +223,7 @@ body {
 }
 #modalDescription {
     padding: 0vw 2vw 0vw 2vw;
+    filter: drop-shadow(2px 3px 0px #0e0e0e);
     /* font-weight: 10; */
 }
 #modalGoToDestinationList {
