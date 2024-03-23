@@ -8,25 +8,45 @@ body {
     background-image: url(../images/bgImage/aboutUsBgLandscape.jpg);
     background-size: cover;
 }
+
 .navbar {
     justify-content: flex-end;
 }
 .nav {
-    background-color: transparent;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    padding-inline: 0.5vw;
 }
 .nav a {
-    color: #f8f9fa;
+    color: #1e1e1e;
     font-weight: 450;
     font-size: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
 }
 .navBtn:hover, .navBtn:focus {
     color: #f8f9fa;
-    animation: scaled 500ms ease;
-    -webkit-animation: scaled 500ms ease;
+    background-color: #1e1e1e;
+    animation: scaled1 250ms linear 0s 1 normal;
+    -webkit-animation: scaled1 250ms linear 0s 1 normal;
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
+}
+
+.briefDescContainer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(3px);
+}
+.briefDesc {
+    background-color: transparent;
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #1e1e1e;
+    font-weight: 700;
 }
 
 .container-fluid {
@@ -92,7 +112,7 @@ body {
 }
 @media only screen and (max-width: 430px) /*phone*/{
     body {
-        background-image: url(../images/bgImage/aboutUsBgPortrate1.jpg);
+        background-image: url(../images/bgImage/aboutUsBgPortrait1.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -105,6 +125,11 @@ body {
     }
     .nav a {
         font-size: 1rem;
+    }
+
+    .briefDesc {
+        width: 90%;
+        font-size: .75rem;
     }
 
     .container-fluid {
@@ -144,6 +169,10 @@ body {
         font-size: 1rem;
     }
 
+    .briefDesc {
+        width: 90%;
+        font-size: .75rem;
+    }
 
     .profileContainer .profileImageContainer {
         height: 18vw;
@@ -167,4 +196,10 @@ body {
         font-size: 1.25vw;
     }
 
+}
+@media only screen and (max-width: 1025px) and (min-width: 771px) /*tablet*/{
+    .briefDesc {
+        width: 90%;
+        font-size: 1rem;
+    }
 }
